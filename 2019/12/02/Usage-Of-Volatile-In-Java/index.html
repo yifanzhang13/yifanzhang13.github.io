@@ -79,14 +79,14 @@
 
 
 
-<meta name="description" content="用在多线程，同步变量。 线程为了提高效率，将某成员变量(如A)拷贝了一份（如B），线程中对A的访问其实访问的是B。只在某些动作时才进行A和B的同步。因此存在A和B不一致的情况。volatile就是用来避免这种情况的。volatile告诉jvm， 它所修饰的变量不保留拷贝，直接访问主内存中的（也就是上面说的A) 在Java内存模型中，有main memory，每个线程也有自己的memory (例如寄">
+<meta name="description" content="Volatile用在多线程，同步变量。 线程为了提高效率，将某成员变量(如A)拷贝了一份（如B），线程中对A的访问其实访问的是B。只在某些动作时才进行A和B的同步。因此存在A和B不一致的情况。volatile就是用来避免这种情况的。volatile告诉jvm， 它所修饰的变量不保留拷贝，直接访问主内存中的（也就是上面说的A) 在Java内存模型中，有main memory，每个线程也有自己的mem">
 <meta property="og:type" content="article">
-<meta property="og:title" content="First Blog">
-<meta property="og:url" content="http:&#x2F;&#x2F;yifanzhang13.github.io&#x2F;2019&#x2F;11&#x2F;14&#x2F;First-Blog&#x2F;index.html">
+<meta property="og:title" content="Usage Of Volatile In Java">
+<meta property="og:url" content="http:&#x2F;&#x2F;yifanzhang13.github.io&#x2F;2019&#x2F;12&#x2F;02&#x2F;Usage-Of-Volatile-In-Java&#x2F;index.html">
 <meta property="og:site_name" content="Flog">
-<meta property="og:description" content="用在多线程，同步变量。 线程为了提高效率，将某成员变量(如A)拷贝了一份（如B），线程中对A的访问其实访问的是B。只在某些动作时才进行A和B的同步。因此存在A和B不一致的情况。volatile就是用来避免这种情况的。volatile告诉jvm， 它所修饰的变量不保留拷贝，直接访问主内存中的（也就是上面说的A) 在Java内存模型中，有main memory，每个线程也有自己的memory (例如寄">
+<meta property="og:description" content="Volatile用在多线程，同步变量。 线程为了提高效率，将某成员变量(如A)拷贝了一份（如B），线程中对A的访问其实访问的是B。只在某些动作时才进行A和B的同步。因此存在A和B不一致的情况。volatile就是用来避免这种情况的。volatile告诉jvm， 它所修饰的变量不保留拷贝，直接访问主内存中的（也就是上面说的A) 在Java内存模型中，有main memory，每个线程也有自己的mem">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-12-02T21:19:20.352Z">
+<meta property="og:updated_time" content="2019-12-02T21:24:11.119Z">
 <meta name="twitter:card" content="summary">
 
 
@@ -117,13 +117,13 @@
 
 
 
-  <link rel="canonical" href="http://yifanzhang13.github.io/2019/11/14/First-Blog/"/>
+  <link rel="canonical" href="http://yifanzhang13.github.io/2019/12/02/Usage-Of-Volatile-In-Java/"/>
 
 
 
 
 
-  <title>First Blog | Flog</title>
+  <title>Usage Of Volatile In Java | Flog</title>
   
 
 
@@ -240,7 +240,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yifanzhang13.github.io/2019/11/14/First-Blog/">
+    <link itemprop="mainEntityOfPage" href="http://yifanzhang13.github.io/2019/12/02/Usage-Of-Volatile-In-Java/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Yifan Zhang">
@@ -257,7 +257,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">First Blog</h1>
+          <h1 class="post-title" itemprop="name headline">Usage Of Volatile In Java</h1>
         
 
         <div class="post-meta">
@@ -269,8 +269,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-11-14T10:32:05+00:00">
-                2019-11-14
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-12-02T21:23:30+00:00">
+                2019-12-02
               </time>
             
 
@@ -307,7 +307,7 @@
       
 
       
-        <p>用在多线程，同步变量。 线程为了提高效率，将某成员变量(如A)拷贝了一份（如B），线程中对A的访问其实访问的是B。只在某些动作时才进行A和B的同步。因此存在A和B不一致的情况。volatile就是用来避免这种情况的。volatile告诉jvm， 它所修饰的变量不保留拷贝，直接访问主内存中的（也就是上面说的A)</p>
+        <p>Volatile用在多线程，同步变量。 线程为了提高效率，将某成员变量(如A)拷贝了一份（如B），线程中对A的访问其实访问的是B。只在某些动作时才进行A和B的同步。因此存在A和B不一致的情况。volatile就是用来避免这种情况的。volatile告诉jvm， 它所修饰的变量不保留拷贝，直接访问主内存中的（也就是上面说的A)</p>
 <p>在Java内存模型中，有main memory，每个线程也有自己的memory (例如寄存器)。为了性能，一个线程会在自己的memory中保持要访问的变量的副本。这样就会出现同一个变量在某个瞬间，在一个线程的memory中的值可能与另外一个线程memory中的值，或者main memory中的值不一致的情况。</p>
 <p>一个变量声明为volatile，就意味着这个变量是随时会被其他线程修改的，因此不能将它cache在线程memory中。以下例子展现了volatile的作用：</p>
 <p>public class StoppableTask extends Thread {  </p>
@@ -395,6 +395,7 @@ volatile关键字相信了解Java多线程的读者都很清楚它的作用。vo
     System.out.println( &quot; n= &quot;   +  JoinThread.n);  
 }  </code></pre><p>}   </p>
 <p>上面的代码将n=n+1改成了inc()，其中inc方法使用了synchronized关键字进行方法同步。因此，在使用volatile关键字时要慎重，并不是只要简单类型变量使用volatile修饰，对这个变量的所有操作都是原来操作，当变量的值由自身的上一个决定时，如n=n+1、n++ 等，volatile关键字将失效，只有当变量的值和自身上一个值无关时对该变量的操作才是原子级别的，如n = m + 1，这个就是原级别的。所以在使用volatile关键时一定要谨慎，如果自己没有把握，可以使用synchronized来代替volatile。</p>
+<p>作者：我是嘻哈大哥<br>链接：<a href="https://www.jianshu.com/p/ffb8e441b55b" target="_blank" rel="noopener">https://www.jianshu.com/p/ffb8e441b55b</a><br>来源：简书<br>著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。</p>
 
       
     </div>
@@ -419,15 +420,15 @@ volatile关键字相信了解Java多线程的读者都很清楚它的作用。vo
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2019/11/14/First-Blog/" rel="next" title="First Blog">
+                <i class="fa fa-chevron-left"></i> First Blog
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/12/02/Usage-Of-Volatile-In-Java/" rel="prev" title="Usage Of Volatile In Java">
-                Usage Of Volatile In Java <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
