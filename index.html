@@ -520,7 +520,6 @@ volatile关键字相信了解Java多线程的读者都很清楚它的作用。vo
     System.out.println( &quot; n= &quot;   +  JoinThread.n);  
 }  </code></pre><p>}   </p>
 <p>上面的代码将n=n+1改成了inc()，其中inc方法使用了synchronized关键字进行方法同步。因此，在使用volatile关键字时要慎重，并不是只要简单类型变量使用volatile修饰，对这个变量的所有操作都是原来操作，当变量的值由自身的上一个决定时，如n=n+1、n++ 等，volatile关键字将失效，只有当变量的值和自身上一个值无关时对该变量的操作才是原子级别的，如n = m + 1，这个就是原级别的。所以在使用volatile关键时一定要谨慎，如果自己没有把握，可以使用synchronized来代替volatile。</p>
-<p>作者：我是嘻哈大哥<br>链接：<a href="https://www.jianshu.com/p/ffb8e441b55b" target="_blank" rel="noopener">https://www.jianshu.com/p/ffb8e441b55b</a><br>来源：简书<br>著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。</p>
 
           
         
