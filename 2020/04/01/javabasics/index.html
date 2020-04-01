@@ -5,7 +5,7 @@
   
 
 
-<html class="theme-next mist use-motion" lang="en">
+<html class="theme-next pisces use-motion" lang="en">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -79,13 +79,13 @@
 
 
 
-<meta name="description" content="2.1 Java基础1. 面向对象和面向过程的区别 面向过程 ：面向过程性能比面向对象高。 因为类调用时需要实例化，开销比较大，比较消耗资源，所以当性能是最重要的考量因素的时候，比如单片机、嵌入式开发、Linux&#x2F;Unix 等一般采用面向过程开发。但是，面向过程没有面向对象易维护、易复用、易扩展。 面向对象 ：面向对象易维护、易复用、易扩展。 因为面向对象有封装、继承、多态性的特性，所以可以设计出">
+<meta name="description" content="2.1 Java基础Original Blog 1. 面向对象和面向过程的区别 面向过程 ：面向过程性能比面向对象高。 因为类调用时需要实例化，开销比较大，比较消耗资源，所以当性能是最重要的考量因素的时候，比如单片机、嵌入式开发、Linux&#x2F;Unix 等一般采用面向过程开发。但是，面向过程没有面向对象易维护、易复用、易扩展。 面向对象 ：面向对象易维护、易复用、易扩展。 因为面向对象有封装、继承、">
 <meta name="keywords" content="java,basics">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Java Basics(Author:Guide哥。)">
+<meta property="og:title" content="Interview - Java Basics">
 <meta property="og:url" content="http:&#x2F;&#x2F;yifanzhang13.github.io&#x2F;2020&#x2F;04&#x2F;01&#x2F;javabasics&#x2F;index.html">
 <meta property="og:site_name" content="Flog">
-<meta property="og:description" content="2.1 Java基础1. 面向对象和面向过程的区别 面向过程 ：面向过程性能比面向对象高。 因为类调用时需要实例化，开销比较大，比较消耗资源，所以当性能是最重要的考量因素的时候，比如单片机、嵌入式开发、Linux&#x2F;Unix 等一般采用面向过程开发。但是，面向过程没有面向对象易维护、易复用、易扩展。 面向对象 ：面向对象易维护、易复用、易扩展。 因为面向对象有封装、继承、多态性的特性，所以可以设计出">
+<meta property="og:description" content="2.1 Java基础Original Blog 1. 面向对象和面向过程的区别 面向过程 ：面向过程性能比面向对象高。 因为类调用时需要实例化，开销比较大，比较消耗资源，所以当性能是最重要的考量因素的时候，比如单片机、嵌入式开发、Linux&#x2F;Unix 等一般采用面向过程开发。但是，面向过程没有面向对象易维护、易复用、易扩展。 面向对象 ：面向对象易维护、易复用、易扩展。 因为面向对象有封装、继承、">
 <meta property="og:locale" content="en">
 <meta property="og:image" content="https:&#x2F;&#x2F;my-blog-to-use.oss-cn-beijing.aliyuncs.com&#x2F;Java%20%E7%A8%8B%E5%BA%8F%E8%BF%90%E8%A1%8C%E8%BF%87%E7%A8%8B.png">
 <meta property="og:image" content="http:&#x2F;&#x2F;my-blog-to-use.oss-cn-beijing.aliyuncs.com&#x2F;18-9-15&#x2F;86735519.jpg">
@@ -97,7 +97,7 @@
 <meta property="og:image" content="https:&#x2F;&#x2F;my-blog-to-use.oss-cn-beijing.aliyuncs.com&#x2F;2019-6&#x2F;IO-%E6%93%8D%E4%BD%9C%E6%96%B9%E5%BC%8F%E5%88%86%E7%B1%BB.png">
 <meta property="og:image" content="https:&#x2F;&#x2F;my-blog-to-use.oss-cn-beijing.aliyuncs.com&#x2F;2019-6&#x2F;IO-%E6%93%8D%E4%BD%9C%E5%AF%B9%E8%B1%A1%E5%88%86%E7%B1%BB.png">
 <meta property="og:image" content="https:&#x2F;&#x2F;my-blog-to-use.oss-cn-beijing.aliyuncs.com&#x2F;2019-7&#x2F;java-deep-and-shallow-copy.jpg">
-<meta property="og:updated_time" content="2020-04-01T00:43:33.090Z">
+<meta property="og:updated_time" content="2020-04-01T01:20:48.009Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https:&#x2F;&#x2F;my-blog-to-use.oss-cn-beijing.aliyuncs.com&#x2F;Java%20%E7%A8%8B%E5%BA%8F%E8%BF%90%E8%A1%8C%E8%BF%87%E7%A8%8B.png">
 
@@ -107,7 +107,7 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
-    scheme: 'Mist',
+    scheme: 'Pisces',
     version: '5.1.4',
     sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
     fancybox: true,
@@ -135,7 +135,7 @@
 
 
 
-  <title>Java Basics(Author:Guide哥。) | Flog</title>
+  <title>Interview - Java Basics | Flog</title>
   
 
 
@@ -191,9 +191,9 @@
       
         
         <li class="menu-item menu-item-home">
-          <a href="/" rel="section">
+          <a href="/%20" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
             Home
           </a>
@@ -201,9 +201,9 @@
       
         
         <li class="menu-item menu-item-about">
-          <a href="/about" rel="section">
+          <a href="/about%20" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
             
             About
           </a>
@@ -211,9 +211,9 @@
       
         
         <li class="menu-item menu-item-tags">
-          <a href="/tags" rel="section">
+          <a href="/tags%20" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
             
             Tags
           </a>
@@ -221,9 +221,9 @@
       
         
         <li class="menu-item menu-item-categories">
-          <a href="/categories" rel="section">
+          <a href="/categories%20" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
             
             Categories
           </a>
@@ -231,9 +231,9 @@
       
         
         <li class="menu-item menu-item-archives">
-          <a href="/archives" rel="section">
+          <a href="/archives%20%20" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
             Archives
           </a>
@@ -289,7 +289,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Java Basics(Author:Guide哥。)</h1>
+          <h1 class="post-title" itemprop="name headline">Interview - Java Basics</h1>
         
 
         <div class="post-meta">
@@ -361,7 +361,8 @@
       
 
       
-        <h2 id="2-1-Java基础"><a href="#2-1-Java基础" class="headerlink" title="2.1 Java基础"></a>2.1 Java基础</h2><h3 id="1-面向对象和面向过程的区别"><a href="#1-面向对象和面向过程的区别" class="headerlink" title="1. 面向对象和面向过程的区别"></a>1. 面向对象和面向过程的区别</h3><ul>
+        <h2 id="2-1-Java基础"><a href="#2-1-Java基础" class="headerlink" title="2.1 Java基础"></a>2.1 Java基础</h2><p><a href="https://github.com/Snailclimb/JavaGuide-Interview" target="_blank" rel="noopener">Original Blog</a></p>
+<h3 id="1-面向对象和面向过程的区别"><a href="#1-面向对象和面向过程的区别" class="headerlink" title="1. 面向对象和面向过程的区别"></a>1. 面向对象和面向过程的区别</h3><ul>
 <li><strong>面向过程</strong> ：<strong>面向过程性能比面向对象高。</strong> 因为类调用时需要实例化，开销比较大，比较消耗资源，所以当性能是最重要的考量因素的时候，比如单片机、嵌入式开发、Linux/Unix 等一般采用面向过程开发。但是，<strong>面向过程没有面向对象易维护、易复用、易扩展。</strong></li>
 <li><strong>面向对象</strong> ：<strong>面向对象易维护、易复用、易扩展。</strong> 因为面向对象有封装、继承、多态性的特性，所以可以设计出低耦合的系统，使系统更加灵活、更加易于维护。但是，<strong>面向对象性能比面向过程低</strong>。</li>
 </ul>
@@ -759,7 +760,7 @@
             
               <div class="site-state-item site-state-posts">
               
-                <a href="/archives">
+                <a href="/archives%20%20%7C%7C%20archive">
               
                   <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">posts</span>
@@ -799,25 +800,25 @@
                   <span class="links-of-author-item">
                     <a href="https://github.com/yifanzhang13" target="_blank" title="GitHub">
                       
-                        <i class="fa fa-fw fa-globe"></i></a>
+                        <i class="fa fa-fw fa-github"></i></a>
                   </span>
                 
                   <span class="links-of-author-item">
-                    <a href="yifancheung13@gmail.com" target="_blank" title="E-Mail">
+                    <a href="mailto:yifancheung13@gmail.com" target="_blank" title="E-Mail">
                       
-                        <i class="fa fa-fw fa-globe"></i></a>
+                        <i class="fa fa-fw fa-envelope"></i></a>
                   </span>
                 
                   <span class="links-of-author-item">
                     <a href="https://www.facebook.com/yifan.zhang.14224/" target="_blank" title="FB">
                       
-                        <i class="fa fa-fw fa-globe"></i></a>
+                        <i class="fa fa-fw fa-facebook"></i></a>
                   </span>
                 
                   <span class="links-of-author-item">
                     <a href="https://www.linkedin.com/in/yifan-zhang-204b53193/" target="_blank" title="Linkedin">
                       
-                        <i class="fa fa-fw fa-globe"></i></a>
+                        <i class="fa fa-fw fa-linkedin"></i></a>
                   </span>
                 
             </div>
@@ -864,7 +865,7 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2020</span>
+        <div class="copyright">&copy; 2018 &mdash; <span itemprop="copyrightYear">2020</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
@@ -882,7 +883,7 @@
 
 
 
-  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Mist</a> v5.1.4</div>
+  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a> v5.1.4</div>
 
 
 
@@ -981,6 +982,13 @@
 
   
   
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
 
   
   <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
