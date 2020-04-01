@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Flog</title>
+  <icon>http://yifanzhang13.github.io/icon.png</icon>
+  <subtitle>阿酱日常写码的碎碎念</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yifanzhang13.github.io/"/>
+  <updated>2020-04-01T01:53:26.290Z</updated>
+  <id>http://yifanzhang13.github.io/</id>
+  
+  <author>
+    <name>阿酱 a.k.a Yifan Zhang</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Coco xi qio ju</title>
+    <link href="http://yifanzhang13.github.io/2020/04/01/Coco-xi-qio-ju/"/>
+    <id>http://yifanzhang13.github.io/2020/04/01/Coco-xi-qio-ju/</id>
+    <published>2020-04-01T01:52:52.000Z</published>
+    <updated>2020-04-01T01:53:26.290Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;Coco-系-qio-ju&quot;&gt;&lt;a href=&quot;#Coco-系-qio-ju&quot; class=&quot;headerlink&quot; title=&quot;Coco 系 qio ju&quot;&gt;&lt;/a&gt;Coco 系 qio
+        
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Interview - Java Basics</title>
+    <link href="http://yifanzhang13.github.io/2020/04/01/javabasics/"/>
+    <id>http://yifanzhang13.github.io/2020/04/01/javabasics/</id>
+    <published>2020-03-31T23:32:22.000Z</published>
+    <updated>2020-04-01T01:20:48.009Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;2-1-Java基础&quot;&gt;&lt;a href=&quot;#2-1-Java基础&quot; class=&quot;headerlink&quot; title=&quot;2.1 Java基础&quot;&gt;&lt;/a&gt;2.1 Java基础&lt;/h2&gt;&lt;p&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+    
+      <category term="java" scheme="http://yifanzhang13.github.io/categories/java/"/>
+    
+    
+      <category term="java" scheme="http://yifanzhang13.github.io/tags/java/"/>
+    
+      <category term="basics" scheme="http://yifanzhang13.github.io/tags/basics/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Usage Of Volatile In Java</title>
+    <link href="http://yifanzhang13.github.io/2019/12/02/Usage-Of-Volatile-In-Java/"/>
+    <id>http://yifanzhang13.github.io/2019/12/02/Usage-Of-Volatile-In-Java/</id>
+    <published>2019-12-02T21:23:30.000Z</published>
+    <updated>2020-04-01T00:43:43.960Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;Volatile用在多线程，同步变量。 线程为了提高效率，将某成员变量(如A)拷贝了一份（如B），线程中对A的访问其实访问的是B。只在某些动作时才进行A和B的同步。因此存在A和B不一致的情况。volatile就是用来避免这种情况的。volatile告诉jvm，
+        
+      
+    
+    </summary>
+    
+    
+      <category term="java" scheme="http://yifanzhang13.github.io/categories/java/"/>
+    
+    
+      <category term="java" scheme="http://yifanzhang13.github.io/tags/java/"/>
+    
+      <category term="concurrency" scheme="http://yifanzhang13.github.io/tags/concurrency/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>First Blog</title>
+    <link href="http://yifanzhang13.github.io/2019/11/14/First-Blog/"/>
+    <id>http://yifanzhang13.github.io/2019/11/14/First-Blog/</id>
+    <published>2019-11-14T10:32:05.000Z</published>
+    <updated>2020-04-01T00:43:59.736Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;Hello World!&lt;/p&gt;
+&lt;p&gt;Personal Blog
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Hello World!" scheme="http://yifanzhang13.github.io/categories/Hello-World/"/>
+    
+    
+      <category term="Hello World!" scheme="http://yifanzhang13.github.io/tags/Hello-World/"/>
+    
+  </entry>
+  
+</feed>
