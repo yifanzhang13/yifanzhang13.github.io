@@ -1,42 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>First Blog</title>
-    <url>/2019/11/14/First-Blog/</url>
-    <content><![CDATA[<p>Hello World!</p>
-<p>Personal Blog Test!</p>
-<p>Done!</p>
-]]></content>
-      <categories>
-        <category>Hello World!</category>
-      </categories>
-      <tags>
-        <tag>Hello World!</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Hexo ERROR Render HTML failed</title>
-    <url>/2020/04/01/Hexo-ERROR-Render-HTML-failed/</url>
-    <content><![CDATA[<h1 id="ERROR-Render-HTML-failed"><a href="#ERROR-Render-HTML-failed" class="headerlink" title="ERROR-Render-HTML-failed"></a>ERROR-Render-HTML-failed</h1><p>Error reported when I entered <code>hexo g</code> to convert md file into HTML file</p>
-<a id="more"></a>
-
-<h2 id="Error"><a href="#Error" class="headerlink" title="Error"></a>Error</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo g</span><br><span class="line">INFO  Start processing</span><br><span class="line">INFO  Files loaded <span class="keyword">in</span> 627 ms</span><br><span class="line">ERROR Render HTML failed: about/index.html</span><br><span class="line">TypeError: Cannot <span class="built_in">read</span> property <span class="string">'replace'</span> of null</span><br><span class="line">    at Hexo.externalLinkFilter (/Users/xiaqiulei/Documents/blog/node_modules/hexo/lib/plugins/filter/after_render/external_link.js:45:15)</span><br><span class="line">    at Hexo.tryCatcher (/Users/xiaqiulei/Documents/blog/node_modules/bluebird/js/release/util.js:16:23)</span><br><span class="line">    at Hexo.&lt;anonymous&gt; (/Users/xiaqiulei/Documents/blog/node_modules/bluebird/js/release/method.js:15:34)</span><br><span class="line">    at /Users/xiaqiulei/Documents/blog/node_modules/hexo/lib/extend/filter.js:60:50</span><br><span class="line">    at tryCatcher (/Users/xiaqiulei/Documents/blog/node_modules/bluebird/js/release/util.js:16:23)</span><br><span class="line">    at Object.gotValue (/Users/xiaqiulei/Documents/blog/node_modules/bluebird/js/release/reduce.js:155:18)</span><br><span class="line">    at Object.gotAccum (/Users/xiaqiulei/Documents/blog/node_modules/bluebird/js/release/reduce.js:144:25)</span><br><span class="line">    at Object.tryCatcher (/Users/xiaqiulei/Documents/blog/node_modules/bluebird/js/release/util.js:16:23)</span><br><span class="line">    at Promise._settlePromiseFromHandler (/Users/xiaqiulei/Documents/blog/node_modules/bluebird/js/release/promise.js:512:31)</span><br><span class="line">    at Promise._settlePromise (/Users/xiaqiulei/Documents/blog/node_modules/bluebird/js/release/promise.js:569:18)</span><br><span class="line">    at Promise._settlePromiseCtx (/Users/xiaqiulei/Documents/blog/node_modules/bluebird/js/release/promise.js:606:10)</span><br><span class="line">    at _drainQueueStep (/Users/xiaqiulei/Documents/blog/node_modules/bluebird/js/release/async.js:142:12)</span><br><span class="line">    at _drainQueue (/Users/xiaqiulei/Documents/blog/node_modules/bluebird/js/release/async.js:131:9)</span><br><span class="line">    at Async._drainQueues (/Users/xiaqiulei/Documents/blog/node_modules/bluebird/js/release/async.js:147:5)</span><br><span class="line">    at Immediate.Async.drainQueues [as _onImmediate] (/Users/xiaqiulei/Documents/blog/node_modules/bluebird/js/release/async.js:17:14)</span><br><span class="line">    at processImmediate (internal/timers.js:439:21)</span><br><span class="line">ERROR Cannot <span class="built_in">read</span> property <span class="string">'replace'</span> of null</span><br><span class="line">TypeError: Cannot <span class="built_in">read</span> property <span class="string">'replace'</span> of null</span><br><span class="line">    at Hexo.externalLinkFilter (/Users/xiaqiulei/Documents/blog/node_modules/hexo/lib/plugins/filter/after_render/external_link.js:45:15)</span><br><span class="line">    at Hexo.tryCatcher (/Users/xiaqiulei/Documents/blog/node_modules/bluebird/js/release/util.js:16:23)</span><br><span class="line">    at Hexo.&lt;anonymous&gt; (/Users/xiaqiulei/Documents/blog/node_modules/bluebird/js/release/method.js:15:34)</span><br><span class="line">    at /Users/xiaqiulei/Documents/blog/node_modules/hexo/lib/extend/filter.js:60:50</span><br><span class="line">    at tryCatcher (/Users/xiaqiulei/Documents/blog/node_modules/bluebird/js/release/util.js:16:23)</span><br><span class="line">    at Object.gotValue (/Users/xiaqiulei/Documents/blog/node_modules/bluebird/js/release/reduce.js:155:18)</span><br><span class="line">    at Object.gotAccum (/Users/xiaqiulei/Documents/blog/node_modules/bluebird/js/release/reduce.js:144:25)</span><br><span class="line">    at Object.tryCatcher (/Users/xiaqiulei/Documents/blog/node_modules/bluebird/js/release/util.js:16:23)</span><br><span class="line">    at Promise._settlePromiseFromHandler (/Users/xiaqiulei/Documents/blog/node_modules/bluebird/js/release/promise.js:512:31)</span><br><span class="line">    at Promise._settlePromise (/Users/xiaqiulei/Documents/blog/node_modules/bluebird/js/release/promise.js:569:18)</span><br><span class="line">    at Promise._settlePromiseCtx (/Users/xiaqiulei/Documents/blog/node_modules/bluebird/js/release/promise.js:606:10)</span><br><span class="line">    at _drainQueueStep (/Users/xiaqiulei/Documents/blog/node_modules/bluebird/js/release/async.js:142:12)</span><br><span class="line">    at _drainQueue (/Users/xiaqiulei/Documents/blog/node_modules/bluebird/js/release/async.js:131:9)</span><br><span class="line">    at Async._drainQueues (/Users/xiaqiulei/Documents/blog/node_modules/bluebird/js/release/async.js:147:5)</span><br><span class="line">    at Immediate.Async.drainQueues [as _onImmediate] (/Users/xiaqiulei/Documents/blog/node_modules/bluebird/js/release/async.js:17:14)</span><br><span class="line">    at processImmediate (internal/timers.js:439:21)</span><br><span class="line">INFO  0 files generated <span class="keyword">in</span> 1.6 s</span><br></pre></td></tr></table></figure>
-
-<h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><ul>
-<li><p>Uninstall the extension of ‘Relative article recommendation’</p>
-</li>
-<li><p>Set the <code>enable</code> into false</p>
-<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">external_link:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">false</span> <span class="comment"># Open external links in new tab</span></span><br><span class="line">  <span class="attr">field:</span> <span class="string">site</span> <span class="comment"># Apply to the whole site</span></span><br><span class="line">  <span class="attr">exclude:</span> <span class="string">'</span></span><br></pre></td></tr></table></figure></li>
-</ul>
-]]></content>
-      <categories>
-        <category>Hexo</category>
-      </categories>
-      <tags>
-        <tag>ERROR-RenderHTMLFailed</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Usage Of Volatile In Java</title>
     <url>/2019/12/02/Usage-Of-Volatile-In-Java/</url>
     <content><![CDATA[<p>Volatile用在多线程，同步变量。 线程为了提高效率，将某成员变量(如A)拷贝了一份（如B），线程中对A的访问其实访问的是B。只在某些动作时才进行A和B的同步。因此存在A和B不一致的情况。volatile就是用来避免这种情况的。volatile告诉jvm， 它所修饰的变量不保留拷贝，直接访问主内存中的（也就是上面说的A)</p>
@@ -138,6 +102,42 @@ volatile关键字相信了解Java多线程的读者都很清楚它的作用。vo
       <tags>
         <tag>java</tag>
         <tag>concurrency</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>First Blog</title>
+    <url>/2019/11/14/First-Blog/</url>
+    <content><![CDATA[<p>Hello World!</p>
+<p>Personal Blog Test!</p>
+<p>Done!</p>
+]]></content>
+      <categories>
+        <category>Hello World!</category>
+      </categories>
+      <tags>
+        <tag>Hello World!</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hexo ERROR Render HTML failed</title>
+    <url>/2020/04/01/Hexo-ERROR-Render-HTML-failed/</url>
+    <content><![CDATA[<h1 id="ERROR-Render-HTML-failed"><a href="#ERROR-Render-HTML-failed" class="headerlink" title="ERROR-Render-HTML-failed"></a>ERROR-Render-HTML-failed</h1><p>Error reported when I entered <code>hexo g</code> to convert md file into HTML file</p>
+<a id="more"></a>
+
+<h2 id="Error"><a href="#Error" class="headerlink" title="Error"></a>Error</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo g</span><br><span class="line">INFO  Start processing</span><br><span class="line">INFO  Files loaded <span class="keyword">in</span> 627 ms</span><br><span class="line">ERROR Render HTML failed: about/index.html</span><br><span class="line">TypeError: Cannot <span class="built_in">read</span> property <span class="string">'replace'</span> of null</span><br><span class="line">    at Hexo.externalLinkFilter (/Users/xiaqiulei/Documents/blog/node_modules/hexo/lib/plugins/filter/after_render/external_link.js:45:15)</span><br><span class="line">    at Hexo.tryCatcher (/Users/xiaqiulei/Documents/blog/node_modules/bluebird/js/release/util.js:16:23)</span><br><span class="line">    at Hexo.&lt;anonymous&gt; (/Users/xiaqiulei/Documents/blog/node_modules/bluebird/js/release/method.js:15:34)</span><br><span class="line">    at /Users/xiaqiulei/Documents/blog/node_modules/hexo/lib/extend/filter.js:60:50</span><br><span class="line">    at tryCatcher (/Users/xiaqiulei/Documents/blog/node_modules/bluebird/js/release/util.js:16:23)</span><br><span class="line">    at Object.gotValue (/Users/xiaqiulei/Documents/blog/node_modules/bluebird/js/release/reduce.js:155:18)</span><br><span class="line">    at Object.gotAccum (/Users/xiaqiulei/Documents/blog/node_modules/bluebird/js/release/reduce.js:144:25)</span><br><span class="line">    at Object.tryCatcher (/Users/xiaqiulei/Documents/blog/node_modules/bluebird/js/release/util.js:16:23)</span><br><span class="line">    at Promise._settlePromiseFromHandler (/Users/xiaqiulei/Documents/blog/node_modules/bluebird/js/release/promise.js:512:31)</span><br><span class="line">    at Promise._settlePromise (/Users/xiaqiulei/Documents/blog/node_modules/bluebird/js/release/promise.js:569:18)</span><br><span class="line">    at Promise._settlePromiseCtx (/Users/xiaqiulei/Documents/blog/node_modules/bluebird/js/release/promise.js:606:10)</span><br><span class="line">    at _drainQueueStep (/Users/xiaqiulei/Documents/blog/node_modules/bluebird/js/release/async.js:142:12)</span><br><span class="line">    at _drainQueue (/Users/xiaqiulei/Documents/blog/node_modules/bluebird/js/release/async.js:131:9)</span><br><span class="line">    at Async._drainQueues (/Users/xiaqiulei/Documents/blog/node_modules/bluebird/js/release/async.js:147:5)</span><br><span class="line">    at Immediate.Async.drainQueues [as _onImmediate] (/Users/xiaqiulei/Documents/blog/node_modules/bluebird/js/release/async.js:17:14)</span><br><span class="line">    at processImmediate (internal/timers.js:439:21)</span><br><span class="line">ERROR Cannot <span class="built_in">read</span> property <span class="string">'replace'</span> of null</span><br><span class="line">TypeError: Cannot <span class="built_in">read</span> property <span class="string">'replace'</span> of null</span><br><span class="line">    at Hexo.externalLinkFilter (/Users/xiaqiulei/Documents/blog/node_modules/hexo/lib/plugins/filter/after_render/external_link.js:45:15)</span><br><span class="line">    at Hexo.tryCatcher (/Users/xiaqiulei/Documents/blog/node_modules/bluebird/js/release/util.js:16:23)</span><br><span class="line">    at Hexo.&lt;anonymous&gt; (/Users/xiaqiulei/Documents/blog/node_modules/bluebird/js/release/method.js:15:34)</span><br><span class="line">    at /Users/xiaqiulei/Documents/blog/node_modules/hexo/lib/extend/filter.js:60:50</span><br><span class="line">    at tryCatcher (/Users/xiaqiulei/Documents/blog/node_modules/bluebird/js/release/util.js:16:23)</span><br><span class="line">    at Object.gotValue (/Users/xiaqiulei/Documents/blog/node_modules/bluebird/js/release/reduce.js:155:18)</span><br><span class="line">    at Object.gotAccum (/Users/xiaqiulei/Documents/blog/node_modules/bluebird/js/release/reduce.js:144:25)</span><br><span class="line">    at Object.tryCatcher (/Users/xiaqiulei/Documents/blog/node_modules/bluebird/js/release/util.js:16:23)</span><br><span class="line">    at Promise._settlePromiseFromHandler (/Users/xiaqiulei/Documents/blog/node_modules/bluebird/js/release/promise.js:512:31)</span><br><span class="line">    at Promise._settlePromise (/Users/xiaqiulei/Documents/blog/node_modules/bluebird/js/release/promise.js:569:18)</span><br><span class="line">    at Promise._settlePromiseCtx (/Users/xiaqiulei/Documents/blog/node_modules/bluebird/js/release/promise.js:606:10)</span><br><span class="line">    at _drainQueueStep (/Users/xiaqiulei/Documents/blog/node_modules/bluebird/js/release/async.js:142:12)</span><br><span class="line">    at _drainQueue (/Users/xiaqiulei/Documents/blog/node_modules/bluebird/js/release/async.js:131:9)</span><br><span class="line">    at Async._drainQueues (/Users/xiaqiulei/Documents/blog/node_modules/bluebird/js/release/async.js:147:5)</span><br><span class="line">    at Immediate.Async.drainQueues [as _onImmediate] (/Users/xiaqiulei/Documents/blog/node_modules/bluebird/js/release/async.js:17:14)</span><br><span class="line">    at processImmediate (internal/timers.js:439:21)</span><br><span class="line">INFO  0 files generated <span class="keyword">in</span> 1.6 s</span><br></pre></td></tr></table></figure>
+
+<h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><ul>
+<li><p>Uninstall the extension of ‘Relative article recommendation’</p>
+</li>
+<li><p>Set the <code>enable</code> into false</p>
+<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">external_link:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">false</span> <span class="comment"># Open external links in new tab</span></span><br><span class="line">  <span class="attr">field:</span> <span class="string">site</span> <span class="comment"># Apply to the whole site</span></span><br><span class="line">  <span class="attr">exclude:</span> <span class="string">'</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+]]></content>
+      <categories>
+        <category>Hexo</category>
+      </categories>
+      <tags>
+        <tag>ERROR-RenderHTMLFailed</tag>
       </tags>
   </entry>
   <entry>
