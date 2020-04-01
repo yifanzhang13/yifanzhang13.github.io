@@ -26,6 +26,10 @@
     <url>/2019/12/02/Usage-Of-Volatile-In-Java/</url>
     <content><![CDATA[<p>Volatile用在多线程，同步变量。 线程为了提高效率，将某成员变量(如A)拷贝了一份（如B），线程中对A的访问其实访问的是B。只在某些动作时才进行A和B的同步。因此存在A和B不一致的情况。volatile就是用来避免这种情况的。volatile告诉jvm， 它所修饰的变量不保留拷贝，直接访问主内存中的（也就是上面说的A)</p>
 <p>在Java内存模型中，有main memory，每个线程也有自己的memory (例如寄存器)。为了性能，一个线程会在自己的memory中保持要访问的变量的副本。这样就会出现同一个变量在某个瞬间，在一个线程的memory中的值可能与另外一个线程memory中的值，或者main memory中的值不一致的情况。</p>
+<a id="more"></a>
+
+
+
 <p>一个变量声明为volatile，就意味着这个变量是随时会被其他线程修改的，因此不能将它cache在线程memory中。以下例子展现了volatile的作用：</p>
 <p>public class StoppableTask extends Thread {  </p>
 <p>  private volatile boolean pleaseStop;  </p>
@@ -122,12 +126,6 @@ volatile关键字相信了解Java多线程的读者都很清楚它的作用。vo
       </tags>
   </entry>
   <entry>
-    <title>test1</title>
-    <url>/2020/04/01/test1/</url>
-    <content><![CDATA[<p>你好 test</p>
-]]></content>
-  </entry>
-  <entry>
     <title>Interview - Java Basics</title>
     <url>/2020/04/01/javabasics/</url>
     <content><![CDATA[<h2 id="2-1-Java基础"><a href="#2-1-Java基础" class="headerlink" title="2.1 Java基础"></a>2.1 Java基础</h2><p><a href="https://github.com/Snailclimb/JavaGuide-Interview">Original Blog</a></p>
@@ -140,6 +138,8 @@ volatile关键字相信了解Java多线程的读者都很清楚它的作用。vo
 <p>这个并不是根本原因，面向过程也需要分配内存，计算内存偏移量，Java 性能差的主要原因并不是因为它是面向对象语言，而是 Java 是半编译语言，最终的执行代码并不是可以直接被 CPU 执行的二进制机械码。</p>
 <p>而面向过程语言大多都是直接编译成机械码在电脑上执行，并且其它一些面向过程的脚本语言性能也并不一定比 Java 好。</p>
 </blockquote>
+<a id="more"></a>
+
 <h3 id="2-Java-语言有哪些特点"><a href="#2-Java-语言有哪些特点" class="headerlink" title="2. Java 语言有哪些特点?"></a>2. Java 语言有哪些特点?</h3><ol>
 <li>简单易学；</li>
 <li>面向对象（封装，继承，多态）；</li>
@@ -418,5 +418,11 @@ volatile关键字相信了解Java多线程的读者都很清楚它的作用。vo
         <tag>java</tag>
         <tag>basics</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>test1</title>
+    <url>/2020/04/01/test1/</url>
+    <content><![CDATA[<p>你好 test</p>
+]]></content>
   </entry>
 </search>
