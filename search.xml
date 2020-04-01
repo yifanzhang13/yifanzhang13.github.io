@@ -23,20 +23,6 @@
       </tags>
   </entry>
   <entry>
-    <title>First Blog</title>
-    <url>/2019/11/14/First-Blog/</url>
-    <content><![CDATA[<p>Hello World!</p>
-<p>Personal Blog Test!</p>
-<p>Done!</p>
-]]></content>
-      <categories>
-        <category>Hello World!</category>
-      </categories>
-      <tags>
-        <tag>Hello World!</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Usage Of Volatile In Java</title>
     <url>/2019/12/02/Usage-Of-Volatile-In-Java/</url>
     <content><![CDATA[<p>Volatile用在多线程，同步变量。 线程为了提高效率，将某成员变量(如A)拷贝了一份（如B），线程中对A的访问其实访问的是B。只在某些动作时才进行A和B的同步。因此存在A和B不一致的情况。volatile就是用来避免这种情况的。volatile告诉jvm， 它所修饰的变量不保留拷贝，直接访问主内存中的（也就是上面说的A)</p>
@@ -138,6 +124,20 @@ volatile关键字相信了解Java多线程的读者都很清楚它的作用。vo
       <tags>
         <tag>java</tag>
         <tag>concurrency</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>First Blog</title>
+    <url>/2019/11/14/First-Blog/</url>
+    <content><![CDATA[<p>Hello World!</p>
+<p>Personal Blog Test!</p>
+<p>Done!</p>
+]]></content>
+      <categories>
+        <category>Hello World!</category>
+      </categories>
+      <tags>
+        <tag>Hello World!</tag>
       </tags>
   </entry>
   <entry>
