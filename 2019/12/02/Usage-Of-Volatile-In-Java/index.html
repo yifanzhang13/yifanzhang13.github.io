@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="java,violatile," />
+  <meta name="keywords" content="java,concurrency," />
 
 
 
@@ -80,14 +80,14 @@
 
 
 <meta name="description" content="Volatile用在多线程，同步变量。 线程为了提高效率，将某成员变量(如A)拷贝了一份（如B），线程中对A的访问其实访问的是B。只在某些动作时才进行A和B的同步。因此存在A和B不一致的情况。volatile就是用来避免这种情况的。volatile告诉jvm， 它所修饰的变量不保留拷贝，直接访问主内存中的（也就是上面说的A) 在Java内存模型中，有main memory，每个线程也有自己的mem">
-<meta name="keywords" content="java,violatile">
+<meta name="keywords" content="java,concurrency">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Usage Of Volatile In Java">
 <meta property="og:url" content="http:&#x2F;&#x2F;yifanzhang13.github.io&#x2F;2019&#x2F;12&#x2F;02&#x2F;Usage-Of-Volatile-In-Java&#x2F;index.html">
 <meta property="og:site_name" content="Flog">
 <meta property="og:description" content="Volatile用在多线程，同步变量。 线程为了提高效率，将某成员变量(如A)拷贝了一份（如B），线程中对A的访问其实访问的是B。只在某些动作时才进行A和B的同步。因此存在A和B不一致的情况。volatile就是用来避免这种情况的。volatile告诉jvm， 它所修饰的变量不保留拷贝，直接访问主内存中的（也就是上面说的A) 在Java内存模型中，有main memory，每个线程也有自己的mem">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2020-04-01T00:33:25.406Z">
+<meta property="og:updated_time" content="2020-04-01T00:43:43.960Z">
 <meta name="twitter:card" content="summary">
 
 
@@ -301,6 +301,28 @@
           </span>
 
           
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/java/" itemprop="url" rel="index">
+                    <span itemprop="name">java</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
 
           
             
@@ -435,7 +457,7 @@ volatile关键字相信了解Java多线程的读者都很清楚它的作用。vo
           
             <a href="/tags/java/" rel="tag"># java</a>
           
-            <a href="/tags/violatile/" rel="tag"># violatile</a>
+            <a href="/tags/concurrency/" rel="tag"># concurrency</a>
           
         </div>
       
@@ -539,6 +561,15 @@ volatile关键字相信了解Java多线程的读者都很清楚它的作用。vo
             
 
             
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-name">categories</span>
+                </a>
+              </div>
+            
 
             
               
@@ -555,6 +586,28 @@ volatile关键字相信了解Java多线程的读者都很清楚它的作用。vo
 
           
 
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/yifanzhang13" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-globe"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="yifancheung13@gmail.com" target="_blank" title="E-Mail">
+                      
+                        <i class="fa fa-fw fa-globe"></i>E-Mail</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://www.facebook.com/yifan.zhang.14224/" target="_blank" title="FB Page">
+                      
+                        <i class="fa fa-fw fa-globe"></i>FB Page</a>
+                  </span>
+                
+            </div>
           
 
           
