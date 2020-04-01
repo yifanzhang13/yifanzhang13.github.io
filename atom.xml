@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yifanzhang13.github.io/"/>
-  <updated>2020-04-01T15:45:40.966Z</updated>
+  <updated>2020-04-01T16:09:47.575Z</updated>
   <id>http://yifanzhang13.github.io/</id>
   
   <author>
@@ -15,53 +15,6 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>test1</title>
-    <link href="http://yifanzhang13.github.io/2020/04/01/test1/"/>
-    <id>http://yifanzhang13.github.io/2020/04/01/test1/</id>
-    <published>2020-04-01T15:45:18.000Z</published>
-    <updated>2020-04-01T15:45:40.966Z</updated>
-    
-    <content type="html"><![CDATA[<p>你好 test</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;你好 test&lt;/p&gt;
-
-      
-    
-    </summary>
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Coco xi qio ju</title>
-    <link href="http://yifanzhang13.github.io/2020/04/01/Coco-xi-qio-ju/"/>
-    <id>http://yifanzhang13.github.io/2020/04/01/Coco-xi-qio-ju/</id>
-    <published>2020-04-01T01:52:52.000Z</published>
-    <updated>2020-04-01T15:27:33.368Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="Coco-系-qio-ju"><a href="#Coco-系-qio-ju" class="headerlink" title="Coco 系 qio ju"></a>Coco 系 qio ju</h1><p>哈哈哈哈哈哈哈</p><p>update</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h1 id=&quot;Coco-系-qio-ju&quot;&gt;&lt;a href=&quot;#Coco-系-qio-ju&quot; class=&quot;headerlink&quot; title=&quot;Coco 系 qio ju&quot;&gt;&lt;/a&gt;Coco 系 qio ju&lt;/h1&gt;&lt;p&gt;哈哈哈哈哈哈哈&lt;/p&gt;
-&lt;p&gt;update&lt;/p&gt;
-
-      
-    
-    </summary>
-    
-    
-    
-  </entry>
   
   <entry>
     <title>Interview - Java Basics</title>

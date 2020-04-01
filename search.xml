@@ -1,13 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Coco xi qio ju</title>
-    <url>/2020/04/01/Coco-xi-qio-ju/</url>
-    <content><![CDATA[<h1 id="Coco-系-qio-ju"><a href="#Coco-系-qio-ju" class="headerlink" title="Coco 系 qio ju"></a>Coco 系 qio ju</h1><p>哈哈哈哈哈哈哈</p>
-<p>update</p>
-]]></content>
-  </entry>
-  <entry>
     <title>First Blog</title>
     <url>/2019/11/14/First-Blog/</url>
     <content><![CDATA[<p>Hello World!</p>
@@ -418,11 +411,5 @@ volatile关键字相信了解Java多线程的读者都很清楚它的作用。vo
         <tag>java</tag>
         <tag>basics</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>test1</title>
-    <url>/2020/04/01/test1/</url>
-    <content><![CDATA[<p>你好 test</p>
-]]></content>
   </entry>
 </search>
