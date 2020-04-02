@@ -23,14 +23,14 @@
   </script>
 
   <meta name="description" content="Volatile用在多线程，同步变量。 线程为了提高效率，将某成员变量(如A)拷贝了一份（如B），线程中对A的访问其实访问的是B。只在某些动作时才进行A和B的同步。因此存在A和B不一致的情况。volatile就是用来避免这种情况的。volatile告诉jvm， 它所修饰的变量不保留拷贝，直接访问主内存中的（也就是上面说的A) 在Java内存模型中，有main memory，每个线程也有自己的mem">
-<meta name="keywords" content="java,concurrency">
+<meta name="keywords" content="concurrency">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Usage Of Volatile In Java">
 <meta property="og:url" content="http:&#x2F;&#x2F;yifanzhang13.github.io&#x2F;2019&#x2F;12&#x2F;02&#x2F;Usage-Of-Volatile-In-Java&#x2F;index.html">
 <meta property="og:site_name" content="Flog">
 <meta property="og:description" content="Volatile用在多线程，同步变量。 线程为了提高效率，将某成员变量(如A)拷贝了一份（如B），线程中对A的访问其实访问的是B。只在某些动作时才进行A和B的同步。因此存在A和B不一致的情况。volatile就是用来避免这种情况的。volatile告诉jvm， 它所修饰的变量不保留拷贝，直接访问主内存中的（也就是上面说的A) 在Java内存模型中，有main memory，每个线程也有自己的mem">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2020-04-01T16:09:28.664Z">
+<meta property="og:updated_time" content="2020-04-02T15:31:13.183Z">
 <meta name="twitter:card" content="summary">
 
 <link rel="canonical" href="http://yifanzhang13.github.io/2019/12/02/Usage-Of-Volatile-In-Java/">
@@ -229,7 +229,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2020-04-01 17:09:28" itemprop="dateModified" datetime="2020-04-01T17:09:28+01:00">2020-04-01</time>
+                <time title="Modified: 2020-04-02 16:31:13" itemprop="dateModified" datetime="2020-04-02T16:31:13+01:00">2020-04-02</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -391,7 +391,6 @@ volatile关键字相信了解Java多线程的读者都很清楚它的作用。vo
 
       <footer class="post-footer">
           <div class="post-tags">
-              <a href="/tags/java/" rel="tag"><i class="fa fa-tags"></i> java</a>
               <a href="/tags/concurrency/" rel="tag"><i class="fa fa-tags"></i> concurrency</a>
           </div>
 
