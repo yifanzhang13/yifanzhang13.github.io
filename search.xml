@@ -129,6 +129,10 @@
 <h4 id="书签"><a href="#书签" class="headerlink" title="书签"></a>书签</h4><p>在左上角显示一个书签按钮可以跳转到上一次设置书签的位置<br>首先执行命令<code>git clone https://github.com/theme-next/theme-next-bookmark.git source/lib/bookmark</code>安装<a href="https://github.com/theme-next/theme-next-bookmark">bookmark</a>插件<br>然后在下面的选项中将<code>enable:</code>设置为<code>true</code></p>
 <figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Bookmark Support</span></span><br><span class="line"><span class="comment"># Dependencies: https://github.com/theme-next/theme-next-bookmark</span></span><br><span class="line"><span class="attr">bookmark:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="comment"># If auto, save the reading position when closing the page or clicking the bookmark-icon.</span></span><br><span class="line">  <span class="comment"># If manual, only save it by clicking the bookmark-icon.</span></span><br><span class="line">  <span class="attr">save:</span> <span class="string">auto</span></span><br></pre></td></tr></table></figure>
 
+<h4 id="黑暗模式"><a href="#黑暗模式" class="headerlink" title="黑暗模式"></a>黑暗模式</h4><p>在config.yml文件中找到darkmode关键字</p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Dark Mode</span></span><br><span class="line"><span class="attr">darkmode:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure>
+
+<p>设置为true即可</p>
 <h3 id="主题深度美化"><a href="#主题深度美化" class="headerlink" title="主题深度美化"></a>主题深度美化</h3><p><u>这些美化总结一下就是</u>：<strong>可以但没必要</strong></p>
 <p>🈶️闲情逸致🉐️可以搞一下，<del>这是一个大坑之后有时间再更</del></p>
 <hr>
