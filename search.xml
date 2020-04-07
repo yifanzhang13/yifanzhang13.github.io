@@ -207,6 +207,17 @@
       </tags>
   </entry>
   <entry>
+    <title>Quarantine in Shanghai</title>
+    <url>/2020/04/07/Quarantine-in-Shanghai/</url>
+    <content><![CDATA[<h1 id="隔离记录"><a href="#隔离记录" class="headerlink" title="隔离记录"></a>隔离记录</h1><a id="more"></a>
+
+<h2 id="Day-1"><a href="#Day-1" class="headerlink" title="Day 1"></a>Day 1</h2><p><img src="/Users/yifancheung/Downloads/day1.JPG" alt="午饭&amp;晚饭"></p>
+<p>晚餐完体温：36.1摄氏度</p>
+<h2 id="Day-2"><a href="#Day-2" class="headerlink" title="Day 2"></a>Day 2</h2><p><img src="/Users/yifancheung/Downloads/%E5%9B%BE%E5%83%8F.JPG" alt="图像">早上温度：36.6摄氏度</p>
+<p>晚餐温度：36.4摄氏度</p>
+<h2 id="Day3"><a href="#Day3" class="headerlink" title="Day3"></a>Day3</h2>]]></content>
+  </entry>
+  <entry>
     <title>Usage Of Volatile In Java</title>
     <url>/2019/12/02/Usage-Of-Volatile-In-Java/</url>
     <content><![CDATA[<p>Volatile用在多线程，同步变量。 线程为了提高效率，将某成员变量(如A)拷贝了一份（如B），线程中对A的访问其实访问的是B。只在某些动作时才进行A和B的同步。因此存在A和B不一致的情况。volatile就是用来避免这种情况的。volatile告诉jvm， 它所修饰的变量不保留拷贝，直接访问主内存中的（也就是上面说的A)</p>
