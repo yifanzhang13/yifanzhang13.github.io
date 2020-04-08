@@ -1,17 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>First Blog</title>
-    <url>/2019/11/14/First-Blog/</url>
-    <content><![CDATA[<p>Hello World!</p>
-<p>Personal Blog Test!</p>
-<p>Done!</p>
+    <title>COMP0008 Concurrency</title>
+    <url>/2020/04/08/COMP0008-Concurrency/</url>
+    <content><![CDATA[<h1 id="Java-Concurrency"><a href="#Java-Concurrency" class="headerlink" title="Java Concurrency"></a>Java Concurrency</h1><h2 id="Lecture-10-Concurrency-Abstraction"><a href="#Lecture-10-Concurrency-Abstraction" class="headerlink" title="Lecture 10: Concurrency Abstraction"></a>Lecture 10: Concurrency Abstraction</h2><a id="more"></a>
+
+<h3 id="Terminology"><a href="#Terminology" class="headerlink" title="Terminology"></a>Terminology</h3><ul>
+<li>Concurrency Abstraction<ul>
+<li>It is based on having a number of <strong>processes</strong> each consisting of a <strong>totally ordered</strong> sequences of <strong>atomic actions</strong></li>
+<li>The abstraction itself models the overall system by <strong>interleaving</strong> the execution of <strong>atomic actions</strong> of the processes.</li>
+</ul>
+</li>
+<li>Sequential Program<ul>
+<li>Consisting of a <strong>single</strong> process carrying out a totally ordered sequence of atomic actions.</li>
+<li>Assuminng a <strong>Fixed</strong> input - the program is deterministic</li>
+</ul>
+</li>
+<li>Concurrent Program<ul>
+<li>Consisting of <strong>two or more</strong> processes carryiing out atomic actions</li>
+</ul>
+</li>
+<li>Atomic action<ul>
+<li>As the name suggests, is an abstract term for an action that is <strong>not divisible in terms of processing</strong>.</li>
+</ul>
+</li>
+<li><h2 id="Interleaving"><a href="#Interleaving" class="headerlink" title="Interleaving"></a>Interleaving</h2></li>
+</ul>
 ]]></content>
       <categories>
-        <category>Hello World!</category>
+        <category>Notes</category>
       </categories>
       <tags>
-        <tag>Hello World!</tag>
+        <tag>COMP0008</tag>
+        <tag>Concurrency</tag>
       </tags>
   </entry>
   <entry>
@@ -27,6 +48,38 @@
         <tag>COMP0141</tag>
         <tag>Security</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>COMP0009 Logic&amp;Database</title>
+    <url>/2020/04/08/COMP0009-Logic-Database/</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>First Blog</title>
+    <url>/2019/11/14/First-Blog/</url>
+    <content><![CDATA[<p>Hello World!</p>
+<p>Personal Blog Test!</p>
+<p>Done!</p>
+]]></content>
+      <categories>
+        <category>Hello World!</category>
+      </categories>
+      <tags>
+        <tag>Hello World!</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Quarantine in Shanghai</title>
+    <url>/2020/04/07/Quarantine-in-Shanghai/</url>
+    <content><![CDATA[<h1 id="隔离记录"><a href="#隔离记录" class="headerlink" title="隔离记录"></a>隔离记录</h1><a id="more"></a>
+
+<h2 id="Day-1"><a href="#Day-1" class="headerlink" title="Day 1"></a>Day 1</h2><p><img src="https://raw.githubusercontent.com/yifanzhang13/yifanzhang13.github.io/master/images/QuarantinePics/day1.JPG" alt="day1"></p>
+<p>早上温度：36.9摄氏度</p>
+<p>下午温度：36.1摄氏度</p>
+<h2 id="Day-2"><a href="#Day-2" class="headerlink" title="Day 2"></a>Day 2</h2><p><img src="https://raw.githubusercontent.com/yifanzhang13/yifanzhang13.github.io/master/images/QuarantinePics/day2.JPG" alt="day2"></p>
+<p>早上温度：36.6摄氏度</p>
+<p>下午温度：36.4摄氏度</p>
+<h2 id="Day-3"><a href="#Day-3" class="headerlink" title="Day 3"></a>Day 3</h2>]]></content>
   </entry>
   <entry>
     <title>Hexo ERROR Render HTML failed</title>
@@ -219,19 +272,6 @@
       <tags>
         <tag>configuration</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>Quarantine in Shanghai</title>
-    <url>/2020/04/07/Quarantine-in-Shanghai/</url>
-    <content><![CDATA[<h1 id="隔离记录"><a href="#隔离记录" class="headerlink" title="隔离记录"></a>隔离记录</h1><a id="more"></a>
-
-<h2 id="Day-1"><a href="#Day-1" class="headerlink" title="Day 1"></a>Day 1</h2><p><img src="https://raw.githubusercontent.com/yifanzhang13/yifanzhang13.github.io/master/images/QuarantinePics/day1.JPG" alt="day1"></p>
-<p>早上温度：36.9摄氏度</p>
-<p>下午温度：36.1摄氏度</p>
-<h2 id="Day-2"><a href="#Day-2" class="headerlink" title="Day 2"></a>Day 2</h2><p><img src="https://raw.githubusercontent.com/yifanzhang13/yifanzhang13.github.io/master/images/QuarantinePics/day2.JPG" alt="day2"></p>
-<p>早上温度：36.6摄氏度</p>
-<p>下午温度：36.4摄氏度</p>
-<h2 id="Day3"><a href="#Day3" class="headerlink" title="Day3"></a>Day3</h2>]]></content>
   </entry>
   <entry>
     <title>Usage Of Volatile In Java</title>
@@ -629,5 +669,10 @@ volatile关键字相信了解Java多线程的读者都很清楚它的作用。vo
         <tag>java</tag>
         <tag>basics</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>COMP00011 Maths&amp;Statistics</title>
+    <url>/2020/04/08/COMP0011-Maths-Statistics/</url>
+    <content><![CDATA[]]></content>
   </entry>
 </search>
