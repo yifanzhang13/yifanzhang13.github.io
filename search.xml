@@ -15,6 +15,20 @@
       </tags>
   </entry>
   <entry>
+    <title>COMP0141 Security</title>
+    <url>/2020/04/08/COMP0141-Security/</url>
+    <content><![CDATA[<a id="more"></a>
+
+]]></content>
+      <categories>
+        <category>Notes</category>
+      </categories>
+      <tags>
+        <tag>COMP0141</tag>
+        <tag>Security</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Hexo ERROR Render HTML failed</title>
     <url>/2020/04/01/Hexo-ERROR-Render-HTML-failed/</url>
     <content><![CDATA[<h1 id="ERROR-Render-HTML-failed"><a href="#ERROR-Render-HTML-failed" class="headerlink" title="ERROR-Render-HTML-failed"></a>ERROR-Render-HTML-failed</h1><p>Error reported when I entered <code>hexo g</code> to convert md file into HTML file</p>
@@ -211,11 +225,12 @@
     <url>/2020/04/07/Quarantine-in-Shanghai/</url>
     <content><![CDATA[<h1 id="隔离记录"><a href="#隔离记录" class="headerlink" title="隔离记录"></a>隔离记录</h1><a id="more"></a>
 
-<h2 id="Day-1"><a href="#Day-1" class="headerlink" title="Day 1"></a>Day 1</h2><p><img src="https://raw.githubusercontent.com/yifanzhang13/yifanzhang13.github.io/master/images/day1.JPG" alt="day1"></p>
-<p>晚餐完体温：36.1摄氏度</p>
-<h2 id="Day-2"><a href="#Day-2" class="headerlink" title="Day 2"></a>Day 2</h2><p><img src="https://raw.githubusercontent.com/yifanzhang13/yifanzhang13.github.io/master/images/day2.JPG" alt="day2"></p>
+<h2 id="Day-1"><a href="#Day-1" class="headerlink" title="Day 1"></a>Day 1</h2><p><img src="https://raw.githubusercontent.com/yifanzhang13/yifanzhang13.github.io/master/images/QuarantinePics/day1.JPG" alt="day1"></p>
+<p>早上温度：36.9摄氏度</p>
+<p>下午温度：36.1摄氏度</p>
+<h2 id="Day-2"><a href="#Day-2" class="headerlink" title="Day 2"></a>Day 2</h2><p><img src="https://raw.githubusercontent.com/yifanzhang13/yifanzhang13.github.io/master/images/QuarantinePics/day2.JPG" alt="day2"></p>
 <p>早上温度：36.6摄氏度</p>
-<p>晚餐温度：36.4摄氏度</p>
+<p>下午温度：36.4摄氏度</p>
 <h2 id="Day3"><a href="#Day3" class="headerlink" title="Day3"></a>Day3</h2>]]></content>
   </entry>
   <entry>
