@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yifanzhang13.github.io/"/>
-  <updated>2020-04-08T07:57:25.171Z</updated>
+  <updated>2020-04-08T08:01:55.952Z</updated>
   <id>http://yifanzhang13.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://yifanzhang13.github.io/2020/04/08/COMP0011-Maths-Statistics/"/>
     <id>http://yifanzhang13.github.io/2020/04/08/COMP0011-Maths-Statistics/</id>
     <published>2020-04-08T00:58:13.000Z</published>
-    <updated>2020-04-08T07:57:25.171Z</updated>
+    <updated>2020-04-08T08:01:55.952Z</updated>
     
     <content type="html"><![CDATA[<a id="more"></a>]]></content>
     
@@ -35,6 +35,10 @@
     </summary>
     
     
+      <category term="Notes" scheme="http://yifanzhang13.github.io/categories/Notes/"/>
+    
+    
+      <category term="COMP" scheme="http://yifanzhang13.github.io/tags/COMP/"/>
     
   </entry>
   
@@ -43,7 +47,7 @@
     <link href="http://yifanzhang13.github.io/2020/04/08/COMP0009-Logic-Database/"/>
     <id>http://yifanzhang13.github.io/2020/04/08/COMP0009-Logic-Database/</id>
     <published>2020-04-08T00:57:23.000Z</published>
-    <updated>2020-04-08T07:57:31.196Z</updated>
+    <updated>2020-04-08T08:01:47.198Z</updated>
     
     <content type="html"><![CDATA[<a id="more"></a>]]></content>
     
@@ -57,6 +61,10 @@
     </summary>
     
     
+      <category term="Notes" scheme="http://yifanzhang13.github.io/categories/Notes/"/>
+    
+    
+      <category term="COMP" scheme="http://yifanzhang13.github.io/tags/COMP/"/>
     
   </entry>
   
@@ -65,7 +73,7 @@
     <link href="http://yifanzhang13.github.io/2020/04/08/COMP0008-Concurrency/"/>
     <id>http://yifanzhang13.github.io/2020/04/08/COMP0008-Concurrency/</id>
     <published>2020-04-08T00:45:13.000Z</published>
-    <updated>2020-04-08T07:52:32.999Z</updated>
+    <updated>2020-04-08T08:01:34.976Z</updated>
     
     <content type="html"><![CDATA[<h1 id="Java-Concurrency"><a href="#Java-Concurrency" class="headerlink" title="Java Concurrency"></a>Java Concurrency</h1><h2 id="Lecture-10-Concurrency-Abstraction"><a href="#Lecture-10-Concurrency-Abstraction" class="headerlink" title="Lecture 10: Concurrency Abstraction"></a>Lecture 10: Concurrency Abstraction</h2><a id="more"></a><h3 id="Terminology"><a href="#Terminology" class="headerlink" title="Terminology"></a>Terminology</h3><ul><li>Concurrency Abstraction<ul><li>It is based on having a number of <strong>processes</strong> each consisting of a <strong>totally ordered</strong> sequences of <strong>atomic actions</strong></li><li>The abstraction itself models the overall system by <strong>interleaving</strong> the execution of <strong>atomic actions</strong> of the processes.</li></ul></li><li>Sequential Program<ul><li>Consisting of a <strong>single</strong> process carrying out a totally ordered sequence of atomic actions.</li><li>Assuminng a <strong>Fixed</strong> input - the program is deterministic</li></ul></li><li>Concurrent Program<ul><li>Consisting of <strong>two or more</strong> processes carryiing out atomic actions</li></ul></li><li>Atomic action<ul><li>As the name suggests, is an abstract term for an action that is <strong>not divisible in terms of processing</strong>.</li></ul></li><li><h2 id="Interleaving"><a href="#Interleaving" class="headerlink" title="Interleaving"></a>Interleaving</h2></li></ul>]]></content>
     
@@ -79,9 +87,7 @@
       <category term="Notes" scheme="http://yifanzhang13.github.io/categories/Notes/"/>
     
     
-      <category term="COMP0008" scheme="http://yifanzhang13.github.io/tags/COMP0008/"/>
-    
-      <category term="Concurrency" scheme="http://yifanzhang13.github.io/tags/Concurrency/"/>
+      <category term="COMP" scheme="http://yifanzhang13.github.io/tags/COMP/"/>
     
   </entry>
   
@@ -90,7 +96,7 @@
     <link href="http://yifanzhang13.github.io/2020/04/08/COMP0141-Security/"/>
     <id>http://yifanzhang13.github.io/2020/04/08/COMP0141-Security/</id>
     <published>2020-04-08T00:27:16.000Z</published>
-    <updated>2020-04-08T00:28:16.998Z</updated>
+    <updated>2020-04-08T08:02:06.882Z</updated>
     
     <content type="html"><![CDATA[<a id="more"></a>]]></content>
     
@@ -109,9 +115,7 @@
       <category term="Notes" scheme="http://yifanzhang13.github.io/categories/Notes/"/>
     
     
-      <category term="COMP0141" scheme="http://yifanzhang13.github.io/tags/COMP0141/"/>
-    
-      <category term="Security" scheme="http://yifanzhang13.github.io/tags/Security/"/>
+      <category term="COMP" scheme="http://yifanzhang13.github.io/tags/COMP/"/>
     
   </entry>
   
