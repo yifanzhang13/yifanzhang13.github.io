@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yifanzhang13.github.io/"/>
-  <updated>2020-04-08T00:58:13.371Z</updated>
+  <updated>2020-04-08T07:57:25.171Z</updated>
   <id>http://yifanzhang13.github.io/</id>
   
   <author>
@@ -17,13 +17,20 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>COMP00011 Maths&amp;Statistics</title>
+    <title>COMP0011 Maths&amp;Statistics</title>
     <link href="http://yifanzhang13.github.io/2020/04/08/COMP0011-Maths-Statistics/"/>
     <id>http://yifanzhang13.github.io/2020/04/08/COMP0011-Maths-Statistics/</id>
     <published>2020-04-08T00:58:13.000Z</published>
-    <updated>2020-04-08T00:58:13.371Z</updated>
+    <updated>2020-04-08T07:57:25.171Z</updated>
+    
+    <content type="html"><![CDATA[<a id="more"></a>]]></content>
     
     <summary type="html">
+    
+      
+      
+        &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+      
     
     </summary>
     
@@ -36,9 +43,16 @@
     <link href="http://yifanzhang13.github.io/2020/04/08/COMP0009-Logic-Database/"/>
     <id>http://yifanzhang13.github.io/2020/04/08/COMP0009-Logic-Database/</id>
     <published>2020-04-08T00:57:23.000Z</published>
-    <updated>2020-04-08T00:57:23.913Z</updated>
+    <updated>2020-04-08T07:57:31.196Z</updated>
+    
+    <content type="html"><![CDATA[<a id="more"></a>]]></content>
     
     <summary type="html">
+    
+      
+      
+        &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+      
     
     </summary>
     
