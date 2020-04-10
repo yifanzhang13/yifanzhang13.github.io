@@ -1,17 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>First Blog</title>
-    <url>/2019/11/14/First-Blog/</url>
-    <content><![CDATA[<p>Hello World!</p>
-<p>Personal Blog Test!</p>
-<p>Done!</p>
+    <title>COMP0008 Concurrency</title>
+    <url>/2020/04/08/COMP0008-Concurrency/</url>
+    <content><![CDATA[<h1 id="Java-Concurrency"><a href="#Java-Concurrency" class="headerlink" title="Java Concurrency"></a>Java Concurrency</h1><a id="more"></a>
+
+<h2 id="Lecture-10-Concurrency-Abstraction"><a href="#Lecture-10-Concurrency-Abstraction" class="headerlink" title="Lecture 10: Concurrency Abstraction"></a>Lecture 10: Concurrency Abstraction</h2><h3 id="Terminology"><a href="#Terminology" class="headerlink" title="Terminology"></a>Terminology</h3><ul>
+<li>Concurrency Abstraction<ul>
+<li>It is based on having a number of <strong>processes</strong> each consisting of a <strong>totally ordered</strong> sequences of <strong>atomic actions</strong></li>
+<li>The abstraction itself models the overall system by <strong>interleaving</strong> the execution of <strong>atomic actions</strong> of the processes.</li>
+</ul>
+</li>
+<li>Sequential Program<ul>
+<li>Consisting of a <strong>single</strong> process carrying out a totally ordered sequence of atomic actions.</li>
+<li>Assuminng a <strong>Fixed</strong> input - the program is deterministic</li>
+</ul>
+</li>
+<li>Concurrent Program<ul>
+<li>Consisting of <strong>two or more</strong> processes carryiing out atomic actions</li>
+</ul>
+</li>
+<li>Atomic action<ul>
+<li>As the name suggests, is an abstract term for an action that is <strong>not divisible in terms of processing</strong>.</li>
+</ul>
+</li>
+<li>Interleaving</li>
+</ul>
 ]]></content>
       <categories>
-        <category>Hello World!</category>
+        <category>Notes</category>
       </categories>
       <tags>
-        <tag>Hello World!</tag>
+        <tag>COMP</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>COMP0011 Maths&amp;Statistics</title>
+    <url>/2020/04/08/COMP0011-Maths-Statistics/</url>
+    <content><![CDATA[<a id="more"></a>]]></content>
+      <categories>
+        <category>Notes</category>
+      </categories>
+      <tags>
+        <tag>COMP</tag>
       </tags>
   </entry>
   <entry>
@@ -233,12 +264,53 @@
 <p><strong><u>调用 Thread.sleep() 方法使线程进入限期等待状态时，常常用“使一个线程睡眠”进行描述。调用 Object.wait()  方法使线程进入限期等待或者无限期等待时，常常用“挂起一个线程”进行描述。睡眠和挂起是用来描述行为，而阻塞和等待用来描述状态。</u></strong></p>
 <h2 id="死亡（TERMINATED）"><a href="#死亡（TERMINATED）" class="headerlink" title="死亡（TERMINATED）"></a>死亡（TERMINATED）</h2><p>可以是线程结束任务之后自己结束，或者产生了异常而结束。</p>
 <p><a href="https://docs.oracle.com/javase/9/docs/api/java/lang/Thread.State.html">Java SE 9 Enum Thread.State</a></p>
-]]></content>
+<h1 id="七、J-U-C-AQS"><a href="#七、J-U-C-AQS" class="headerlink" title="七、J.U.C - AQS"></a>七、J.U.C - AQS</h1><p>java.util.concurrent（J.U.C）大大提高了并发性能，AQS 被认为是 J.U.C 的核心。</p>
+<h2 id="CountDownLatch"><a href="#CountDownLatch" class="headerlink" title="CountDownLatch"></a>CountDownLatch</h2><p>用来控制一个或者多个线程等待多个线程。</p>
+<p>维护了一个计数器 cnt，每次调用 countDown() 方法会让计数器的值减 1，减到 0 的时候，那些因为调用 await() 方法而在等待的线程就会被唤醒。</p>
+<p> <a href="https://camo.githubusercontent.com/c2a94b75d7379c204996f24411a9c497125cfa06/68747470733a2f2f63732d6e6f7465732d313235363130393739362e636f732e61702d6775616e677a686f752e6d7971636c6f75642e636f6d2f62613037383239312d373931652d343337382d623664312d6563653736633266306231342e706e67"><img src="https://camo.githubusercontent.com/c2a94b75d7379c204996f24411a9c497125cfa06/68747470733a2f2f63732d6e6f7465732d313235363130393739362e636f732e61702d6775616e677a686f752e6d7971636c6f75642e636f6d2f62613037383239312d373931652d343337382d623664312d6563653736633266306231342e706e67" alt="img"></a> </p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">public class CountdownLatchExample &#123;</span><br><span class="line"></span><br><span class="line">    public static void main(String[] args) throws InterruptedException &#123;</span><br><span class="line">        final int totalThread = 10;</span><br><span class="line">        CountDownLatch countDownLatch = new CountDownLatch(totalThread);</span><br><span class="line">        ExecutorService executorService = Executors.newCachedThreadPool();</span><br><span class="line">        for (int i = 0; i &lt; totalThread; i++) &#123;</span><br><span class="line">            executorService.execute(() -&gt; &#123;</span><br><span class="line">                System.out.print(&quot;run..&quot;);</span><br><span class="line">                countDownLatch.countDown();</span><br><span class="line">            &#125;);</span><br><span class="line">        &#125;</span><br><span class="line">        countDownLatch.await();</span><br><span class="line">        System.out.println(&quot;end&quot;);</span><br><span class="line">        executorService.shutdown();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">run..run..run..run..run..run..run..run..run..run..end</span><br></pre></td></tr></table></figure>
+
+<h2 id=""><a href="#" class="headerlink" title=""></a></h2><h2 id="CyclicBarrier"><a href="#CyclicBarrier" class="headerlink" title="CyclicBarrier"></a>CyclicBarrier</h2><p>用来控制多个线程互相等待，只有当多个线程都到达时，这些线程才会继续执行。</p>
+<p>和 CountdownLatch 相似，都是通过维护计数器来实现的。线程执行 await() 方法之后计数器会减 1，并进行等待，直到计数器为 0，所有调用 await() 方法而在等待的线程才能继续执行。</p>
+<p>CyclicBarrier 和 CountdownLatch 的一个区别是，CyclicBarrier 的计数器通过调用 reset() 方法可以循环使用，所以它才叫做循环屏障。</p>
+<p>CyclicBarrier 有两个构造函数，其中 parties 指示计数器的初始值，barrierAction 在所有线程都到达屏障的时候会执行一次。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">public CyclicBarrier(int parties, Runnable barrierAction) &#123;</span><br><span class="line">    if (parties &lt;= 0) throw new IllegalArgumentException();</span><br><span class="line">    this.parties = parties;</span><br><span class="line">    this.count = parties;</span><br><span class="line">    this.barrierCommand = barrierAction;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">public CyclicBarrier(int parties) &#123;</span><br><span class="line">    this(parties, null);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p> <a href="https://camo.githubusercontent.com/10dd07a9c7828fab8f68a0f953755869dc286a8e/68747470733a2f2f63732d6e6f7465732d313235363130393739362e636f732e61702d6775616e677a686f752e6d7971636c6f75642e636f6d2f66373161663636622d306435342d343339392d613434622d6634376235383332313938342e706e67"><img src="https://camo.githubusercontent.com/10dd07a9c7828fab8f68a0f953755869dc286a8e/68747470733a2f2f63732d6e6f7465732d313235363130393739362e636f732e61702d6775616e677a686f752e6d7971636c6f75642e636f6d2f66373161663636622d306435342d343339392d613434622d6634376235383332313938342e706e67" alt="img"></a> </p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">public class CyclicBarrierExample &#123;</span><br><span class="line"></span><br><span class="line">    public static void main(String[] args) &#123;</span><br><span class="line">        final int totalThread = 10;</span><br><span class="line">        CyclicBarrier cyclicBarrier = new CyclicBarrier(totalThread);</span><br><span class="line">        ExecutorService executorService = Executors.newCachedThreadPool();</span><br><span class="line">        for (int i = 0; i &lt; totalThread; i++) &#123;</span><br><span class="line">            executorService.execute(() -&gt; &#123;</span><br><span class="line">                System.out.print(&quot;before..&quot;);</span><br><span class="line">                try &#123;</span><br><span class="line">                    cyclicBarrier.await();</span><br><span class="line">                &#125; catch (InterruptedException | BrokenBarrierException e) &#123;</span><br><span class="line">                    e.printStackTrace();</span><br><span class="line">                &#125;</span><br><span class="line">                System.out.print(&quot;after..&quot;);</span><br><span class="line">            &#125;);</span><br><span class="line">        &#125;</span><br><span class="line">        executorService.shutdown();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">before..before..before..before..before..before..before..before..before..before..after..after..after..after..after..after..after..after..after..after..</span><br></pre></td></tr></table></figure>
+
+<h2 id="-1"><a href="#-1" class="headerlink" title=""></a></h2><h2 id="Semaphore"><a href="#Semaphore" class="headerlink" title="Semaphore"></a>Semaphore</h2><p>Semaphore 类似于操作系统中的信号量，可以控制对互斥资源的访问线程数。</p>
+<p>以下代码模拟了对某个服务的并发请求，每次只能有 3 个客户端同时访问，请求总数为 10。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">public class SemaphoreExample &#123;</span><br><span class="line"></span><br><span class="line">    public static void main(String[] args) &#123;</span><br><span class="line">        final int clientCount = 3;</span><br><span class="line">        final int totalRequestCount = 10;</span><br><span class="line">        Semaphore semaphore = new Semaphore(clientCount);</span><br><span class="line">        ExecutorService executorService = Executors.newCachedThreadPool();</span><br><span class="line">        for (int i = 0; i &lt; totalRequestCount; i++) &#123;</span><br><span class="line">            executorService.execute(()-&gt;&#123;</span><br><span class="line">                try &#123;</span><br><span class="line">                    semaphore.acquire();</span><br><span class="line">                    System.out.print(semaphore.availablePermits() + &quot; &quot;);</span><br><span class="line">                &#125; catch (InterruptedException e) &#123;</span><br><span class="line">                    e.printStackTrace();</span><br><span class="line">                &#125; finally &#123;</span><br><span class="line">                    semaphore.release();</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;);</span><br><span class="line">        &#125;</span><br><span class="line">        executorService.shutdown();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">2 1 2 2 2 2 2 1 2 2</span><br></pre></td></tr></table></figure>]]></content>
       <categories>
         <category>java</category>
       </categories>
       <tags>
         <tag>concurrency</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>COMP0141 Security</title>
+    <url>/2020/04/08/COMP0141-Security/</url>
+    <content><![CDATA[<a id="more"></a>
+
+]]></content>
+      <categories>
+        <category>Notes</category>
+      </categories>
+      <tags>
+        <tag>COMP</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>COMP0009 Logic&amp;Database</title>
+    <url>/2020/04/08/COMP0009-Logic-Database/</url>
+    <content><![CDATA[<a id="more"></a>]]></content>
+      <categories>
+        <category>Notes</category>
+      </categories>
+      <tags>
+        <tag>COMP</tag>
       </tags>
   </entry>
   <entry>
@@ -264,27 +336,17 @@
       </tags>
   </entry>
   <entry>
-    <title>COMP0141 Security</title>
-    <url>/2020/04/08/COMP0141-Security/</url>
-    <content><![CDATA[<a id="more"></a>
-
+    <title>First Blog</title>
+    <url>/2019/11/14/First-Blog/</url>
+    <content><![CDATA[<p>Hello World!</p>
+<p>Personal Blog Test!</p>
+<p>Done!</p>
 ]]></content>
       <categories>
-        <category>Notes</category>
+        <category>Hello World!</category>
       </categories>
       <tags>
-        <tag>COMP</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>COMP0011 Maths&amp;Statistics</title>
-    <url>/2020/04/08/COMP0011-Maths-Statistics/</url>
-    <content><![CDATA[<a id="more"></a>]]></content>
-      <categories>
-        <category>Notes</category>
-      </categories>
-      <tags>
-        <tag>COMP</tag>
+        <tag>Hello World!</tag>
       </tags>
   </entry>
   <entry>
@@ -406,51 +468,6 @@ volatile关键字相信了解Java多线程的读者都很清楚它的作用。vo
       </categories>
       <tags>
         <tag>concurrency</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>COMP0008 Concurrency</title>
-    <url>/2020/04/08/COMP0008-Concurrency/</url>
-    <content><![CDATA[<h1 id="Java-Concurrency"><a href="#Java-Concurrency" class="headerlink" title="Java Concurrency"></a>Java Concurrency</h1><a id="more"></a>
-
-<h2 id="Lecture-10-Concurrency-Abstraction"><a href="#Lecture-10-Concurrency-Abstraction" class="headerlink" title="Lecture 10: Concurrency Abstraction"></a>Lecture 10: Concurrency Abstraction</h2><h3 id="Terminology"><a href="#Terminology" class="headerlink" title="Terminology"></a>Terminology</h3><ul>
-<li>Concurrency Abstraction<ul>
-<li>It is based on having a number of <strong>processes</strong> each consisting of a <strong>totally ordered</strong> sequences of <strong>atomic actions</strong></li>
-<li>The abstraction itself models the overall system by <strong>interleaving</strong> the execution of <strong>atomic actions</strong> of the processes.</li>
-</ul>
-</li>
-<li>Sequential Program<ul>
-<li>Consisting of a <strong>single</strong> process carrying out a totally ordered sequence of atomic actions.</li>
-<li>Assuminng a <strong>Fixed</strong> input - the program is deterministic</li>
-</ul>
-</li>
-<li>Concurrent Program<ul>
-<li>Consisting of <strong>two or more</strong> processes carryiing out atomic actions</li>
-</ul>
-</li>
-<li>Atomic action<ul>
-<li>As the name suggests, is an abstract term for an action that is <strong>not divisible in terms of processing</strong>.</li>
-</ul>
-</li>
-<li>Interleaving</li>
-</ul>
-]]></content>
-      <categories>
-        <category>Notes</category>
-      </categories>
-      <tags>
-        <tag>COMP</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>COMP0009 Logic&amp;Database</title>
-    <url>/2020/04/08/COMP0009-Logic-Database/</url>
-    <content><![CDATA[<a id="more"></a>]]></content>
-      <categories>
-        <category>Notes</category>
-      </categories>
-      <tags>
-        <tag>COMP</tag>
       </tags>
   </entry>
   <entry>
