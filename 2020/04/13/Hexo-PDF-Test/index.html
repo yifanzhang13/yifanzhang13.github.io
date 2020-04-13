@@ -22,13 +22,15 @@
     var CONFIG = {"hostname":"yifanzhang13.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="keywords" content="configuration">
+  <meta name="description" content="Uploading PDF files without installing hexo-pdf extension.">
+<meta name="keywords" content="configuration">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hexo-PDF Test">
 <meta property="og:url" content="http:&#x2F;&#x2F;yifanzhang13.github.io&#x2F;2020&#x2F;04&#x2F;13&#x2F;Hexo-PDF-Test&#x2F;index.html">
 <meta property="og:site_name" content="Flog">
+<meta property="og:description" content="Uploading PDF files without installing hexo-pdf extension.">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2020-04-13T02:41:40.357Z">
+<meta property="og:updated_time" content="2020-04-13T03:09:41.547Z">
 <meta name="twitter:card" content="summary">
 
 <link rel="canonical" href="http://yifanzhang13.github.io/2020/04/13/Hexo-PDF-Test/">
@@ -221,7 +223,7 @@
               <span class="post-meta-item-text">Posted on</span>
               
 
-              <time title="Created: 2020-04-13 09:44:04 / Modified: 10:41:40" itemprop="dateCreated datePublished" datetime="2020-04-13T09:44:04+08:00">2020-04-13</time>
+              <time title="Created: 2020-04-13 09:44:04 / Modified: 11:09:41" itemprop="dateCreated datePublished" datetime="2020-04-13T09:44:04+08:00">2020-04-13</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -246,7 +248,7 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">Symbols count in article: </span>
-              <span>0</span>
+              <span>706</span>
             </span>
             <span class="post-meta-item" title="Reading time">
               <span class="post-meta-item-icon">
@@ -265,14 +267,36 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <a id="more"></a>
+        <p><strong>Uploading PDF files without installing <code>hexo-pdf</code> extension.</strong></p>
+<a id="more"></a>
 
-<br>
+<p>由于想上传一些PDF文件到博客上，查了下发现有一个<code>hexo-pdf</code>的插件可以很方便的用来潜入PDF文件。但是不知道是插件年久失修还是不支持最新Hexo版本，并不能达到预期效果。所以有了下面<del>简单粗暴</del>的方法。</p>
+<h2 id="修改根目录下的-config-yml文件"><a href="#修改根目录下的-config-yml文件" class="headerlink" title="修改根目录下的_config.yml文件"></a>修改根目录下的_config.yml文件</h2><h3 id="将-config-yml中的post-asset-folder选项置为true"><a href="#将-config-yml中的post-asset-folder选项置为true" class="headerlink" title="将_config.yml中的post_asset_folder选项置为true"></a>将_config.yml中的post_asset_folder选项置为true</h3><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">post_asset_folder:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure>
+
+<p>关于这个选项的功能说明如下:</p>
+<blockquote>
+<p>当您设置post_asset_folder为true参数后，在建立文件时，Hexo<br> 会自动建立一个与文章同名的文件夹，您可以把与该文章相关的所有资源都放到那个文件夹，如此一来，您便可以更方便的使用资源。</p>
+</blockquote>
+<h3 id="然后新建一篇文章"><a href="#然后新建一篇文章" class="headerlink" title="然后新建一篇文章"></a>然后新建一篇文章</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new &lt;article_name&gt;</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>由于上一步已经将post_asset_folder选项设为了true<br>所以这一步新建文章时会创建一个md文件和一个同名的文件夹<br>为了方便叙述，我用test作为文件和文件夹名</p>
+</blockquote>
+<h3 id="编辑Markdown文件"><a href="#编辑Markdown文件" class="headerlink" title="编辑Markdown文件"></a>编辑Markdown文件</h3><blockquote>
+<p>用Typora或者其他编辑器打开test.md<br>test.md文件中加入如下代码</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">object</span> <span class="attr">data</span>=<span class="string">"./Hello.pdf"</span> <span class="attr">type</span>=<span class="string">"application/pdf"</span> <span class="attr">width</span>=<span class="string">"100%"</span> <span class="attr">height</span>=<span class="string">"877px"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">object</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>关于这句代码简单的解释<br>data表示你要上传的pdf的路径,使用相对路径，将你要上传的pdf放入第二步生成的test文件夹</p>
+</blockquote>
+<h2 id="效果"><a href="#效果" class="headerlink" title="效果"></a>效果</h2><br>
 
 <object data="./Hello.pdf" type="application/pdf" width="100%" height="877px">
 </object>
-
 <br>
+
+<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><p><a href="https://blog.csdn.net/qappleh/article/details/80250492">前端预览PDF总结</a></p>
+<p><a href="http://miracle778.site/pdf-test/pdf-test.html">hexo中插入pdf解决方法</a></p>
+
     </div>
 
     
@@ -369,6 +393,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#修改根目录下的-config-yml文件"><span class="nav-number">1.</span> <span class="nav-text">修改根目录下的_config.yml文件</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#将-config-yml中的post-asset-folder选项置为true"><span class="nav-number">1.1.</span> <span class="nav-text">将_config.yml中的post_asset_folder选项置为true</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#然后新建一篇文章"><span class="nav-number">1.2.</span> <span class="nav-text">然后新建一篇文章</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#编辑Markdown文件"><span class="nav-number">1.3.</span> <span class="nav-text">编辑Markdown文件</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#效果"><span class="nav-number">2.</span> <span class="nav-text">效果</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#参考"><span class="nav-number">3.</span> <span class="nav-text">参考</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -445,13 +470,13 @@
       <i class="fa fa-chart-area"></i>
     </span>
       <span class="post-meta-item-text">Symbols count total: </span>
-    <span title="Symbols count total">71k</span>
+    <span title="Symbols count total">72k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span class="post-meta-item-text">Reading time total &asymp;</span>
-    <span title="Reading time total">1:04</span>
+    <span title="Reading time total">1:05</span>
 </div>
 
         
