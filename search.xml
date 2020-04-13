@@ -1,6 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>COMP0009 Logic&amp;Database</title>
+    <url>/2020/04/08/COMP0009-Logic-Database/</url>
+    <content><![CDATA[<a id="more"></a>]]></content>
+      <categories>
+        <category>Notes</category>
+      </categories>
+      <tags>
+        <tag>COMP</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>COMP0011 Maths&amp;Statistics</title>
+    <url>/2020/04/08/COMP0011-Maths-Statistics/</url>
+    <content><![CDATA[<a id="more"></a>]]></content>
+      <categories>
+        <category>Notes</category>
+      </categories>
+      <tags>
+        <tag>COMP</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>COMP0008 Concurrency</title>
     <url>/2020/04/08/COMP0008-Concurrency/</url>
     <content><![CDATA[<h1 id="Java-Concurrency"><a href="#Java-Concurrency" class="headerlink" title="Java Concurrency"></a>Java Concurrency</h1><a id="more"></a>
@@ -27,28 +49,6 @@
 <li>Interleaving</li>
 </ul>
 ]]></content>
-      <categories>
-        <category>Notes</category>
-      </categories>
-      <tags>
-        <tag>COMP</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>COMP0009 Logic&amp;Database</title>
-    <url>/2020/04/08/COMP0009-Logic-Database/</url>
-    <content><![CDATA[<a id="more"></a>]]></content>
-      <categories>
-        <category>Notes</category>
-      </categories>
-      <tags>
-        <tag>COMP</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>COMP0011 Maths&amp;Statistics</title>
-    <url>/2020/04/08/COMP0011-Maths-Statistics/</url>
-    <content><![CDATA[<a id="more"></a>]]></content>
       <categories>
         <category>Notes</category>
       </categories>
@@ -106,10 +106,44 @@
 <h2 id="Day-6"><a href="#Day-6" class="headerlink" title="Day 6"></a>Day 6</h2><p><img src="https://raw.githubusercontent.com/yifanzhang13/yifanzhang13.github.io/master/images/QuarantinePics/day6.JPG" alt=""></p>
 <p>上午温度：36.5摄氏度</p>
 <p>下午温度：36.9摄氏度</p>
-<h2 id="Day-7"><a href="#Day-7" class="headerlink" title="Day 7"></a>Day 7</h2><p><img src="https://raw.githubusercontent.com/yifanzhang13/yifanzhang13.github.io/master/images/QuarantinePics/day7.JPG" alt=""></p>
+<h2 id="Day-7"><a href="#Day-7" class="headerlink" title="Day 7 *"></a>Day 7 *</h2><p><img src="https://raw.githubusercontent.com/yifanzhang13/yifanzhang13.github.io/master/images/QuarantinePics/day7.JPG" alt=""></p>
 <p>上午温度：36.4摄氏度</p>
 <p>下午温度：36.7摄氏度</p>
+<h2 id="Day-8"><a href="#Day-8" class="headerlink" title="Day 8"></a>Day 8</h2><p><img src="" alt=""></p>
+<p>上午温度：36.3摄氏度</p>
+<p>下午温度：36.摄氏度</p>
+<h2 id="Day-9"><a href="#Day-9" class="headerlink" title="Day 9"></a>Day 9</h2><p><img src="" alt=""></p>
+<p>上午温度：36.摄氏度</p>
+<p>下午温度：36.摄氏度</p>
+<h2 id="Day-10"><a href="#Day-10" class="headerlink" title="Day 10"></a>Day 10</h2><p><img src="" alt=""></p>
+<p>上午温度：36.摄氏度</p>
+<p>下午温度：36.摄氏度</p>
+<h2 id="Day-11"><a href="#Day-11" class="headerlink" title="Day 11"></a>Day 11</h2><p><img src="" alt=""></p>
+<p>上午温度：36.摄氏度</p>
+<p>下午温度：36.摄氏度</p>
+<h2 id="Day-12"><a href="#Day-12" class="headerlink" title="Day 12"></a>Day 12</h2><p><img src="" alt=""></p>
+<p>上午温度：36.摄氏度</p>
+<p>下午温度：36.摄氏度</p>
+<h2 id="Day-13"><a href="#Day-13" class="headerlink" title="Day 13"></a>Day 13</h2><p><img src="" alt=""></p>
+<p>上午温度：36.摄氏度</p>
+<p>下午温度：36.摄氏度</p>
+<h2 id="Day-14"><a href="#Day-14" class="headerlink" title="Day 14"></a>Day 14</h2><p><img src="" alt=""></p>
+<p>上午温度：36.摄氏度</p>
+<p>下午温度：36.摄氏度</p>
 ]]></content>
+  </entry>
+  <entry>
+    <title>Hexo-PDF Test</title>
+    <url>/2020/04/13/Hexo-PDF-Test/</url>
+    <content><![CDATA[<object data="./Hexo-PDF-Test/Hello.pdf" type="application/pdf" width="100%" height="877px">
+
+]]></content>
+      <categories>
+        <category>Hexo</category>
+      </categories>
+      <tags>
+        <tag>configuration</tag>
+      </tags>
   </entry>
   <entry>
     <title>Hexo ERROR Render HTML failed</title>
