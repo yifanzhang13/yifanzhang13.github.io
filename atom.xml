@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yifanzhang13.github.io/"/>
-  <updated>2020-04-13T02:01:34.073Z</updated>
+  <updated>2020-04-13T02:07:56.087Z</updated>
   <id>http://yifanzhang13.github.io/</id>
   
   <author>
@@ -21,17 +21,20 @@
     <link href="http://yifanzhang13.github.io/2020/04/13/Hexo-PDF-Test/"/>
     <id>http://yifanzhang13.github.io/2020/04/13/Hexo-PDF-Test/</id>
     <published>2020-04-13T01:44:04.000Z</published>
-    <updated>2020-04-13T02:01:34.073Z</updated>
+    <updated>2020-04-13T02:07:56.087Z</updated>
     
-    <content type="html"><![CDATA[<object data="./Hello.pdf" type="application/pdf" width="100%" height="877px">]]></content>
+    <content type="html"><![CDATA[<a id="more"></a><!--<object data="./Hello.pdf" type="application/pdf" width="100%" height="877px">--><div class="pdfobject-container" data-target="Hello.pdf" data-height="500px"></div>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;object data=&quot;./Hello.pdf&quot; type=&quot;application/pdf&quot; width=&quot;100%&quot; height=&quot;877px&quot;&gt;
+        &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
 
 
+&lt;!--&lt;object data=&quot;./Hello.pdf&quot; type=&quot;application/pdf&quot; width=&quot;100%&quot; height=&quot;877px&quot;&gt;--&gt;
+
+&lt;div class=&quot;pdfobject-container&quot; 
       
     
     </summary>

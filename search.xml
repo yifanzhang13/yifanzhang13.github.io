@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>COMP0009 Logic&amp;Database</title>
+    <url>/2020/04/08/COMP0009-Logic-Database/</url>
+    <content><![CDATA[<a id="more"></a>]]></content>
+      <categories>
+        <category>Notes</category>
+      </categories>
+      <tags>
+        <tag>COMP</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>COMP0008 Concurrency</title>
     <url>/2020/04/08/COMP0008-Concurrency/</url>
     <content><![CDATA[<h1 id="Java-Concurrency"><a href="#Java-Concurrency" class="headerlink" title="Java Concurrency"></a>Java Concurrency</h1><a id="more"></a>
@@ -27,17 +38,6 @@
 <li>Interleaving</li>
 </ul>
 ]]></content>
-      <categories>
-        <category>Notes</category>
-      </categories>
-      <tags>
-        <tag>COMP</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>COMP0009 Logic&amp;Database</title>
-    <url>/2020/04/08/COMP0009-Logic-Database/</url>
-    <content><![CDATA[<a id="more"></a>]]></content>
       <categories>
         <category>Notes</category>
       </categories>
@@ -84,6 +84,22 @@
       </tags>
   </entry>
   <entry>
+    <title>Hexo-PDF Test</title>
+    <url>/2020/04/13/Hexo-PDF-Test/</url>
+    <content><![CDATA[<a id="more"></a>
+
+
+<!--<object data="./Hello.pdf" type="application/pdf" width="100%" height="877px">-->
+
+<div class="pdfobject-container" data-target="Hello.pdf" data-height="500px"></div>]]></content>
+      <categories>
+        <category>Hexo</category>
+      </categories>
+      <tags>
+        <tag>configuration</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Hexo ERROR Render HTML failed</title>
     <url>/2020/04/01/Hexo-ERROR-Render-HTML-failed/</url>
     <content><![CDATA[<h1 id="ERROR-Render-HTML-failed"><a href="#ERROR-Render-HTML-failed" class="headerlink" title="ERROR-Render-HTML-failed"></a>ERROR-Render-HTML-failed</h1><p>Error reported when I entered <code>hexo g</code> to convert md file into HTML file</p>
@@ -103,19 +119,6 @@
       </categories>
       <tags>
         <tag>ERROR</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Hexo-PDF Test</title>
-    <url>/2020/04/13/Hexo-PDF-Test/</url>
-    <content><![CDATA[<object data="./Hello.pdf" type="application/pdf" width="100%" height="877px">
-
-]]></content>
-      <categories>
-        <category>Hexo</category>
-      </categories>
-      <tags>
-        <tag>configuration</tag>
       </tags>
   </entry>
   <entry>
