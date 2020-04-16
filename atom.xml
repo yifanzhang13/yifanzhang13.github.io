@@ -149,18 +149,20 @@
     <link href="http://yifanzhang13.github.io/2020/04/08/COMP0141-Security/"/>
     <id>http://yifanzhang13.github.io/2020/04/08/COMP0141-Security/</id>
     <published>2020-04-08T00:27:16.000Z</published>
-    <updated>2020-04-08T08:02:06.882Z</updated>
+    <updated>2020-04-16T14:11:28.614Z</updated>
     
-    <content type="html"><![CDATA[<a id="more"></a>]]></content>
+    <content type="html"><![CDATA[<h1 id="Lecture-1-1"><a href="#Lecture-1-1" class="headerlink" title="Lecture 1-1"></a>Lecture 1-1</h1><h2 id="CIA-Triangle"><a href="#CIA-Triangle" class="headerlink" title="CIA Triangle"></a>CIA Triangle</h2><ul><li>Components<ul><li><strong>Confidentiality</strong>: Keeping Data private, only authorized users and processes should be able to access or modify data</li><li><strong>Integrity</strong>: System and data have not been improperly altered, data should be maintained in a correct state and nobody should be able  to improperly modify it, either accidentally or maliciously</li><li><strong>Availability</strong>: The ability to use the system as anticipated</li></ul></li></ul><a id="more"></a><h2 id="Security-Design"><a href="#Security-Design" class="headerlink" title="Security Design"></a>Security Design</h2><ul><li>How to define a secure system?<ul><li>Secure physical facility</li><li>Contactless payment protocol</li><li>Online database</li><li>Private online communication</li></ul></li><li>We need a specified security policy to define a secure system, how to define a security policy?</li><li>What should Policy address?<ul><li>Threat Model<ul><li>Threats (Attacker-centric)</li><li>Vulnerabilities (System-centric)</li><li>Likelihood</li><li>Impact (Asset-centric)</li><li>Protection</li></ul></li></ul></li><li>Security Policy is a type of <strong>risk assessment</strong></li><li><strong>Threats (Who is the adversary?)</strong><ul><li>Consider adversary across 2 dimensions:<ul><li><strong>Capabilities</strong>: Who are they?</li><li><strong>Motivation</strong>: Why do they do it?</li></ul></li></ul></li><li><strong>Vulnerabilities (where can system break?)</strong><ul><li>Define vulnerabilities with respect to threats</li><li>Threat v.s. Vulnerabilities<ul><li>If there is a water pool, threat is water may overflow, vulnerability may be a crack of the pool</li></ul></li></ul></li><li><strong>Likelihood (might this happen?)</strong><ul><li>Define likelihood with respect to vulnerabilities </li><li>Vulnerability vs. Likelihood<ul><li>Zero if we never add water</li></ul></li></ul></li><li><strong>Impact (what if bad things happen?)</strong><ul><li>Define impact with respect to threat</li><li>Threat? Water might overflow. Impact? Depends on what’s nearby.</li></ul></li><li><strong>Protection (what does it cost?)</strong><ul><li>most of academic computer security is <strong>protection</strong></li></ul></li></ul><h2 id="Competing-Philosophies"><a href="#Competing-Philosophies" class="headerlink" title="Competing Philosophies"></a>Competing Philosophies</h2><ul><li>Binary Model<ul><li>Secure or Insecure<ul><li>Binary Model is <strong>longevity</strong> but also <strong>brittle</strong> and <strong>expensive</strong></li></ul></li></ul></li><li>Risk Management Model<ul><li>It minimise the biggest threats and focus on the <strong>cost</strong></li><li>It is <strong>adaptive</strong> but the solutions are usually quite reactive so lead to <strong>Arms Race</strong></li></ul></li></ul><h2 id="Is-the-System-Secure"><a href="#Is-the-System-Secure" class="headerlink" title="Is the System Secure?"></a>Is the System Secure?</h2><p><code>Security is not an absolute property, depends on having a good threat model that captures a range of adversarial behaviours</code></p><h2 id="Security-Mechanism"><a href="#Security-Mechanism" class="headerlink" title="Security Mechanism"></a>Security Mechanism</h2><blockquote><p>A system is “secure” if there is a security argument that an adversary constrained by a <strong>specific threat model</strong> cannot violate the <strong>security policy</strong></p><p><strong>Security argument</strong>: rigorous argument that the security mechanisms are maintaining the security policy (subject to the assumptions of the threat model)</p><p><strong>Security mechanism</strong>: Technical mechanism used to ensure that the security policy is not violated by an adversary operating within the threat model</p></blockquote>]]></content>
     
     <summary type="html">
     
-      
-      
-        &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-
-
-      
+      &lt;h1 id=&quot;Lecture-1-1&quot;&gt;&lt;a href=&quot;#Lecture-1-1&quot; class=&quot;headerlink&quot; title=&quot;Lecture 1-1&quot;&gt;&lt;/a&gt;Lecture 1-1&lt;/h1&gt;&lt;h2 id=&quot;CIA-Triangle&quot;&gt;&lt;a href=&quot;#CIA-Triangle&quot; class=&quot;headerlink&quot; title=&quot;CIA Triangle&quot;&gt;&lt;/a&gt;CIA Triangle&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;Components&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Confidentiality&lt;/strong&gt;: Keeping Data private, only authorized users and processes should be able to access or modify data&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Integrity&lt;/strong&gt;: System and data have not been improperly altered, data should be maintained in a correct state and nobody should be able  to improperly modify it, either accidentally or maliciously&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Availability&lt;/strong&gt;: The ability to use the system as anticipated&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
     
     </summary>
     
