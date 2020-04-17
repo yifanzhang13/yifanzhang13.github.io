@@ -1,51 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>COMP0008 Concurrency</title>
-    <url>/2020/04/08/COMP0008-Concurrency/</url>
-    <content><![CDATA[<h1 id="Java-Concurrency"><a href="#Java-Concurrency" class="headerlink" title="Java Concurrency"></a>Java Concurrency</h1><a id="more"></a>
-
-<h2 id="Lecture-10-Concurrency-Abstraction"><a href="#Lecture-10-Concurrency-Abstraction" class="headerlink" title="Lecture 10: Concurrency Abstraction"></a>Lecture 10: Concurrency Abstraction</h2><h3 id="Terminology"><a href="#Terminology" class="headerlink" title="Terminology"></a>Terminology</h3><ul>
-<li>Concurrency Abstraction<ul>
-<li>It is based on having a number of <strong>processes</strong> each consisting of a <strong>totally ordered</strong> sequences of <strong>atomic actions</strong></li>
-<li>The abstraction itself models the overall system by <strong>interleaving</strong> the execution of <strong>atomic actions</strong> of the processes.</li>
-</ul>
-</li>
-<li>Sequential Program<ul>
-<li>Consisting of a <strong>single</strong> process carrying out a totally ordered sequence of atomic actions.</li>
-<li>Assuminng a <strong>Fixed</strong> input - the program is deterministic</li>
-</ul>
-</li>
-<li>Concurrent Program<ul>
-<li>Consisting of <strong>two or more</strong> processes carryiing out atomic actions</li>
-</ul>
-</li>
-<li>Atomic action<ul>
-<li>As the name suggests, is an abstract term for an action that is <strong>not divisible in terms of processing</strong>.</li>
-</ul>
-</li>
-<li>Interleaving</li>
-</ul>
-]]></content>
-      <categories>
-        <category>Notes</category>
-      </categories>
-      <tags>
-        <tag>COMP</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>COMP0009 Logic&amp;Database</title>
-    <url>/2020/04/08/COMP0009-Logic-Database/</url>
-    <content><![CDATA[<a id="more"></a>]]></content>
-      <categories>
-        <category>Notes</category>
-      </categories>
-      <tags>
-        <tag>COMP</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>COMP0141 Security</title>
     <url>/2020/04/08/COMP0141-Security/</url>
     <content><![CDATA[<h1 id="Lecture-1-1"><a href="#Lecture-1-1" class="headerlink" title="Lecture 1-1"></a>Lecture 1-1</h1><h2 id="CIA-Triangle"><a href="#CIA-Triangle" class="headerlink" title="CIA Triangle"></a>CIA Triangle</h2><ul>
@@ -68,7 +23,7 @@
 </li>
 <li>We need a specified security policy to define a secure system, how to define a security policy?</li>
 <li>What should Policy address?<ul>
-<li>Threat Model<ul>
+<li><u><strong>Threat Model</strong></u><ul>
 <li>Threats (Attacker-centric)</li>
 <li>Vulnerabilities (System-centric)</li>
 <li>Likelihood</li>
@@ -133,7 +88,240 @@
 <p><strong>Security argument</strong>: rigorous argument that the security mechanisms are maintaining the security policy (subject to the assumptions of the threat model)</p>
 <p><strong>Security mechanism</strong>: Technical mechanism used to ensure that the security policy is not violated by an adversary operating within the threat model</p>
 </blockquote>
+<h1 id="Lecture-1-2"><a href="#Lecture-1-2" class="headerlink" title="Lecture 1-2"></a>Lecture 1-2</h1><h2 id="Security-and-Human-Behavior"><a href="#Security-and-Human-Behavior" class="headerlink" title="Security and Human Behavior"></a>Security and Human Behavior</h2><h3 id="Information-Security"><a href="#Information-Security" class="headerlink" title="Information Security"></a>Information Security</h3><blockquote>
+<p><strong>Digital Security</strong>: E.g. Files and web-access to servers</p>
+<p><strong>Physical Security</strong>: Files can be printed and stored on USB storage device and servers can be in a locked room</p>
+</blockquote>
+<h3 id="Availability-further-definitions"><a href="#Availability-further-definitions" class="headerlink" title="Availability - further definitions"></a>Availability - further definitions</h3><blockquote>
+<p><strong>Availbility</strong> is “the property of a ssystem or a system resource being uable/ upon demand”</p>
+<p>If availability is a requirement, <strong>an unusable system cannot be</strong> <strong>regarded as secure</strong></p>
+</blockquote>
+<h3 id="Usability"><a href="#Usability" class="headerlink" title="Usability"></a>Usability</h3><blockquote>
+<p>Considering what a person (a ‘user’) wants to achieve (their ‘primary task’ toward an <em>outcome</em>) provides an approximation of the <em>context of use</em></p>
+</blockquote>
+<h2 id="Risk-Analysis-and-Risk-Perception"><a href="#Risk-Analysis-and-Risk-Perception" class="headerlink" title="Risk Analysis and Risk Perception"></a>Risk Analysis and Risk Perception</h2><h3 id="Security-Theatre"><a href="#Security-Theatre" class="headerlink" title="Security Theatre"></a>Security Theatre</h3><blockquote>
+<p>Aim of security measures is not always to increase <em>actual</em> security</p>
+<p><strong>Security Theatre</strong>: When the purpose of a security measure is to increase <em>perceived</em>, rather than actual, security</p>
+</blockquote>
+<h1 id="Lecture-2-1"><a href="#Lecture-2-1" class="headerlink" title="Lecture 2-1"></a>Lecture 2-1</h1><h2 id="Security-Mechanism-1"><a href="#Security-Mechanism-1" class="headerlink" title="Security Mechanism"></a>Security Mechanism</h2><blockquote>
+<p><strong>Security mechanism</strong>: Technical mechanism used to ensure that the security policy is not violated by an adversary <u>operating within the threat model</u></p>
+</blockquote>
+<p>Could be <strong>software, hardware, cryptography, or peoples and procedures</strong> — this is why we’ll learn about all of these!</p>
+<h2 id="Design-Principles"><a href="#Design-Principles" class="headerlink" title="Design Principles"></a>Design Principles</h2><h3 id="Least-privilege"><a href="#Least-privilege" class="headerlink" title="Least privilege"></a><strong>Least privilege</strong></h3><blockquote>
+<p>The <strong>principle</strong> of <strong>least privilege</strong> works by allowing only enough access to perform the required job. In an IT environment, adhering to the <strong>principle</strong> of <strong>least privilege</strong> reduces the risk of attackers gaining access to critical systems or  sensitive data by compromising a low-level user account, device, or  application.</p>
+</blockquote>
+<h3 id="Separation-of-responsibilities"><a href="#Separation-of-responsibilities" class="headerlink" title="Separation of responsibilities"></a><strong>Separation of responsibilities</strong></h3><blockquote>
+<p>E.g. For the system maintenance, there will be database admin, antivirus manager, and front-end engineer. </p>
+<p>Everyone or every section of the system takes responsibility</p>
+</blockquote>
+<h3 id="Complete-mediation"><a href="#Complete-mediation" class="headerlink" title="Complete mediation"></a><strong>Complete mediation</strong></h3><blockquote>
+<p>The <strong>principle</strong> of <strong>complete mediation</strong> requires that all accesses to objects be checked to ensure that they  are allowed. Whenever a subject attempts to read an object, the  operating system should <strong>mediate</strong> the action.</p>
+</blockquote>
+<h3 id="Fail-safe-default"><a href="#Fail-safe-default" class="headerlink" title="Fail-safe default"></a><strong>Fail-safe default</strong></h3><blockquote>
+<p>The <strong>principle</strong> of <strong>fail</strong>-<strong>safe defaults</strong> states that, unless a subject is given explicit access to an object, it should be denied access to that object. This <strong>principle</strong> requires that the <strong>default</strong> access to an object is none.</p>
+</blockquote>
+<h3 id="Defence-in-Depth"><a href="#Defence-in-Depth" class="headerlink" title="Defence in Depth"></a><strong>Defence in Depth</strong></h3><blockquote>
+<p><strong>Defense in depth</strong> defined. <strong>Defense in Depth</strong> (DiD) is an approach to cybersecurity in which a series of defensive  mechanisms are layered in order to protect valuable data and  information. If one mechanism fails, another steps up immediately to  thwart an attack.</p>
+</blockquote>
+<h3 id="Open-Design"><a href="#Open-Design" class="headerlink" title="Open Design"></a>Open Design</h3><blockquote>
+<p>The <strong>principle</strong> of <strong>open design</strong> states that the security of a mechanism should not depend on the secrecy of its <strong>design</strong> or implementation. Designers and implementers of a program must not depend on secrecy of the details of their <strong>design</strong> and implementation to ensure security.</p>
+</blockquote>
+<h3 id="Psychological-Acceptability"><a href="#Psychological-Acceptability" class="headerlink" title="Psychological Acceptability"></a>Psychological Acceptability</h3><blockquote>
+<p>The <strong>principle</strong> of <strong>psychological acceptability</strong> states that security mechanisms should not make the resource more  difficult to access than if the security mechanisms were not present.  Configuring and executing a program should be as easy and as intuitive  as possible, and any output should be clear, direct, and useful.</p>
+</blockquote>
+<h3 id="Economy-of-Mechanisms"><a href="#Economy-of-Mechanisms" class="headerlink" title="Economy of Mechanisms"></a>Economy of Mechanisms</h3><blockquote>
+<p>KISS Principle: Keep it simple, stupid!</p>
+<p>The <strong>principle</strong> of <strong>economy of mechanism</strong> states that security <strong>mechanisms</strong> should be as simple as possible. If a <strong>design</strong> and implementation are simple, fewer possibilities exist for errors.  The checking and testing process is less complex, because fewer  components and cases need to be tested.</p>
+</blockquote>
+<h3 id="Privacy-Promotion"><a href="#Privacy-Promotion" class="headerlink" title="Privacy Promotion"></a>Privacy Promotion</h3><blockquote>
+<p>Don’t collect more data than strictly necessary</p>
+</blockquote>
+<h2 id="Fundamentals-of-Computer-Architecture-Design"><a href="#Fundamentals-of-Computer-Architecture-Design" class="headerlink" title="Fundamentals of Computer Architecture Design"></a>Fundamentals of Computer Architecture Design</h2><ul>
+<li>Code is data</li>
+<li>Layers of abstraction</li>
+<li>Moore’s law</li>
+<li>Halting problem</li>
+</ul>
+<h3 id="von-Neumann-Computer-Architecture"><a href="#von-Neumann-Computer-Architecture" class="headerlink" title="von Neumann Computer Architecture"></a>von Neumann Computer Architecture</h3><ul>
+<li>von Neumann computer architecture does not distinguish between instructions for computer programs and data</li>
+<li>Consequently, <strong>Code is data</strong><ul>
+<li>Enables great flexibility in reprogramming computers</li>
+<li>Programs can be costlessly reproduced, not just data</li>
+</ul>
+</li>
+<li>There are unfortunate security implications</li>
+</ul>
+<h3 id="Layers-of-Abstraction"><a href="#Layers-of-Abstraction" class="headerlink" title="Layers of Abstraction"></a>Layers of Abstraction</h3><ul>
+<li><p><strong>Abstraction:</strong> specifying meaning and behaviour of software while hiding implementation details</p>
+</li>
+<li><p><strong>Modular code</strong> exploits abstraction and enables composition and reuse</p>
+</li>
+<li><p>Abstraction and code modularity enables rapid software development (which has in turn led to a rapid rise in software complexity)</p>
+</li>
+<li><p>Unlike for mechanical engineering, in software engineering there is no practical limit to the potential combinations of code</p>
+</li>
+</ul>
+<h3 id="Moore’s-Law"><a href="#Moore’s-Law" class="headerlink" title="Moore’s Law"></a>Moore’s Law</h3><ul>
+<li><p>Intel founder Gordon Moore noticed in 1965 that integrated circuit density had been doubling since the 1950s</p>
+</li>
+<li><p>Moore’s Law: computer performance roughly doubles every 18-24 months</p>
+</li>
+</ul>
+<h3 id="Halting-Problem"><a href="#Halting-Problem" class="headerlink" title="Halting Problem"></a>Halting Problem</h3><ul>
+<li>In 1936, Alan Turing proved that it is impossible to write a general- purpose program that can determine whether another program will stop</li>
+<li>Can be generalised: anything sufficiently interesting cannot be determined about a program</li>
+<li>Implication: Security can never be solved!</li>
+</ul>
+<h1 id="Lecture-2-2"><a href="#Lecture-2-2" class="headerlink" title="Lecture 2-2"></a>Lecture 2-2</h1><h2 id="How-does-the-Internet-work"><a href="#How-does-the-Internet-work" class="headerlink" title="How does the Internet work?"></a>How does the Internet work?</h2><ul>
+<li><a href="http://me.bob.com/hi.html">http://me.bob.com/hi.html</a><ul>
+<li><code>http:</code>: protocol specifier</li>
+<li><code>me.bob.com</code>: domain name</li>
+<li><code>hi.html</code>: page location</li>
+</ul>
+</li>
+</ul>
+<h3 id="Step1-find-content-host"><a href="#Step1-find-content-host" class="headerlink" title="Step1: find content host"></a>Step1: find content host</h3><p>Goal: get <strong>IP address</strong> for <code>domain name</code> </p>
+<ol>
+<li>Find root Name Server</li>
+<li>Find <code>.com</code> Name Server</li>
+<li>Send ip(.com NS)</li>
+<li>Get ip(bob.com NS) </li>
+<li>Find bob.com NS</li>
+<li>Send ip(bob.com NS)</li>
+<li>Get ip(me.bob.com NS)</li>
+<li>Find me.bob.com NS</li>
+<li>Send ip(me.bob.com NS)</li>
+<li>Get ip(me.bob.com)</li>
+<li>Send back to the browser</li>
+</ol>
+<h3 id="Step-2-request-content"><a href="#Step-2-request-content" class="headerlink" title="Step 2: request content"></a>Step 2: request content</h3><ul>
+<li><p>Where is the Internet?</p>
+<ul>
+<li>“the Internet is […] a series of tubes” (Senator Ted Stevens)</li>
+<li><strong>Leased Lines</strong><ul>
+<li>pros<ul>
+<li>incredibly fast</li>
+<li>reliable</li>
+<li>secure</li>
+</ul>
+</li>
+<li>cons<ul>
+<li>Incredibly expensive</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Internet Backbone</li>
+</ul>
+</li>
+<li><p><strong>q</strong>: how does your router pick another router to ask?</p>
+<p><strong>a</strong>: fascinating topic! autonomous systems (ASes), BGP, etc.</p>
+</li>
+<li><p><strong>q</strong>: how do you actually find these name servers? </p>
+<p><strong>a</strong>: the magic of <strong>routing</strong>!</p>
+</li>
+<li><p><strong>q</strong>: what information are these routers sending? </p>
+<p><strong>a</strong>: <strong>packets</strong>.</p>
+</li>
+<li><p><strong>q</strong>: could requests just go around in a circle?</p>
+<p><strong>a</strong>: no! packets contain information on when to give up. Time to live (TTL): how many hops before dying?</p>
+<p>(decremented by each router; also used for DNS records)</p>
+</li>
+<li><p>Proxy Server and VPNs</p>
+<ul>
+<li>pros<ul>
+<li>get around firewalls </li>
+<li>borrow access credentials</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="Step3-Receive-Content"><a href="#Step3-Receive-Content" class="headerlink" title="Step3: Receive Content"></a>Step3: Receive Content</h3><ul>
+<li>Content at hi.html is split into packets</li>
+<li>Anyone can read the web traffic</li>
+</ul>
+<h3 id="Overview"><a href="#Overview" class="headerlink" title="Overview"></a>Overview</h3><ol>
+<li>goal: get Alice to that website!</li>
+<li>get IP address for me.bob.com (“domain name resolution”)</li>
+<li>send GET request to IP address (routing via the internet backbone)</li>
+<li>wait for response from IP address, then render hi.html and enjoy</li>
+</ol>
+<h2 id="What-Webpages-are-Made-Of"><a href="#What-Webpages-are-Made-Of" class="headerlink" title="What Webpages are Made Of"></a>What Webpages are Made Of</h2><h3 id="HTML"><a href="#HTML" class="headerlink" title="HTML"></a>HTML</h3><ul>
+<li>Markup language</li>
+<li>HTML5 added interactive components:<ul>
+<li>Canvas </li>
+<li>Audio</li>
+<li>Video</li>
+</ul>
+</li>
+</ul>
+<h3 id="CSS"><a href="#CSS" class="headerlink" title="CSS"></a>CSS</h3><ul>
+<li>Style language</li>
+<li>Built to separate content from style</li>
+<li>CSS3 — built in tandem with HTML5</li>
+</ul>
+<h3 id="JavaScript"><a href="#JavaScript" class="headerlink" title="JavaScript"></a>JavaScript</h3><ul>
+<li>Scripting language (similar to Python) • Server side (NodeJS)</li>
+<li>Client side</li>
+<li>Stateless</li>
+</ul>
+<h2 id="Cookies"><a href="#Cookies" class="headerlink" title="Cookies"></a>Cookies</h2><ul>
+<li>Used to store state on user’s machine</li>
+<li>Name, value, attributes: • expiration date</li>
+<li>hostname valid for</li>
+<li>Secure (?)<ul>
+<li>only over HTTPS • HTTPOnly (?)</li>
+<li>not over JavaScript</li>
+</ul>
+</li>
+</ul>
 ]]></content>
+      <categories>
+        <category>Notes</category>
+      </categories>
+      <tags>
+        <tag>COMP</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>COMP0008 Concurrency</title>
+    <url>/2020/04/08/COMP0008-Concurrency/</url>
+    <content><![CDATA[<h1 id="Java-Concurrency"><a href="#Java-Concurrency" class="headerlink" title="Java Concurrency"></a>Java Concurrency</h1><a id="more"></a>
+
+<h2 id="Lecture-10-Concurrency-Abstraction"><a href="#Lecture-10-Concurrency-Abstraction" class="headerlink" title="Lecture 10: Concurrency Abstraction"></a>Lecture 10: Concurrency Abstraction</h2><h3 id="Terminology"><a href="#Terminology" class="headerlink" title="Terminology"></a>Terminology</h3><ul>
+<li>Concurrency Abstraction<ul>
+<li>It is based on having a number of <strong>processes</strong> each consisting of a <strong>totally ordered</strong> sequences of <strong>atomic actions</strong></li>
+<li>The abstraction itself models the overall system by <strong>interleaving</strong> the execution of <strong>atomic actions</strong> of the processes.</li>
+</ul>
+</li>
+<li>Sequential Program<ul>
+<li>Consisting of a <strong>single</strong> process carrying out a totally ordered sequence of atomic actions.</li>
+<li>Assuminng a <strong>Fixed</strong> input - the program is deterministic</li>
+</ul>
+</li>
+<li>Concurrent Program<ul>
+<li>Consisting of <strong>two or more</strong> processes carryiing out atomic actions</li>
+</ul>
+</li>
+<li>Atomic action<ul>
+<li>As the name suggests, is an abstract term for an action that is <strong>not divisible in terms of processing</strong>.</li>
+</ul>
+</li>
+<li>Interleaving</li>
+</ul>
+]]></content>
+      <categories>
+        <category>Notes</category>
+      </categories>
+      <tags>
+        <tag>COMP</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>COMP0009 Logic&amp;Database</title>
+    <url>/2020/04/08/COMP0009-Logic-Database/</url>
+    <content><![CDATA[<a id="more"></a>]]></content>
       <categories>
         <category>Notes</category>
       </categories>
@@ -267,8 +455,8 @@
 <p>上午温度：36.4摄氏度</p>
 <p>下午温度：36.5摄氏度</p>
 <h2 id="Day-12"><a href="#Day-12" class="headerlink" title="Day 12"></a>Day 12</h2><p><img src="" alt=""></p>
-<p>上午温度：36.摄氏度</p>
-<p>下午温度：36.摄氏度</p>
+<p>上午温度：36.0摄氏度</p>
+<p>下午温度：36.5摄氏度</p>
 <h2 id="Day-13"><a href="#Day-13" class="headerlink" title="Day 13"></a>Day 13</h2><p><img src="" alt=""></p>
 <p>上午温度：36.摄氏度</p>
 <p>下午温度：36.摄氏度</p>
