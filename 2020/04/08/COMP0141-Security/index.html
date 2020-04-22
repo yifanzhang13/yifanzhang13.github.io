@@ -30,7 +30,7 @@
 <meta property="og:site_name" content="Flog">
 <meta property="og:description" content="Lecture 1-1CIA Triangle Components Confidentiality: Keeping Data private, only authorized users and processes should be able to access or modify data Integrity: System and data have not been improperl">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2020-04-17T14:58:32.534Z">
+<meta property="og:updated_time" content="2020-04-22T13:39:01.773Z">
 <meta name="twitter:card" content="summary">
 
 <link rel="canonical" href="http://yifanzhang13.github.io/2020/04/08/COMP0141-Security/">
@@ -229,7 +229,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2020-04-17 22:58:32" itemprop="dateModified" datetime="2020-04-17T22:58:32+08:00">2020-04-17</time>
+                <time title="Modified: 2020-04-22 21:39:01" itemprop="dateModified" datetime="2020-04-22T21:39:01+08:00">2020-04-22</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -254,14 +254,14 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">Symbols count in article: </span>
-              <span>7.7k</span>
+              <span>12k</span>
             </span>
             <span class="post-meta-item" title="Reading time">
               <span class="post-meta-item-icon">
                 <i class="far fa-clock"></i>
               </span>
                 <span class="post-meta-item-text">Reading time &asymp;</span>
-              <span>7 mins.</span>
+              <span>11 mins.</span>
             </span>
 
         </div>
@@ -547,6 +547,148 @@
 </ul>
 </li>
 </ul>
+<h1 id="Lecture-3-1"><a href="#Lecture-3-1" class="headerlink" title="Lecture 3-1"></a>Lecture 3-1</h1><h2 id="Web-Architecture"><a href="#Web-Architecture" class="headerlink" title="Web Architecture"></a>Web Architecture</h2><blockquote>
+<p>Websites are programs: HTML + CSS + JSS + Plugins</p>
+</blockquote>
+<ul>
+<li>Partially executed by the client (HTML, JavaScript, plugins, etc.)</li>
+<li>Partially executed by the server (PHP, Ruby, SQL, etc.)</li>
+</ul>
+<h2 id="Web-Server"><a href="#Web-Server" class="headerlink" title="Web Server"></a>Web Server</h2><p>It serves <strong>Static Content (HTML + CSS pages)</strong></p>
+<p>And it also generates <strong>Dynamic Content:</strong></p>
+<ul>
+<li>CGI (Conmmon Gateway Interface): PHP, Python, etc</li>
+<li>Web server modules: Rails, etc</li>
+<li>Database Backend: SQL</li>
+</ul>
+<h2 id="Web-Cookies"><a href="#Web-Cookies" class="headerlink" title="Web Cookies"></a>Web Cookies</h2><p>The web server provides a <strong>token</strong> in its response that looks like:</p>
+<p>Set-Cookie:<code>&lt;cookie-name&gt;=&lt;cookie-value&gt;</code></p>
+<p>This is then <strong>attached to every future request</strong> sent to the server</p>
+<h3 id="Kinds-of-cookies"><a href="#Kinds-of-cookies" class="headerlink" title="Kinds of cookies:"></a>Kinds of cookies:</h3><ul>
+<li>Session cookies<ul>
+<li><strong>Deleted</strong> when the user close the browser</li>
+<li><strong>Expiration property is not set</strong></li>
+</ul>
+</li>
+<li>Persistent cookies<ul>
+<li>A <strong>persistent cookie</strong> is a data file capable of providing websites with user preferences, settings and information for future visits.</li>
+<li>Are saved until some server-defined expiration</li>
+</ul>
+</li>
+</ul>
+<h2 id="JavaScript-1"><a href="#JavaScript-1" class="headerlink" title="JavaScript"></a>JavaScript</h2><p><strong>Same-origin policy</strong>: script can read properties of documents only from the same server, protocol, and port</p>
+<p>But, same-origin policy does not apply to scripts loaded from arbitrary site, so</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span> <span class="attr">src</span>=<span class="string">"http://www.example.com/myscript.js"</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>runs as if it were loaded from the site that provided the page!</p>
+<p>Server can also explicitly tell browser other domains that are allowed using Access-Control-Allow-Origin header</p>
+<h2 id="HTML-Injection"><a href="#HTML-Injection" class="headerlink" title="HTML Injection"></a>HTML Injection</h2><p>Many interactive web applications echo user input:</p>
+<ul>
+<li>Search queries</li>
+</ul>
+<p><strong>What if user input contains HTML markup tags?</strong></p>
+<p><strong>Similar story as with SQL injection</strong>: if the server doesn’t sanitise and encode it, markup is rendered by the web browser as it is provided by any user of the website</p>
+<h2 id="Cross-Site-Scripting"><a href="#Cross-Site-Scripting" class="headerlink" title="Cross Site Scripting"></a>Cross Site Scripting</h2><p>A vulnerability that allows an <strong>attacker</strong> to <strong>run</strong> <strong>JavaScript</strong> on a victim webpage</p>
+<h3 id="Type-of-XSS"><a href="#Type-of-XSS" class="headerlink" title="Type of XSS"></a>Type of XSS</h3><ul>
+<li>Methods for injecting malicious code:<ul>
+<li>Reflected XSS<ul>
+<li>the attack script is reflected back to the user as part of a page from the victim site</li>
+</ul>
+</li>
+<li>Persistant/Stored XSS<ul>
+<li>the attacker stores the malicious code in a resource managed by the web application, such as a database</li>
+</ul>
+</li>
+<li>Others, such as DOM-based attackers</li>
+</ul>
+</li>
+</ul>
+<h3 id="Reflected-XSS"><a href="#Reflected-XSS" class="headerlink" title="Reflected XSS"></a>Reflected XSS</h3><p>A <strong>reflected XSS</strong> (or also called a non-persistent <strong>XSS</strong> attack) is a specific type of <strong>XSS</strong> whose malicious script bounces off of another website to the victim’s  browser. It is passed in the query, typically, in the URL. It makes  exploitation as easy as tricking a user to <strong>click on a link.</strong></p>
+<ul>
+<li>E.g.<ul>
+<li>PayPal 2006</li>
+<li>Attackers contacted users via email and fooled them into accessing a particular URL hosted on the legitimate PayPal website.</li>
+<li>Injected code redirected PayPal visitors to a page warning users their accounts had been compromised.</li>
+<li>Victims were then redirected to a phishing site and prompted to enter sensitive financial data.</li>
+</ul>
+</li>
+</ul>
+<h3 id="Persistant-XSS"><a href="#Persistant-XSS" class="headerlink" title="Persistant XSS"></a>Persistant XSS</h3><p>XSS attacks enable attackers to <a href="https://en.wikipedia.org/wiki/Code_injection">inject</a> <a href="https://en.wikipedia.org/wiki/Client-side_script">client-side scripts</a> into <a href="https://en.wikipedia.org/wiki/Web_page">web pages</a> viewed by other users. A cross-site scripting vulnerability may be used by attackers to bypass <a href="https://en.wikipedia.org/wiki/Access_control">access controls</a> such as the <a href="https://en.wikipedia.org/wiki/Same-origin_policy">same-origin policy</a>.</p>
+<h3 id="Protecting-Against-XSS"><a href="#Protecting-Against-XSS" class="headerlink" title="Protecting Against XSS"></a>Protecting Against XSS</h3><ul>
+<li><strong>Validates all</strong> headers, cookies, query strings, form fields, and hidden fields (i.e., all parameters) against a rigorous specification of what should be allowed.</li>
+<li><strong>Do not attempt to identify active content and remove, filter, or sanitize it.</strong> There are too many types of active content and too many ways of encoding it to get around filters for such content.</li>
+<li><strong>Adopt a ‘positive’ security policy that specifies what is allowed.</strong> ‘Negative’ or attack signature based policies are difficult to maintain and are likely to be incomplete.</li>
+</ul>
+<h4 id="Input-Data-Validation-Filtering"><a href="#Input-Data-Validation-Filtering" class="headerlink" title="Input Data Validation + Filtering"></a>Input Data Validation + Filtering</h4><ul>
+<li>allow only what you expect</li>
+<li>Remove/encode special characters</li>
+</ul>
+<h4 id="Output-filtering-encoding"><a href="#Output-filtering-encoding" class="headerlink" title="Output filtering/encoding"></a>Output filtering/encoding</h4><ul>
+<li><p>Remove / encode (X)HTML special chars </p>
+<ul>
+<li><code>&amp;lt; for &lt;, &amp;gt; for &gt;, &amp;quot for “</code></li>
+</ul>
+</li>
+<li><p>Allow only safe commands (e.g., no <script>...) </p>
+<ul>
+<li>Caution: <code>filter evasion</code> tricks</li>
+</ul>
+</li>
+<li><p>See XSS Cheat Sheet for filter evasion</p>
+</li>
+<li><p>E.g., if filter allows quoting (of <code>&lt;script&gt;</code> etc.), use malformed quoting: <code>&lt;IMG “””&gt;&lt;SCRIPT&gt;alert(“XSS”)</code></p>
+</li>
+</ul>
+<h2 id="CSRF-Cross-Site-Request-Forgery"><a href="#CSRF-Cross-Site-Request-Forgery" class="headerlink" title="CSRF (Cross Site Request Forgery)"></a>CSRF (Cross Site Request Forgery)</h2><h3 id="Ineffective-Defense-POST"><a href="#Ineffective-Defense-POST" class="headerlink" title="Ineffective Defense: POST"></a>Ineffective Defense: POST</h3><ul>
+<li>GET requests are easier to launch CSRF attacks, so some people naively switch to POSTs</li>
+<li>This does not help</li>
+</ul>
+<h3 id="Ineffective-Defense-URL-Rewriting"><a href="#Ineffective-Defense-URL-Rewriting" class="headerlink" title="Ineffective Defense: URL Rewriting"></a>Ineffective Defense: URL Rewriting</h3><ul>
+<li>dangerous to pass auth tokens in URLs (middleperson, logging issues)</li>
+</ul>
+<h3 id="Imperfect-Defense-Referer-Validation"><a href="#Imperfect-Defense-Referer-Validation" class="headerlink" title="Imperfect Defense: Referer Validation"></a>Imperfect Defense: Referer Validation</h3><ul>
+<li>Does not work if Referer is missing</li>
+<li>Referer Privacy Problems<ul>
+<li>HTTP Referer may leak privacy-sensitive information</li>
+<li>Common sources of blocking:<ul>
+<li>Network stripping by the organisation</li>
+<li>Network stripping by the local machine</li>
+<li>Stripped by browser for HTTPS -> HTTP transitions</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="Denfense"><a href="#Denfense" class="headerlink" title="Denfense"></a>Denfense</h2><ul>
+<li>Form keys</li>
+<li>CSRF tokens<ul>
+<li>Requests include a hard-to-guess secret<ul>
+<li>Unguessability substitutes for unforgeability</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Short cookies expiration date</li>
+<li>Encourage users to log out</li>
+</ul>
+<h2 id="Double-Submitted-Cookies"><a href="#Double-Submitted-Cookies" class="headerlink" title="Double-Submitted Cookies"></a>Double-Submitted Cookies</h2><ul>
+<li>Instead of writing separate nonce, re-use the session ID</li>
+<li>When server replies to user, writes session ID to cookie as usual, plus writes into hidden form field</li>
+<li>User posts form with value from hidden field and cookie, server verifies these are same</li>
+<li>Why does this defence work?<ul>
+<li>Attacker cannot reliably guess session ID (unless there is also an XSS vuln)</li>
+</ul>
+</li>
+<li>Solution is completely stateless</li>
+<li>Downside: passing session IDs in HTTP requests and responses is risky<ul>
+<li>Solution: put hash(session ID) in hidden form field instead</li>
+</ul>
+</li>
+</ul>
+<h2 id="XSS-v-s-CSRF"><a href="#XSS-v-s-CSRF" class="headerlink" title="XSS v.s CSRF"></a>XSS v.s CSRF</h2><p><strong>XSS</strong></p>
+<p>Server-side vulnerability<br> Attacker injects a script into the trusted website Trusting browser executes attacker’s script</p>
+<p><strong>CSRF</strong></p>
+<p>Server-side vulnerability<br> Attacker gets trusted browser to issue requests Trusting website executes attacker’s requests</p>
 
     </div>
 
@@ -647,7 +789,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Lecture-1-1"><span class="nav-number">1.</span> <span class="nav-text">Lecture 1-1</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#CIA-Triangle"><span class="nav-number">1.1.</span> <span class="nav-text">CIA Triangle</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Security-Design"><span class="nav-number">1.2.</span> <span class="nav-text">Security Design</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Competing-Philosophies"><span class="nav-number">1.3.</span> <span class="nav-text">Competing Philosophies</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Is-the-System-Secure"><span class="nav-number">1.4.</span> <span class="nav-text">Is the System Secure?</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Security-Mechanism"><span class="nav-number">1.5.</span> <span class="nav-text">Security Mechanism</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Lecture-1-2"><span class="nav-number">2.</span> <span class="nav-text">Lecture 1-2</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Security-and-Human-Behavior"><span class="nav-number">2.1.</span> <span class="nav-text">Security and Human Behavior</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Information-Security"><span class="nav-number">2.1.1.</span> <span class="nav-text">Information Security</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Availability-further-definitions"><span class="nav-number">2.1.2.</span> <span class="nav-text">Availability - further definitions</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Usability"><span class="nav-number">2.1.3.</span> <span class="nav-text">Usability</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Risk-Analysis-and-Risk-Perception"><span class="nav-number">2.2.</span> <span class="nav-text">Risk Analysis and Risk Perception</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Security-Theatre"><span class="nav-number">2.2.1.</span> <span class="nav-text">Security Theatre</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Lecture-2-1"><span class="nav-number">3.</span> <span class="nav-text">Lecture 2-1</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Security-Mechanism-1"><span class="nav-number">3.1.</span> <span class="nav-text">Security Mechanism</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Design-Principles"><span class="nav-number">3.2.</span> <span class="nav-text">Design Principles</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Least-privilege"><span class="nav-number">3.2.1.</span> <span class="nav-text">Least privilege</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Separation-of-responsibilities"><span class="nav-number">3.2.2.</span> <span class="nav-text">Separation of responsibilities</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Complete-mediation"><span class="nav-number">3.2.3.</span> <span class="nav-text">Complete mediation</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Fail-safe-default"><span class="nav-number">3.2.4.</span> <span class="nav-text">Fail-safe default</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Defence-in-Depth"><span class="nav-number">3.2.5.</span> <span class="nav-text">Defence in Depth</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Open-Design"><span class="nav-number">3.2.6.</span> <span class="nav-text">Open Design</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Psychological-Acceptability"><span class="nav-number">3.2.7.</span> <span class="nav-text">Psychological Acceptability</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Economy-of-Mechanisms"><span class="nav-number">3.2.8.</span> <span class="nav-text">Economy of Mechanisms</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Privacy-Promotion"><span class="nav-number">3.2.9.</span> <span class="nav-text">Privacy Promotion</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Fundamentals-of-Computer-Architecture-Design"><span class="nav-number">3.3.</span> <span class="nav-text">Fundamentals of Computer Architecture Design</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#von-Neumann-Computer-Architecture"><span class="nav-number">3.3.1.</span> <span class="nav-text">von Neumann Computer Architecture</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Layers-of-Abstraction"><span class="nav-number">3.3.2.</span> <span class="nav-text">Layers of Abstraction</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Moore’s-Law"><span class="nav-number">3.3.3.</span> <span class="nav-text">Moore’s Law</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Halting-Problem"><span class="nav-number">3.3.4.</span> <span class="nav-text">Halting Problem</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Lecture-2-2"><span class="nav-number">4.</span> <span class="nav-text">Lecture 2-2</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#How-does-the-Internet-work"><span class="nav-number">4.1.</span> <span class="nav-text">How does the Internet work?</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Step1-find-content-host"><span class="nav-number">4.1.1.</span> <span class="nav-text">Step1: find content host</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Step-2-request-content"><span class="nav-number">4.1.2.</span> <span class="nav-text">Step 2: request content</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Step3-Receive-Content"><span class="nav-number">4.1.3.</span> <span class="nav-text">Step3: Receive Content</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Overview"><span class="nav-number">4.1.4.</span> <span class="nav-text">Overview</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#What-Webpages-are-Made-Of"><span class="nav-number">4.2.</span> <span class="nav-text">What Webpages are Made Of</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#HTML"><span class="nav-number">4.2.1.</span> <span class="nav-text">HTML</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#CSS"><span class="nav-number">4.2.2.</span> <span class="nav-text">CSS</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#JavaScript"><span class="nav-number">4.2.3.</span> <span class="nav-text">JavaScript</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Cookies"><span class="nav-number">4.3.</span> <span class="nav-text">Cookies</span></a></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Lecture-1-1"><span class="nav-number">1.</span> <span class="nav-text">Lecture 1-1</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#CIA-Triangle"><span class="nav-number">1.1.</span> <span class="nav-text">CIA Triangle</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Security-Design"><span class="nav-number">1.2.</span> <span class="nav-text">Security Design</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Competing-Philosophies"><span class="nav-number">1.3.</span> <span class="nav-text">Competing Philosophies</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Is-the-System-Secure"><span class="nav-number">1.4.</span> <span class="nav-text">Is the System Secure?</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Security-Mechanism"><span class="nav-number">1.5.</span> <span class="nav-text">Security Mechanism</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Lecture-1-2"><span class="nav-number">2.</span> <span class="nav-text">Lecture 1-2</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Security-and-Human-Behavior"><span class="nav-number">2.1.</span> <span class="nav-text">Security and Human Behavior</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Information-Security"><span class="nav-number">2.1.1.</span> <span class="nav-text">Information Security</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Availability-further-definitions"><span class="nav-number">2.1.2.</span> <span class="nav-text">Availability - further definitions</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Usability"><span class="nav-number">2.1.3.</span> <span class="nav-text">Usability</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Risk-Analysis-and-Risk-Perception"><span class="nav-number">2.2.</span> <span class="nav-text">Risk Analysis and Risk Perception</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Security-Theatre"><span class="nav-number">2.2.1.</span> <span class="nav-text">Security Theatre</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Lecture-2-1"><span class="nav-number">3.</span> <span class="nav-text">Lecture 2-1</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Security-Mechanism-1"><span class="nav-number">3.1.</span> <span class="nav-text">Security Mechanism</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Design-Principles"><span class="nav-number">3.2.</span> <span class="nav-text">Design Principles</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Least-privilege"><span class="nav-number">3.2.1.</span> <span class="nav-text">Least privilege</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Separation-of-responsibilities"><span class="nav-number">3.2.2.</span> <span class="nav-text">Separation of responsibilities</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Complete-mediation"><span class="nav-number">3.2.3.</span> <span class="nav-text">Complete mediation</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Fail-safe-default"><span class="nav-number">3.2.4.</span> <span class="nav-text">Fail-safe default</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Defence-in-Depth"><span class="nav-number">3.2.5.</span> <span class="nav-text">Defence in Depth</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Open-Design"><span class="nav-number">3.2.6.</span> <span class="nav-text">Open Design</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Psychological-Acceptability"><span class="nav-number">3.2.7.</span> <span class="nav-text">Psychological Acceptability</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Economy-of-Mechanisms"><span class="nav-number">3.2.8.</span> <span class="nav-text">Economy of Mechanisms</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Privacy-Promotion"><span class="nav-number">3.2.9.</span> <span class="nav-text">Privacy Promotion</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Fundamentals-of-Computer-Architecture-Design"><span class="nav-number">3.3.</span> <span class="nav-text">Fundamentals of Computer Architecture Design</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#von-Neumann-Computer-Architecture"><span class="nav-number">3.3.1.</span> <span class="nav-text">von Neumann Computer Architecture</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Layers-of-Abstraction"><span class="nav-number">3.3.2.</span> <span class="nav-text">Layers of Abstraction</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Moore’s-Law"><span class="nav-number">3.3.3.</span> <span class="nav-text">Moore’s Law</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Halting-Problem"><span class="nav-number">3.3.4.</span> <span class="nav-text">Halting Problem</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Lecture-2-2"><span class="nav-number">4.</span> <span class="nav-text">Lecture 2-2</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#How-does-the-Internet-work"><span class="nav-number">4.1.</span> <span class="nav-text">How does the Internet work?</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Step1-find-content-host"><span class="nav-number">4.1.1.</span> <span class="nav-text">Step1: find content host</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Step-2-request-content"><span class="nav-number">4.1.2.</span> <span class="nav-text">Step 2: request content</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Step3-Receive-Content"><span class="nav-number">4.1.3.</span> <span class="nav-text">Step3: Receive Content</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Overview"><span class="nav-number">4.1.4.</span> <span class="nav-text">Overview</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#What-Webpages-are-Made-Of"><span class="nav-number">4.2.</span> <span class="nav-text">What Webpages are Made Of</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#HTML"><span class="nav-number">4.2.1.</span> <span class="nav-text">HTML</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#CSS"><span class="nav-number">4.2.2.</span> <span class="nav-text">CSS</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#JavaScript"><span class="nav-number">4.2.3.</span> <span class="nav-text">JavaScript</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Cookies"><span class="nav-number">4.3.</span> <span class="nav-text">Cookies</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Lecture-3-1"><span class="nav-number">5.</span> <span class="nav-text">Lecture 3-1</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Web-Architecture"><span class="nav-number">5.1.</span> <span class="nav-text">Web Architecture</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Web-Server"><span class="nav-number">5.2.</span> <span class="nav-text">Web Server</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Web-Cookies"><span class="nav-number">5.3.</span> <span class="nav-text">Web Cookies</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Kinds-of-cookies"><span class="nav-number">5.3.1.</span> <span class="nav-text">Kinds of cookies:</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#JavaScript-1"><span class="nav-number">5.4.</span> <span class="nav-text">JavaScript</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#HTML-Injection"><span class="nav-number">5.5.</span> <span class="nav-text">HTML Injection</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Cross-Site-Scripting"><span class="nav-number">5.6.</span> <span class="nav-text">Cross Site Scripting</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Type-of-XSS"><span class="nav-number">5.6.1.</span> <span class="nav-text">Type of XSS</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Reflected-XSS"><span class="nav-number">5.6.2.</span> <span class="nav-text">Reflected XSS</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Persistant-XSS"><span class="nav-number">5.6.3.</span> <span class="nav-text">Persistant XSS</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Protecting-Against-XSS"><span class="nav-number">5.6.4.</span> <span class="nav-text">Protecting Against XSS</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Input-Data-Validation-Filtering"><span class="nav-number">5.6.4.1.</span> <span class="nav-text">Input Data Validation + Filtering</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Output-filtering-encoding"><span class="nav-number">5.6.4.2.</span> <span class="nav-text">Output filtering/encoding</span></a></li></ol></li></ol></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -724,13 +866,13 @@
       <i class="fa fa-chart-area"></i>
     </span>
       <span class="post-meta-item-text">Symbols count total: </span>
-    <span title="Symbols count total">79k</span>
+    <span title="Symbols count total">84k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span class="post-meta-item-text">Reading time total &asymp;</span>
-    <span title="Reading time total">1:12</span>
+    <span title="Reading time total">1:16</span>
 </div>
 
         
