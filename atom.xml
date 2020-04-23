@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yifanzhang13.github.io/"/>
-  <updated>2020-04-13T03:16:52.193Z</updated>
+  <updated>2020-04-23T11:56:22.952Z</updated>
   <id>http://yifanzhang13.github.io/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>LeetCode做题记录</title>
+    <link href="http://yifanzhang13.github.io/2020/04/23/LeetCode%E5%81%9A%E9%A2%98%E8%AE%B0%E5%BD%95/"/>
+    <id>http://yifanzhang13.github.io/2020/04/23/LeetCode%E5%81%9A%E9%A2%98%E8%AE%B0%E5%BD%95/</id>
+    <published>2020-04-23T02:13:38.000Z</published>
+    <updated>2020-04-23T11:56:22.952Z</updated>
+    
+    <content type="html"><![CDATA[<a id="more"></a><h1 id="205-同构字符串"><a href="#205-同构字符串" class="headerlink" title="205.同构字符串"></a><a href="https://leetcode-cn.com/problems/isomorphic-strings/">205.同构字符串</a></h1><p><u><strong>思路分析</strong></u></p><ul><li><p>我们可以利用一个 HashMap 来处理映射。对于 s 到 t 的映射，我们同时遍历 s 和 t ，假设当前遇到的字母分别是 c1 和 c2 。</p></li><li><p>如果 map[c1] 不存在，那么就将 c1 映射到 c2 ，即 map[c1] = c2。</p></li><li><p>如果 map[c1] 存在，那么就判断 map[c1] 是否等于 c2，也就是验证之前的映射和当前的字母是否相同。</p></li><li><p>对于这道题，我们只需要验证 s - &gt; t 和 t -&gt; s 两个方向即可。如果验证一个方向，是不可以的。</p></li><li><p>举个例子，s = ab, t = cc，如果单看 s -&gt; t ，那么 a -&gt; c, b -&gt; c 是没有问题的。</p></li><li><p>必须再验证 t -&gt; s，此时，c -&gt; a, c -&gt; b，一个字母对应了多个字母，所以不是同构的。代码的话，只需要调用两次上边的代码即可。</p></li></ul><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">egg 和 add 同构，就意味着下边的映射成立</span><br><span class="line">e -&gt; a</span><br><span class="line">g -&gt; d</span><br><span class="line">也就是将 egg 的 e 换成 a, g 换成 d, 就变成了 add</span><br><span class="line"></span><br><span class="line">同时倒过来也成立</span><br><span class="line">a -&gt; e</span><br><span class="line">d -&gt; g</span><br><span class="line">也就是将 add 的 a 换成 e, d 换成 g, 就变成了 egg</span><br><span class="line"></span><br><span class="line">foo 和 bar 不同构，原因就是映射不唯一</span><br><span class="line">o -&gt; a</span><br><span class="line">o -&gt; r</span><br><span class="line">其中 o 映射到了两个字母</span><br></pre></td></tr></table></figure><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">isIsomorphic1</span><span class="params">(String s,String t)</span></span>&#123;</span><br><span class="line">        <span class="keyword">return</span> isIsomorphicHelper(s,t) &amp;&amp; isIsomorphicHelper(t,s);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">isIsomorphicHelper</span><span class="params">(String s, String t)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> len = s.length();</span><br><span class="line">        HashMap&lt;Character,Character&gt; map = <span class="keyword">new</span> HashMap&lt;&gt;();</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;len;i++)&#123;</span><br><span class="line">            <span class="keyword">char</span> c1 = s.charAt(i);</span><br><span class="line">            <span class="keyword">char</span> c2 = t.charAt(i);</span><br><span class="line">            <span class="keyword">if</span> (!map.containsKey(c1))&#123;</span><br><span class="line">                map.put(c1,c2);</span><br><span class="line">            &#125;<span class="keyword">else</span> &#123;</span><br><span class="line">                <span class="keyword">if</span> (map.get(c1)!=c2)&#123;</span><br><span class="line">                    <span class="keyword">return</span> <span class="keyword">false</span>;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+
+&lt;h1 id=&quot;205-同构字符串&quot;&gt;&lt;a href=&quot;#205-同构字符串&quot; class=&quot;headerlink&quot; title=&quot;205.同构字符串&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://leetcode-cn.com/problem
+      
+    
+    </summary>
+    
+    
+      <category term="Notes" scheme="http://yifanzhang13.github.io/categories/Notes/"/>
+    
+    
+      <category term="LeetCode" scheme="http://yifanzhang13.github.io/tags/LeetCode/"/>
+    
+  </entry>
   
   <entry>
     <title>Hexo-PDF</title>
