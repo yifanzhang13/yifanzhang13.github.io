@@ -57,20 +57,6 @@
       </tags>
   </entry>
   <entry>
-    <title>First Blog</title>
-    <url>/2019/11/14/First-Blog/</url>
-    <content><![CDATA[<p>Hello World!</p>
-<p>Personal Blog Test!</p>
-<p>Done!</p>
-]]></content>
-      <categories>
-        <category>Hello World!</category>
-      </categories>
-      <tags>
-        <tag>Hello World!</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>COMP0141 Security</title>
     <url>/2020/04/08/COMP0141-Security/</url>
     <content><![CDATA[<h1 id="Lecture-1-1"><a href="#Lecture-1-1" class="headerlink" title="Lecture 1-1"></a>Lecture 1-1</h1><h2 id="CIA-Triangle"><a href="#CIA-Triangle" class="headerlink" title="CIA Triangle"></a>CIA Triangle</h2><ul>
@@ -495,6 +481,141 @@
 <li>Server-side vulnerability</li>
 <li>Attacker gets trusted browser to issue requests Trusting website executes attacker’s requests</li>
 </ul>
+<h1 id="Lecture-3-2"><a href="#Lecture-3-2" class="headerlink" title="Lecture 3-2"></a>Lecture 3-2</h1><p>(Code Injection + Return-oriented Programming)</p>
+<h2 id="Code-Injection-Attacks"><a href="#Code-Injection-Attacks" class="headerlink" title="Code Injection Attacks"></a>Code Injection Attacks</h2><blockquote>
+<p>Attacker executes arbitrary code on <strong>Server</strong></p>
+<p><strong>Not Sanitising</strong> user inputs/outputs</p>
+</blockquote>
+<h2 id="Unintended-Functionality"><a href="#Unintended-Functionality" class="headerlink" title="Unintended Functionality"></a>Unintended Functionality</h2><p>Security involves understanding both <strong>intended</strong> and <strong>unintended</strong> functionalities of the system.</p>
+<blockquote>
+<p>An <strong>exploit</strong> is a mechanism by which an attacker triggers some unintended functionality of the system (it is a blind spot for the developers)</p>
+</blockquote>
+<h2 id="What-makes-security-special"><a href="#What-makes-security-special" class="headerlink" title="What makes security special?"></a>What makes security special?</h2><p>These properties must hold even in the presence of a <strong>resourceful</strong> and <strong>strategic</strong> adversary</p>
+<blockquote>
+<p> <strong>Correctness:</strong> For a given input, a program should provide the correct output</p>
+</blockquote>
+<blockquote>
+<p><strong>Safety</strong>: Well-formed programs cannot have bad (wrong or dangerous) outputs, no matter the input</p>
+</blockquote>
+<blockquote>
+<p><strong>Robustness:</strong> Programs should be able to cope with errors in execution</p>
+</blockquote>
+<h2 id="Software-Vulnerability"><a href="#Software-Vulnerability" class="headerlink" title="Software Vulnerability"></a>Software Vulnerability</h2><ul>
+<li><p>A <strong>software vulnerability</strong> is a bug in a program that allows a user capabilities that should be denied to them</p>
+</li>
+<li><p>One very common type of vulnerability is ones that violate <strong>control flow integrity</strong> (CFI)</p>
+<p>Today we’ll look at <strong>SQL injections</strong> and <strong>buffer overflows</strong></p>
+</li>
+</ul>
+<h2 id="SQL-Injection"><a href="#SQL-Injection" class="headerlink" title="SQL Injection"></a>SQL Injection</h2><ol>
+<li><p><strong>Post malicious input to form</strong></p>
+<ol>
+<li><p>SQL Injection Based on 1=1 is Always True</p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line">txtUserId = getRequestString("UserId");</span><br><span class="line">txtSQL = "<span class="keyword">SELECT</span> * <span class="keyword">FROM</span> <span class="keyword">Users</span> <span class="keyword">WHERE</span> UserId = <span class="string">" + txtUserId;</span></span><br></pre></td></tr></table></figure>
+
+<p>If users enter inputs like:  <strong>UserID</strong> <code>105 OR 1=1</code>, then the SQL statement will look like this:</p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> * <span class="keyword">FROM</span> <span class="keyword">Users</span> <span class="keyword">WHERE</span> UserId = <span class="number">105</span> <span class="keyword">OR</span> <span class="number">1</span>=<span class="number">1</span>;</span><br></pre></td></tr></table></figure>
+
+<p>The SQL above is valid and will return ALL rows from the “Users” table, since  <u><strong>OR 1=1</strong> is always TRUE.</u></p>
+</li>
+<li><p>SQL Injection Based on “”=”” is Always True</p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line">uName = getRequestString("username");</span><br><span class="line">uPass = getRequestString("userpassword");</span><br><span class="line"></span><br><span class="line">sql = '<span class="keyword">SELECT</span> * <span class="keyword">FROM</span> <span class="keyword">Users</span> <span class="keyword">WHERE</span> <span class="keyword">Name</span> =<span class="string">"' + uName + '"</span> <span class="keyword">AND</span> Pass =<span class="string">"' + uPass + '"</span><span class="string">'</span></span><br></pre></td></tr></table></figure>
+
+<p>A hacker might get access to user names and passwords in a database by  simply inserting “ OR “”=” into the user name or password text box:</p>
+<p>User Name: <code>&quot; OR &quot;&quot;=&quot;</code></p>
+<p>Password: <code>&quot; OR &quot;&quot;=&quot;</code></p>
+<p>The code at the server will create a valid SQL statement like this:</p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> * <span class="keyword">FROM</span> <span class="keyword">Users</span> <span class="keyword">WHERE</span> <span class="keyword">Name</span> =<span class="string">""</span> <span class="keyword">OR</span> <span class="string">""</span>=<span class="string">""</span> <span class="keyword">AND</span> Pass =<span class="string">""</span> <span class="keyword">OR</span> <span class="string">""</span>=<span class="string">""</span></span><br></pre></td></tr></table></figure>
+
+<p>The SQL above is valid and will return all rows from the “Users” table,  since <strong>OR “”=””</strong> is always TRUE.</p>
+</li>
+</ol>
+</li>
+<li><p><strong>Requests unintended SQL query</strong></p>
+</li>
+<li><p><strong>Returns unintended data to attacker</strong></p>
+</li>
+</ol>
+<h2 id="SQL-Injection-Mitigations"><a href="#SQL-Injection-Mitigations" class="headerlink" title="SQL Injection Mitigations"></a>SQL Injection Mitigations</h2><p>Server-side applications generate SQL queries <strong>based on arbitrary user input</strong></p>
+<p><strong>Solution? Don’t accept arbitrary user input!</strong></p>
+<p><strong>Parameterised queries</strong>: pre-compiled queries that separate commands from input</p>
+<p><strong>Input sanitisation</strong>: make sure only safe input is accepted What is unsafe?</p>
+<ul>
+<li>Single quote? Dashes? But these could be legitimate Sanitise on the client or the server<ul>
+<li><strong>Use proper escaping/encoding?</strong></li>
+</ul>
+</li>
+</ul>
+<h2 id="Buffer-Overflows"><a href="#Buffer-Overflows" class="headerlink" title="Buffer Overflows"></a>Buffer Overflows</h2><blockquote>
+<p> Program variables get allocated regions of physical memory in the form of <strong>buffers</strong></p>
+<p>Buffer overflows happen when a program writes data beyond its allocated buffers</p>
+<p>These are ubiquitous in systems-level languages (C/C++), made worse by the fact that many standard library functions make it easy to go beyond array bounds</p>
+<p>String functions like strcpy() and strcat() write to the destination buffer until they encounter \0 in input, so the user providing the input (who can easily be the attacker!) controls how much gets written</p>
+</blockquote>
+<h3 id="Memory-Allocation-of-Programs"><a href="#Memory-Allocation-of-Programs" class="headerlink" title="Memory Allocation of Programs"></a>Memory Allocation of Programs</h3><p>The computer keeps track using a <strong>Stack</strong> when you make fucntion calls</p>
+<h3 id="Call-Frame"><a href="#Call-Frame" class="headerlink" title="Call Frame"></a>Call Frame</h3><p>When a function is <strong>called</strong>:</p>
+<ul>
+<li>Allocate new <strong>frame</strong> for the callee</li>
+<li>Caller pushes arguments and return address</li>
+<li>Callee:<ul>
+<li>pushes old <strong>frame pointer</strong> (fp): this points to <u>bottom of frame of currently executing function</u></li>
+<li>Sets fp = sp (<strong>stack pointe</strong>r): this points to <u>top of stack</u></li>
+</ul>
+</li>
+</ul>
+<p>When a fucntion is <strong>returned</strong>:</p>
+<ul>
+<li>Callee pops local storage and sets <strong>sp = fp</strong></li>
+<li>Callee pops <strong>fp</strong>(frame pointer)</li>
+<li>Callee pops return address and returns to next instruction in caller frame </li>
+</ul>
+<h3 id="Smashing-the-Stack"><a href="#Smashing-the-Stack" class="headerlink" title="Smashing the Stack"></a>Smashing the Stack</h3><p>What happens if you overwrite a malicious value past the bounds of a local variable?</p>
+<p>Could overwrite:</p>
+<ul>
+<li>another local variable<ul>
+<li>What happens if you overwrite another local variable?</li>
+<li><strong>It depends.</strong></li>
+</ul>
+</li>
+<li>Saved fp<ul>
+<li>What happens if you overwrite the saved fp?</li>
+<li><strong>Probably terrible things!</strong><ul>
+<li>When the function returns, the stack moves to an attacker-supplied address ⇒ complete control of execution</li>
+<li>Even a single byte may be enough for this attack</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>return address<ul>
+<li>What happens if you overwrite the return address?</li>
+<li><strong>Terrible things!</strong></li>
+<li>When the function returns, control is transferred to an attacker-supplied address ⇒ complete control of arbitrary code execution (re-direct to their own code)</li>
+</ul>
+</li>
+<li>function argument</li>
+<li>Deeper stack framess</li>
+<li>exception control data</li>
+</ul>
+<h2 id="Shellcode"><a href="#Shellcode" class="headerlink" title="Shellcode"></a>Shellcode</h2><blockquote>
+<p> <strong>Shellcode</strong> is defined as a set of instructions injected and then executed by an exploited program. <strong>Shellcode</strong> is used to directly manipulate registers and the functionality of a exploited program.s</p>
+</blockquote>
+<p>Attacker ensures shellcode is somewhere in the stack before overwriting return address <strong>but they might not know exactly where it is</strong></p>
+<h2 id="NOP-sleds"><a href="#NOP-sleds" class="headerlink" title="NOP sleds"></a>NOP sleds</h2><p>Instead, attacker can rely on the NOP (“no- op”) instruction to create something called a</p>
+<p><strong>NOP sled</strong> (or a NOP slide)</p>
+<p>As long as the attacker’s guess lands somewhere in this sequence of NOPs they can jump at the end to the start of the shellcode as desired</p>
+<h2 id="DEP"><a href="#DEP" class="headerlink" title="DEP"></a>DEP</h2><ul>
+<li>Data Execution Prevention</li>
+<li>Maybe not everything needs to be executable?</li>
+</ul>
+<h2 id="ASLR"><a href="#ASLR" class="headerlink" title="ASLR"></a>ASLR</h2><ul>
+<li>Randomisess address space</li>
+<li>Now an attacker need to guess even more where they will land</li>
+</ul>
+<h2 id="Stack-Canaries"><a href="#Stack-Canaries" class="headerlink" title="Stack Canaries"></a>Stack Canaries</h2><ul>
+<li>Write a random value to the end of the frame at the beginning of a function call.</li>
+<li>Check that it is still there at the end.</li>
+<li>If it’s not, then throw an error.</li>
+</ul>
 ]]></content>
       <categories>
         <category>Notes</category>
@@ -544,6 +665,20 @@
       </tags>
   </entry>
   <entry>
+    <title>First Blog</title>
+    <url>/2019/11/14/First-Blog/</url>
+    <content><![CDATA[<p>Hello World!</p>
+<p>Personal Blog Test!</p>
+<p>Done!</p>
+]]></content>
+      <categories>
+        <category>Hello World!</category>
+      </categories>
+      <tags>
+        <tag>Hello World!</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Hexo ERROR Render HTML failed</title>
     <url>/2020/04/01/Hexo-ERROR-Render-HTML-failed/</url>
     <content><![CDATA[<h1 id="ERROR-Render-HTML-failed"><a href="#ERROR-Render-HTML-failed" class="headerlink" title="ERROR-Render-HTML-failed"></a>ERROR-Render-HTML-failed</h1><p>Error reported when I entered <code>hexo g</code> to convert md file into HTML file</p>
@@ -563,38 +698,6 @@
       </categories>
       <tags>
         <tag>ERROR</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>LeetCode做题记录</title>
-    <url>/2020/04/23/LeetCode%E5%81%9A%E9%A2%98%E8%AE%B0%E5%BD%95/</url>
-    <content><![CDATA[<a id="more"></a>
-
-<h1 id="205-同构字符串"><a href="#205-同构字符串" class="headerlink" title="205.同构字符串"></a><a href="https://leetcode-cn.com/problems/isomorphic-strings/">205.同构字符串</a></h1><p><u><strong>思路分析</strong></u></p>
-<ul>
-<li><p>我们可以利用一个 HashMap 来处理映射。对于 s 到 t 的映射，我们同时遍历 s 和 t ，假设当前遇到的字母分别是 c1 和 c2 。</p>
-</li>
-<li><p>如果 map[c1] 不存在，那么就将 c1 映射到 c2 ，即 map[c1] = c2。</p>
-</li>
-<li><p>如果 map[c1] 存在，那么就判断 map[c1] 是否等于 c2，也就是验证之前的映射和当前的字母是否相同。</p>
-</li>
-<li><p>对于这道题，我们只需要验证 s - &gt; t 和 t -&gt; s 两个方向即可。如果验证一个方向，是不可以的。</p>
-</li>
-<li><p>举个例子，s = ab, t = cc，如果单看 s -&gt; t ，那么 a -&gt; c, b -&gt; c 是没有问题的。</p>
-</li>
-<li><p>必须再验证 t -&gt; s，此时，c -&gt; a, c -&gt; b，一个字母对应了多个字母，所以不是同构的。代码的话，只需要调用两次上边的代码即可。</p>
-</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">egg 和 add 同构，就意味着下边的映射成立</span><br><span class="line">e -&gt; a</span><br><span class="line">g -&gt; d</span><br><span class="line">也就是将 egg 的 e 换成 a, g 换成 d, 就变成了 add</span><br><span class="line"></span><br><span class="line">同时倒过来也成立</span><br><span class="line">a -&gt; e</span><br><span class="line">d -&gt; g</span><br><span class="line">也就是将 add 的 a 换成 e, d 换成 g, 就变成了 egg</span><br><span class="line"></span><br><span class="line">foo 和 bar 不同构，原因就是映射不唯一</span><br><span class="line">o -&gt; a</span><br><span class="line">o -&gt; r</span><br><span class="line">其中 o 映射到了两个字母</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">isIsomorphic1</span><span class="params">(String s,String t)</span></span>&#123;</span><br><span class="line">        <span class="keyword">return</span> isIsomorphicHelper(s,t) &amp;&amp; isIsomorphicHelper(t,s);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">isIsomorphicHelper</span><span class="params">(String s, String t)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> len = s.length();</span><br><span class="line">        HashMap&lt;Character,Character&gt; map = <span class="keyword">new</span> HashMap&lt;&gt;();</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;len;i++)&#123;</span><br><span class="line">            <span class="keyword">char</span> c1 = s.charAt(i);</span><br><span class="line">            <span class="keyword">char</span> c2 = t.charAt(i);</span><br><span class="line">            <span class="keyword">if</span> (!map.containsKey(c1))&#123;</span><br><span class="line">                map.put(c1,c2);</span><br><span class="line">            &#125;<span class="keyword">else</span> &#123;</span><br><span class="line">                <span class="keyword">if</span> (map.get(c1)!=c2)&#123;</span><br><span class="line">                    <span class="keyword">return</span> <span class="keyword">false</span>;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
-
-]]></content>
-      <categories>
-        <category>Notes</category>
-      </categories>
-      <tags>
-        <tag>LeetCode</tag>
       </tags>
   </entry>
   <entry>
@@ -645,6 +748,38 @@
 <p>上午温度：36.2摄氏度</p>
 <p>下午温度：36.5摄氏度</p>
 ]]></content>
+  </entry>
+  <entry>
+    <title>LeetCode做题记录</title>
+    <url>/2020/04/23/LeetCode%E5%81%9A%E9%A2%98%E8%AE%B0%E5%BD%95/</url>
+    <content><![CDATA[<a id="more"></a>
+
+<h1 id="205-同构字符串"><a href="#205-同构字符串" class="headerlink" title="205.同构字符串"></a><a href="https://leetcode-cn.com/problems/isomorphic-strings/">205.同构字符串</a></h1><p><u><strong>思路分析</strong></u></p>
+<ul>
+<li><p>我们可以利用一个 HashMap 来处理映射。对于 s 到 t 的映射，我们同时遍历 s 和 t ，假设当前遇到的字母分别是 c1 和 c2 。</p>
+</li>
+<li><p>如果 map[c1] 不存在，那么就将 c1 映射到 c2 ，即 map[c1] = c2。</p>
+</li>
+<li><p>如果 map[c1] 存在，那么就判断 map[c1] 是否等于 c2，也就是验证之前的映射和当前的字母是否相同。</p>
+</li>
+<li><p>对于这道题，我们只需要验证 s - &gt; t 和 t -&gt; s 两个方向即可。如果验证一个方向，是不可以的。</p>
+</li>
+<li><p>举个例子，s = ab, t = cc，如果单看 s -&gt; t ，那么 a -&gt; c, b -&gt; c 是没有问题的。</p>
+</li>
+<li><p>必须再验证 t -&gt; s，此时，c -&gt; a, c -&gt; b，一个字母对应了多个字母，所以不是同构的。代码的话，只需要调用两次上边的代码即可。</p>
+</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">egg 和 add 同构，就意味着下边的映射成立</span><br><span class="line">e -&gt; a</span><br><span class="line">g -&gt; d</span><br><span class="line">也就是将 egg 的 e 换成 a, g 换成 d, 就变成了 add</span><br><span class="line"></span><br><span class="line">同时倒过来也成立</span><br><span class="line">a -&gt; e</span><br><span class="line">d -&gt; g</span><br><span class="line">也就是将 add 的 a 换成 e, d 换成 g, 就变成了 egg</span><br><span class="line"></span><br><span class="line">foo 和 bar 不同构，原因就是映射不唯一</span><br><span class="line">o -&gt; a</span><br><span class="line">o -&gt; r</span><br><span class="line">其中 o 映射到了两个字母</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">isIsomorphic1</span><span class="params">(String s,String t)</span></span>&#123;</span><br><span class="line">        <span class="keyword">return</span> isIsomorphicHelper(s,t) &amp;&amp; isIsomorphicHelper(t,s);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">isIsomorphicHelper</span><span class="params">(String s, String t)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> len = s.length();</span><br><span class="line">        HashMap&lt;Character,Character&gt; map = <span class="keyword">new</span> HashMap&lt;&gt;();</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;len;i++)&#123;</span><br><span class="line">            <span class="keyword">char</span> c1 = s.charAt(i);</span><br><span class="line">            <span class="keyword">char</span> c2 = t.charAt(i);</span><br><span class="line">            <span class="keyword">if</span> (!map.containsKey(c1))&#123;</span><br><span class="line">                map.put(c1,c2);</span><br><span class="line">            &#125;<span class="keyword">else</span> &#123;</span><br><span class="line">                <span class="keyword">if</span> (map.get(c1)!=c2)&#123;</span><br><span class="line">                    <span class="keyword">return</span> <span class="keyword">false</span>;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>Notes</category>
+      </categories>
+      <tags>
+        <tag>LeetCode</tag>
+      </tags>
   </entry>
   <entry>
     <title>Usage Of Volatile In Java</title>
