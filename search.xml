@@ -35,6 +35,17 @@
       </tags>
   </entry>
   <entry>
+    <title>COMP0011 Maths&amp;Statistics</title>
+    <url>/2020/04/08/COMP0011-Maths-Statistics/</url>
+    <content><![CDATA[<a id="more"></a>]]></content>
+      <categories>
+        <category>Notes</category>
+      </categories>
+      <tags>
+        <tag>COMP</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>COMP0009 Logic&amp;Database</title>
     <url>/2020/04/08/COMP0009-Logic-Database/</url>
     <content><![CDATA[<a id="more"></a>]]></content>
@@ -46,14 +57,71 @@
       </tags>
   </entry>
   <entry>
-    <title>COMP0011 Maths&amp;Statistics</title>
-    <url>/2020/04/08/COMP0011-Maths-Statistics/</url>
-    <content><![CDATA[<a id="more"></a>]]></content>
+    <title>First Blog</title>
+    <url>/2019/11/14/First-Blog/</url>
+    <content><![CDATA[<p>Hello World!</p>
+<p>Personal Blog Test!</p>
+<p>Done!</p>
+]]></content>
+      <categories>
+        <category>Hello World!</category>
+      </categories>
+      <tags>
+        <tag>Hello World!</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hexo ERROR Render HTML failed</title>
+    <url>/2020/04/01/Hexo-ERROR-Render-HTML-failed/</url>
+    <content><![CDATA[<h1 id="ERROR-Render-HTML-failed"><a href="#ERROR-Render-HTML-failed" class="headerlink" title="ERROR-Render-HTML-failed"></a>ERROR-Render-HTML-failed</h1><p>Error reported when I entered <code>hexo g</code> to convert md file into HTML file</p>
+<a id="more"></a>
+
+<h2 id="Error"><a href="#Error" class="headerlink" title="Error"></a>Error</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo g</span><br><span class="line">INFO  Start processing</span><br><span class="line">INFO  Files loaded <span class="keyword">in</span> 627 ms</span><br><span class="line">ERROR Render HTML failed: about/index.html</span><br><span class="line">TypeError: Cannot <span class="built_in">read</span> property <span class="string">'replace'</span> of null</span><br><span class="line">    at Hexo.externalLinkFilter (/Users/xiaqiulei/Documents/blog/node_modules/hexo/lib/plugins/filter/after_render/external_link.js:45:15)</span><br><span class="line">    at Hexo.tryCatcher (/Users/xiaqiulei/Documents/blog/node_modules/bluebird/js/release/util.js:16:23)</span><br><span class="line">    at Hexo.&lt;anonymous&gt; (/Users/xiaqiulei/Documents/blog/node_modules/bluebird/js/release/method.js:15:34)</span><br><span class="line">    at /Users/xiaqiulei/Documents/blog/node_modules/hexo/lib/extend/filter.js:60:50</span><br><span class="line">    at tryCatcher (/Users/xiaqiulei/Documents/blog/node_modules/bluebird/js/release/util.js:16:23)</span><br><span class="line">    at Object.gotValue (/Users/xiaqiulei/Documents/blog/node_modules/bluebird/js/release/reduce.js:155:18)</span><br><span class="line">    at Object.gotAccum (/Users/xiaqiulei/Documents/blog/node_modules/bluebird/js/release/reduce.js:144:25)</span><br><span class="line">    at Object.tryCatcher (/Users/xiaqiulei/Documents/blog/node_modules/bluebird/js/release/util.js:16:23)</span><br><span class="line">    at Promise._settlePromiseFromHandler (/Users/xiaqiulei/Documents/blog/node_modules/bluebird/js/release/promise.js:512:31)</span><br><span class="line">    at Promise._settlePromise (/Users/xiaqiulei/Documents/blog/node_modules/bluebird/js/release/promise.js:569:18)</span><br><span class="line">    at Promise._settlePromiseCtx (/Users/xiaqiulei/Documents/blog/node_modules/bluebird/js/release/promise.js:606:10)</span><br><span class="line">    at _drainQueueStep (/Users/xiaqiulei/Documents/blog/node_modules/bluebird/js/release/async.js:142:12)</span><br><span class="line">    at _drainQueue (/Users/xiaqiulei/Documents/blog/node_modules/bluebird/js/release/async.js:131:9)</span><br><span class="line">    at Async._drainQueues (/Users/xiaqiulei/Documents/blog/node_modules/bluebird/js/release/async.js:147:5)</span><br><span class="line">    at Immediate.Async.drainQueues [as _onImmediate] (/Users/xiaqiulei/Documents/blog/node_modules/bluebird/js/release/async.js:17:14)</span><br><span class="line">    at processImmediate (internal/timers.js:439:21)</span><br><span class="line">ERROR Cannot <span class="built_in">read</span> property <span class="string">'replace'</span> of null</span><br><span class="line">TypeError: Cannot <span class="built_in">read</span> property <span class="string">'replace'</span> of null</span><br><span class="line">    at Hexo.externalLinkFilter (/Users/xiaqiulei/Documents/blog/node_modules/hexo/lib/plugins/filter/after_render/external_link.js:45:15)</span><br><span class="line">    at Hexo.tryCatcher (/Users/xiaqiulei/Documents/blog/node_modules/bluebird/js/release/util.js:16:23)</span><br><span class="line">    at Hexo.&lt;anonymous&gt; (/Users/xiaqiulei/Documents/blog/node_modules/bluebird/js/release/method.js:15:34)</span><br><span class="line">    at /Users/xiaqiulei/Documents/blog/node_modules/hexo/lib/extend/filter.js:60:50</span><br><span class="line">    at tryCatcher (/Users/xiaqiulei/Documents/blog/node_modules/bluebird/js/release/util.js:16:23)</span><br><span class="line">    at Object.gotValue (/Users/xiaqiulei/Documents/blog/node_modules/bluebird/js/release/reduce.js:155:18)</span><br><span class="line">    at Object.gotAccum (/Users/xiaqiulei/Documents/blog/node_modules/bluebird/js/release/reduce.js:144:25)</span><br><span class="line">    at Object.tryCatcher (/Users/xiaqiulei/Documents/blog/node_modules/bluebird/js/release/util.js:16:23)</span><br><span class="line">    at Promise._settlePromiseFromHandler (/Users/xiaqiulei/Documents/blog/node_modules/bluebird/js/release/promise.js:512:31)</span><br><span class="line">    at Promise._settlePromise (/Users/xiaqiulei/Documents/blog/node_modules/bluebird/js/release/promise.js:569:18)</span><br><span class="line">    at Promise._settlePromiseCtx (/Users/xiaqiulei/Documents/blog/node_modules/bluebird/js/release/promise.js:606:10)</span><br><span class="line">    at _drainQueueStep (/Users/xiaqiulei/Documents/blog/node_modules/bluebird/js/release/async.js:142:12)</span><br><span class="line">    at _drainQueue (/Users/xiaqiulei/Documents/blog/node_modules/bluebird/js/release/async.js:131:9)</span><br><span class="line">    at Async._drainQueues (/Users/xiaqiulei/Documents/blog/node_modules/bluebird/js/release/async.js:147:5)</span><br><span class="line">    at Immediate.Async.drainQueues [as _onImmediate] (/Users/xiaqiulei/Documents/blog/node_modules/bluebird/js/release/async.js:17:14)</span><br><span class="line">    at processImmediate (internal/timers.js:439:21)</span><br><span class="line">INFO  0 files generated <span class="keyword">in</span> 1.6 s</span><br></pre></td></tr></table></figure>
+
+<h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><ul>
+<li><p>Uninstall the extension of ‘Relative article recommendation’</p>
+</li>
+<li><p>Set the <code>enable</code> into false</p>
+<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">external_link:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">false</span> <span class="comment"># Open external links in new tab</span></span><br><span class="line">  <span class="attr">field:</span> <span class="string">site</span> <span class="comment"># Apply to the whole site</span></span><br><span class="line">  <span class="attr">exclude:</span> <span class="string">'</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+]]></content>
+      <categories>
+        <category>Hexo</category>
+      </categories>
+      <tags>
+        <tag>ERROR</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>LeetCode做题记录</title>
+    <url>/2020/04/23/LeetCode%E5%81%9A%E9%A2%98%E8%AE%B0%E5%BD%95/</url>
+    <content><![CDATA[<a id="more"></a>
+
+<h1 id="205-同构字符串"><a href="#205-同构字符串" class="headerlink" title="205.同构字符串"></a><a href="https://leetcode-cn.com/problems/isomorphic-strings/">205.同构字符串</a></h1><p><u><strong>思路分析</strong></u></p>
+<ul>
+<li><p>我们可以利用一个 HashMap 来处理映射。对于 s 到 t 的映射，我们同时遍历 s 和 t ，假设当前遇到的字母分别是 c1 和 c2 。</p>
+</li>
+<li><p>如果 map[c1] 不存在，那么就将 c1 映射到 c2 ，即 map[c1] = c2。</p>
+</li>
+<li><p>如果 map[c1] 存在，那么就判断 map[c1] 是否等于 c2，也就是验证之前的映射和当前的字母是否相同。</p>
+</li>
+<li><p>对于这道题，我们只需要验证 s - &gt; t 和 t -&gt; s 两个方向即可。如果验证一个方向，是不可以的。</p>
+</li>
+<li><p>举个例子，s = ab, t = cc，如果单看 s -&gt; t ，那么 a -&gt; c, b -&gt; c 是没有问题的。</p>
+</li>
+<li><p>必须再验证 t -&gt; s，此时，c -&gt; a, c -&gt; b，一个字母对应了多个字母，所以不是同构的。代码的话，只需要调用两次上边的代码即可。</p>
+</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">egg 和 add 同构，就意味着下边的映射成立</span><br><span class="line">e -&gt; a</span><br><span class="line">g -&gt; d</span><br><span class="line">也就是将 egg 的 e 换成 a, g 换成 d, 就变成了 add</span><br><span class="line"></span><br><span class="line">同时倒过来也成立</span><br><span class="line">a -&gt; e</span><br><span class="line">d -&gt; g</span><br><span class="line">也就是将 add 的 a 换成 e, d 换成 g, 就变成了 egg</span><br><span class="line"></span><br><span class="line">foo 和 bar 不同构，原因就是映射不唯一</span><br><span class="line">o -&gt; a</span><br><span class="line">o -&gt; r</span><br><span class="line">其中 o 映射到了两个字母</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">isIsomorphic1</span><span class="params">(String s,String t)</span></span>&#123;</span><br><span class="line">        <span class="keyword">return</span> isIsomorphicHelper(s,t) &amp;&amp; isIsomorphicHelper(t,s);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">isIsomorphicHelper</span><span class="params">(String s, String t)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> len = s.length();</span><br><span class="line">        HashMap&lt;Character,Character&gt; map = <span class="keyword">new</span> HashMap&lt;&gt;();</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;len;i++)&#123;</span><br><span class="line">            <span class="keyword">char</span> c1 = s.charAt(i);</span><br><span class="line">            <span class="keyword">char</span> c2 = t.charAt(i);</span><br><span class="line">            <span class="keyword">if</span> (!map.containsKey(c1))&#123;</span><br><span class="line">                map.put(c1,c2);</span><br><span class="line">            &#125;<span class="keyword">else</span> &#123;</span><br><span class="line">                <span class="keyword">if</span> (map.get(c1)!=c2)&#123;</span><br><span class="line">                    <span class="keyword">return</span> <span class="keyword">false</span>;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+
+]]></content>
       <categories>
         <category>Notes</category>
       </categories>
       <tags>
-        <tag>COMP</tag>
+        <tag>LeetCode</tag>
       </tags>
   </entry>
   <entry>
@@ -625,266 +693,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Hexo-PDF</title>
-    <url>/2020/04/13/Hexo-PDF-Test/</url>
-    <content><![CDATA[<p><strong>Uploading PDF files without installing <code>hexo-pdf</code> extension.</strong></p>
-<a id="more"></a>
-
-<p>由于想上传一些PDF文件到博客上，查了下发现有一个<code>hexo-pdf</code>的插件可以很方便的用来潜入PDF文件。但是不知道是插件年久失修还是不支持最新Hexo版本，并不能达到预期效果。所以有了下面<del>简单粗暴</del>的方法。</p>
-<h2 id="修改根目录下的-config-yml文件"><a href="#修改根目录下的-config-yml文件" class="headerlink" title="修改根目录下的_config.yml文件"></a>修改根目录下的_config.yml文件</h2><h3 id="将-config-yml中的post-asset-folder选项置为true"><a href="#将-config-yml中的post-asset-folder选项置为true" class="headerlink" title="将_config.yml中的post_asset_folder选项置为true"></a>将_config.yml中的post_asset_folder选项置为true</h3><figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">post_asset_folder:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure>
-
-<p>关于这个选项的功能说明如下:</p>
-<blockquote>
-<p>当您设置post_asset_folder为true参数后，在建立文件时，Hexo<br> 会自动建立一个与文章同名的文件夹，您可以把与该文章相关的所有资源都放到那个文件夹，如此一来，您便可以更方便的使用资源。</p>
-</blockquote>
-<h3 id="然后新建一篇文章"><a href="#然后新建一篇文章" class="headerlink" title="然后新建一篇文章"></a>然后新建一篇文章</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new &lt;article_name&gt;</span><br></pre></td></tr></table></figure>
-
-<blockquote>
-<p>由于上一步已经将post_asset_folder选项设为了true<br>所以这一步新建文章时会创建一个md文件和一个同名的文件夹<br>为了方便叙述，我用test作为文件和文件夹名</p>
-</blockquote>
-<h3 id="编辑Markdown文件"><a href="#编辑Markdown文件" class="headerlink" title="编辑Markdown文件"></a>编辑Markdown文件</h3><blockquote>
-<p>用Typora或者其他编辑器打开test.md<br>test.md文件中加入如下代码</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">object</span> <span class="attr">data</span>=<span class="string">"./Hello.pdf"</span> <span class="attr">type</span>=<span class="string">"application/pdf"</span> <span class="attr">width</span>=<span class="string">"100%"</span> <span class="attr">height</span>=<span class="string">"877px"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">object</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<p>关于这句代码简单的解释<br>data表示你要上传的pdf的路径,使用相对路径，将你要上传的pdf放入第二步生成的test文件夹</p>
-</blockquote>
-<h2 id="效果"><a href="#效果" class="headerlink" title="效果"></a>效果</h2><br>
-
-<object data="./Hello.pdf" type="application/pdf" width="100%" height="877px">
-</object>
-<br>
-
-<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><p><a href="https://blog.csdn.net/qappleh/article/details/80250492">前端预览PDF总结</a></p>
-<p><a href="http://miracle778.site/pdf-test/pdf-test.html">hexo中插入pdf解决方法</a></p>
-]]></content>
-      <categories>
-        <category>Hexo</category>
-      </categories>
-      <tags>
-        <tag>configuration</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>First Blog</title>
-    <url>/2019/11/14/First-Blog/</url>
-    <content><![CDATA[<p>Hello World!</p>
-<p>Personal Blog Test!</p>
-<p>Done!</p>
-]]></content>
-      <categories>
-        <category>Hello World!</category>
-      </categories>
-      <tags>
-        <tag>Hello World!</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Hexo ERROR Render HTML failed</title>
-    <url>/2020/04/01/Hexo-ERROR-Render-HTML-failed/</url>
-    <content><![CDATA[<h1 id="ERROR-Render-HTML-failed"><a href="#ERROR-Render-HTML-failed" class="headerlink" title="ERROR-Render-HTML-failed"></a>ERROR-Render-HTML-failed</h1><p>Error reported when I entered <code>hexo g</code> to convert md file into HTML file</p>
-<a id="more"></a>
-
-<h2 id="Error"><a href="#Error" class="headerlink" title="Error"></a>Error</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo g</span><br><span class="line">INFO  Start processing</span><br><span class="line">INFO  Files loaded <span class="keyword">in</span> 627 ms</span><br><span class="line">ERROR Render HTML failed: about/index.html</span><br><span class="line">TypeError: Cannot <span class="built_in">read</span> property <span class="string">'replace'</span> of null</span><br><span class="line">    at Hexo.externalLinkFilter (/Users/xiaqiulei/Documents/blog/node_modules/hexo/lib/plugins/filter/after_render/external_link.js:45:15)</span><br><span class="line">    at Hexo.tryCatcher (/Users/xiaqiulei/Documents/blog/node_modules/bluebird/js/release/util.js:16:23)</span><br><span class="line">    at Hexo.&lt;anonymous&gt; (/Users/xiaqiulei/Documents/blog/node_modules/bluebird/js/release/method.js:15:34)</span><br><span class="line">    at /Users/xiaqiulei/Documents/blog/node_modules/hexo/lib/extend/filter.js:60:50</span><br><span class="line">    at tryCatcher (/Users/xiaqiulei/Documents/blog/node_modules/bluebird/js/release/util.js:16:23)</span><br><span class="line">    at Object.gotValue (/Users/xiaqiulei/Documents/blog/node_modules/bluebird/js/release/reduce.js:155:18)</span><br><span class="line">    at Object.gotAccum (/Users/xiaqiulei/Documents/blog/node_modules/bluebird/js/release/reduce.js:144:25)</span><br><span class="line">    at Object.tryCatcher (/Users/xiaqiulei/Documents/blog/node_modules/bluebird/js/release/util.js:16:23)</span><br><span class="line">    at Promise._settlePromiseFromHandler (/Users/xiaqiulei/Documents/blog/node_modules/bluebird/js/release/promise.js:512:31)</span><br><span class="line">    at Promise._settlePromise (/Users/xiaqiulei/Documents/blog/node_modules/bluebird/js/release/promise.js:569:18)</span><br><span class="line">    at Promise._settlePromiseCtx (/Users/xiaqiulei/Documents/blog/node_modules/bluebird/js/release/promise.js:606:10)</span><br><span class="line">    at _drainQueueStep (/Users/xiaqiulei/Documents/blog/node_modules/bluebird/js/release/async.js:142:12)</span><br><span class="line">    at _drainQueue (/Users/xiaqiulei/Documents/blog/node_modules/bluebird/js/release/async.js:131:9)</span><br><span class="line">    at Async._drainQueues (/Users/xiaqiulei/Documents/blog/node_modules/bluebird/js/release/async.js:147:5)</span><br><span class="line">    at Immediate.Async.drainQueues [as _onImmediate] (/Users/xiaqiulei/Documents/blog/node_modules/bluebird/js/release/async.js:17:14)</span><br><span class="line">    at processImmediate (internal/timers.js:439:21)</span><br><span class="line">ERROR Cannot <span class="built_in">read</span> property <span class="string">'replace'</span> of null</span><br><span class="line">TypeError: Cannot <span class="built_in">read</span> property <span class="string">'replace'</span> of null</span><br><span class="line">    at Hexo.externalLinkFilter (/Users/xiaqiulei/Documents/blog/node_modules/hexo/lib/plugins/filter/after_render/external_link.js:45:15)</span><br><span class="line">    at Hexo.tryCatcher (/Users/xiaqiulei/Documents/blog/node_modules/bluebird/js/release/util.js:16:23)</span><br><span class="line">    at Hexo.&lt;anonymous&gt; (/Users/xiaqiulei/Documents/blog/node_modules/bluebird/js/release/method.js:15:34)</span><br><span class="line">    at /Users/xiaqiulei/Documents/blog/node_modules/hexo/lib/extend/filter.js:60:50</span><br><span class="line">    at tryCatcher (/Users/xiaqiulei/Documents/blog/node_modules/bluebird/js/release/util.js:16:23)</span><br><span class="line">    at Object.gotValue (/Users/xiaqiulei/Documents/blog/node_modules/bluebird/js/release/reduce.js:155:18)</span><br><span class="line">    at Object.gotAccum (/Users/xiaqiulei/Documents/blog/node_modules/bluebird/js/release/reduce.js:144:25)</span><br><span class="line">    at Object.tryCatcher (/Users/xiaqiulei/Documents/blog/node_modules/bluebird/js/release/util.js:16:23)</span><br><span class="line">    at Promise._settlePromiseFromHandler (/Users/xiaqiulei/Documents/blog/node_modules/bluebird/js/release/promise.js:512:31)</span><br><span class="line">    at Promise._settlePromise (/Users/xiaqiulei/Documents/blog/node_modules/bluebird/js/release/promise.js:569:18)</span><br><span class="line">    at Promise._settlePromiseCtx (/Users/xiaqiulei/Documents/blog/node_modules/bluebird/js/release/promise.js:606:10)</span><br><span class="line">    at _drainQueueStep (/Users/xiaqiulei/Documents/blog/node_modules/bluebird/js/release/async.js:142:12)</span><br><span class="line">    at _drainQueue (/Users/xiaqiulei/Documents/blog/node_modules/bluebird/js/release/async.js:131:9)</span><br><span class="line">    at Async._drainQueues (/Users/xiaqiulei/Documents/blog/node_modules/bluebird/js/release/async.js:147:5)</span><br><span class="line">    at Immediate.Async.drainQueues [as _onImmediate] (/Users/xiaqiulei/Documents/blog/node_modules/bluebird/js/release/async.js:17:14)</span><br><span class="line">    at processImmediate (internal/timers.js:439:21)</span><br><span class="line">INFO  0 files generated <span class="keyword">in</span> 1.6 s</span><br></pre></td></tr></table></figure>
-
-<h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><ul>
-<li><p>Uninstall the extension of ‘Relative article recommendation’</p>
-</li>
-<li><p>Set the <code>enable</code> into false</p>
-<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">external_link:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">false</span> <span class="comment"># Open external links in new tab</span></span><br><span class="line">  <span class="attr">field:</span> <span class="string">site</span> <span class="comment"># Apply to the whole site</span></span><br><span class="line">  <span class="attr">exclude:</span> <span class="string">'</span></span><br></pre></td></tr></table></figure></li>
-</ul>
-]]></content>
-      <categories>
-        <category>Hexo</category>
-      </categories>
-      <tags>
-        <tag>ERROR</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Quarantine in Shanghai</title>
-    <url>/2020/04/07/Quarantine-in-Shanghai/</url>
-    <content><![CDATA[<h1 id="隔离记录"><a href="#隔离记录" class="headerlink" title="隔离记录"></a>隔离记录</h1><a id="more"></a>
-
-<h2 id="Day-1"><a href="#Day-1" class="headerlink" title="Day 1"></a>Day 1</h2><p><img src="https://raw.githubusercontent.com/yifanzhang13/yifanzhang13.github.io/master/images/QuarantinePics/day1.JPG" alt="day1"></p>
-<p>早上温度：36.9摄氏度</p>
-<p>下午温度：36.1摄氏度</p>
-<h2 id="Day-2"><a href="#Day-2" class="headerlink" title="Day 2"></a>Day 2</h2><p><img src="https://raw.githubusercontent.com/yifanzhang13/yifanzhang13.github.io/master/images/QuarantinePics/day2.JPG" alt="day2"></p>
-<p>早上温度：36.6摄氏度</p>
-<p>下午温度：36.4摄氏度</p>
-<h2 id="Day-3"><a href="#Day-3" class="headerlink" title="Day 3 *"></a>Day 3 *</h2><p><img src="https://raw.githubusercontent.com/yifanzhang13/yifanzhang13.github.io/master/images/QuarantinePics/day3.JPG" alt="day3"></p>
-<p>早上温度：36.0摄氏度</p>
-<p>下午温度：36.5摄氏度</p>
-<h2 id="Day-4"><a href="#Day-4" class="headerlink" title="Day 4"></a>Day 4</h2><p><img src="https://raw.githubusercontent.com/yifanzhang13/yifanzhang13.github.io/master/images/QuarantinePics/day4.JPG" alt="day4"></p>
-<p>上午温度：36.0摄氏度</p>
-<p>下午温度：36.5摄氏度</p>
-<h2 id="Day-5"><a href="#Day-5" class="headerlink" title="Day 5 *"></a>Day 5 *</h2><p><img src="https://raw.githubusercontent.com/yifanzhang13/yifanzhang13.github.io/master/images/QuarantinePics/day5.JPG" alt=""></p>
-<p>上午温度：36.0摄氏度</p>
-<p>下午温度：36.4摄氏度</p>
-<h2 id="Day-6"><a href="#Day-6" class="headerlink" title="Day 6"></a>Day 6</h2><p><img src="https://raw.githubusercontent.com/yifanzhang13/yifanzhang13.github.io/master/images/QuarantinePics/day6.JPG" alt=""></p>
-<p>上午温度：36.5摄氏度</p>
-<p>下午温度：36.9摄氏度</p>
-<h2 id="Day-7"><a href="#Day-7" class="headerlink" title="Day 7 *"></a>Day 7 *</h2><p><img src="https://raw.githubusercontent.com/yifanzhang13/yifanzhang13.github.io/master/images/QuarantinePics/day7.JPG" alt=""></p>
-<p>上午温度：36.4摄氏度</p>
-<p>下午温度：36.7摄氏度</p>
-<h2 id="Day-8"><a href="#Day-8" class="headerlink" title="Day 8"></a>Day 8</h2><p><img src="https://raw.githubusercontent.com/yifanzhang13/yifanzhang13.github.io/master/images/QuarantinePics/day8.JPG" alt=""></p>
-<p>上午温度：36.3摄氏度</p>
-<p>下午温度：36.7摄氏度</p>
-<h2 id="Day-9"><a href="#Day-9" class="headerlink" title="Day 9 *"></a>Day 9 *</h2><p><img src="https://raw.githubusercontent.com/yifanzhang13/yifanzhang13.github.io/master/images/QuarantinePics/day9.JPG" alt=""></p>
-<p>上午温度：36.3摄氏度</p>
-<p>下午温度：36.6摄氏度</p>
-<h2 id="Day-10"><a href="#Day-10" class="headerlink" title="Day 10 *"></a>Day 10 *</h2><p><img src="https://raw.githubusercontent.com/yifanzhang13/yifanzhang13.github.io/master/images/QuarantinePics/day10.JPG" alt=""></p>
-<p>上午温度：36.2摄氏度</p>
-<p>下午温度：36.7摄氏度</p>
-<h2 id="Day-11"><a href="#Day-11" class="headerlink" title="Day 11 *"></a>Day 11 *</h2><p><img src="https://raw.githubusercontent.com/yifanzhang13/yifanzhang13.github.io/master/images/QuarantinePics/day11.JPG" alt=""></p>
-<p>上午温度：36.4摄氏度</p>
-<p>下午温度：36.5摄氏度</p>
-<h2 id="Day-12"><a href="#Day-12" class="headerlink" title="Day 12"></a>Day 12</h2><p><img src="https://raw.githubusercontent.com/yifanzhang13/yifanzhang13.github.io/master/images/QuarantinePics/day12.JPG" alt=""></p>
-<p>上午温度：36.1摄氏度</p>
-<p>下午温度：36.5摄氏度</p>
-<h2 id="Day-13"><a href="#Day-13" class="headerlink" title="Day 13"></a>Day 13</h2><p><img src="https://raw.githubusercontent.com/yifanzhang13/yifanzhang13.github.io/master/images/QuarantinePics/day13.JPG" alt=""></p>
-<p>上午温度：36.1摄氏度</p>
-<p>下午温度：36.8摄氏度</p>
-<h2 id="Day-14"><a href="#Day-14" class="headerlink" title="Day 14"></a>Day 14</h2><p><img src="https://raw.githubusercontent.com/yifanzhang13/yifanzhang13.github.io/master/images/QuarantinePics/day14.JPG" alt=""></p>
-<p>上午温度：36.2摄氏度</p>
-<p>下午温度：36.5摄氏度</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>LeetCode做题记录</title>
-    <url>/2020/04/23/LeetCode%E5%81%9A%E9%A2%98%E8%AE%B0%E5%BD%95/</url>
-    <content><![CDATA[<a id="more"></a>
-
-<h1 id="205-同构字符串"><a href="#205-同构字符串" class="headerlink" title="205.同构字符串"></a><a href="https://leetcode-cn.com/problems/isomorphic-strings/">205.同构字符串</a></h1><p><u><strong>思路分析</strong></u></p>
-<ul>
-<li><p>我们可以利用一个 HashMap 来处理映射。对于 s 到 t 的映射，我们同时遍历 s 和 t ，假设当前遇到的字母分别是 c1 和 c2 。</p>
-</li>
-<li><p>如果 map[c1] 不存在，那么就将 c1 映射到 c2 ，即 map[c1] = c2。</p>
-</li>
-<li><p>如果 map[c1] 存在，那么就判断 map[c1] 是否等于 c2，也就是验证之前的映射和当前的字母是否相同。</p>
-</li>
-<li><p>对于这道题，我们只需要验证 s - &gt; t 和 t -&gt; s 两个方向即可。如果验证一个方向，是不可以的。</p>
-</li>
-<li><p>举个例子，s = ab, t = cc，如果单看 s -&gt; t ，那么 a -&gt; c, b -&gt; c 是没有问题的。</p>
-</li>
-<li><p>必须再验证 t -&gt; s，此时，c -&gt; a, c -&gt; b，一个字母对应了多个字母，所以不是同构的。代码的话，只需要调用两次上边的代码即可。</p>
-</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">egg 和 add 同构，就意味着下边的映射成立</span><br><span class="line">e -&gt; a</span><br><span class="line">g -&gt; d</span><br><span class="line">也就是将 egg 的 e 换成 a, g 换成 d, 就变成了 add</span><br><span class="line"></span><br><span class="line">同时倒过来也成立</span><br><span class="line">a -&gt; e</span><br><span class="line">d -&gt; g</span><br><span class="line">也就是将 add 的 a 换成 e, d 换成 g, 就变成了 egg</span><br><span class="line"></span><br><span class="line">foo 和 bar 不同构，原因就是映射不唯一</span><br><span class="line">o -&gt; a</span><br><span class="line">o -&gt; r</span><br><span class="line">其中 o 映射到了两个字母</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">isIsomorphic1</span><span class="params">(String s,String t)</span></span>&#123;</span><br><span class="line">        <span class="keyword">return</span> isIsomorphicHelper(s,t) &amp;&amp; isIsomorphicHelper(t,s);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">isIsomorphicHelper</span><span class="params">(String s, String t)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> len = s.length();</span><br><span class="line">        HashMap&lt;Character,Character&gt; map = <span class="keyword">new</span> HashMap&lt;&gt;();</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;len;i++)&#123;</span><br><span class="line">            <span class="keyword">char</span> c1 = s.charAt(i);</span><br><span class="line">            <span class="keyword">char</span> c2 = t.charAt(i);</span><br><span class="line">            <span class="keyword">if</span> (!map.containsKey(c1))&#123;</span><br><span class="line">                map.put(c1,c2);</span><br><span class="line">            &#125;<span class="keyword">else</span> &#123;</span><br><span class="line">                <span class="keyword">if</span> (map.get(c1)!=c2)&#123;</span><br><span class="line">                    <span class="keyword">return</span> <span class="keyword">false</span>;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
-
-]]></content>
-      <categories>
-        <category>Notes</category>
-      </categories>
-      <tags>
-        <tag>LeetCode</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Usage Of Volatile In Java</title>
-    <url>/2019/12/02/Usage-Of-Volatile-In-Java/</url>
-    <content><![CDATA[<p>Volatile用在多线程，同步变量。 线程为了提高效率，将某成员变量(如A)拷贝了一份（如B），线程中对A的访问其实访问的是B。只在某些动作时才进行A和B的同步。因此存在A和B不一致的情况。volatile就是用来避免这种情况的。volatile告诉jvm， 它所修饰的变量不保留拷贝，直接访问主内存中的（也就是上面说的A)</p>
-<p>在Java内存模型中，有main memory，每个线程也有自己的memory (例如寄存器)。为了性能，一个线程会在自己的memory中保持要访问的变量的副本。这样就会出现同一个变量在某个瞬间，在一个线程的memory中的值可能与另外一个线程memory中的值，或者main memory中的值不一致的情况。</p>
-<a id="more"></a>
-
-
-
-<p>一个变量声明为volatile，就意味着这个变量是随时会被其他线程修改的，因此不能将它cache在线程memory中。以下例子展现了volatile的作用：</p>
-<p>public class StoppableTask extends Thread {  </p>
-<p>  private volatile boolean pleaseStop;  </p>
-<p>  public void run() {  </p>
-<pre><code>while (!pleaseStop) {  
-
- // do some stuff...  
-
-}  </code></pre><p> }  </p>
-<p>  public void tellMeToStop() {  </p>
-<p>   pleaseStop = true;  </p>
-<p>  }  </p>
-<p>}  </p>
-<p>假如pleaseStop没有被声明为volatile，线程执行run的时候检查的是自己的副本，就不能及时得知其他线程已经调用tellMeToStop()修改了pleaseStop的值。</p>
-<p>Volatile一般情况下不能代替sychronized，因为volatile不能保证操作的原子性，即使只是i++，实际上也是由多个原子操作组成：read i; inc; write i，假如多个线程同时执行i++，volatile只能保证他们操作的i是同一块内存，但依然可能出现写入脏数据的情况。如果配合Java 5增加的atomic wrapper classes，对它们的increase之类的操作就不需要sychronized。</p>
-<p>Reference：<br><a href="http://www.javamex.com/tutorials/synchronization_volatile.shtml">http://www.javamex.com/tutorials/synchronization_volatile.shtml</a><br><a href="http://www.javamex.com/tutorials/synchronization_volatile_java_5.shtml">http://www.javamex.com/tutorials/synchronization_volatile_java_5.shtml</a><br><a href="http://www.ibm.com/developerworks/cn/java/j-jtp06197.html">http://www.ibm.com/developerworks/cn/java/j-jtp06197.html</a><br>恐怕比较一下volatile和synchronized的不同是最容易解释清楚的。volatile是变量修饰符，而synchronized则作用于一段代码或方法；看如下三句get代码：</p>
-<p>int i1;<br>int geti1() {return i1;}<br>volatile int i2;<br>int geti2()<br>{return i2;}<br>int i3;<br>synchronized int geti3() {return i3;}<br>　　geti1()  </p>
-<p>得到存储在当前线程中i1的数值。多个线程有多个i1变量拷贝，而且这些i1之间可以互不相同。换句话说，另一个线程可能已经改变了它线程内的i1值，而这个值可以和当前线程中的i1值不相同。事实上，Java有个思想叫“主”内存区域，这里存放了变量目前的“准确值”。每个线程可以有它自己的变量拷贝，而这个变量拷贝值可以和“主”内存区域里存放的不同。因此实际上存在一种可能：“主”内存区域里的i1值是1，线程1里的i1值是2，线程2里的i1值是3——这在线程1和线程2都改变了它们各自的i1值，而且这个改变还没来得及传递给“主”内存区域或其他线程时就会发生。<br>　　而 geti2()得到的是“主”内存区域的i2数值。用volatile修饰后的变量不允许有不同于“主”内存区域的变量拷贝。换句话说，一个变量经 volatile修饰后在所有线程中必须是同步的；任何线程中改变了它的值，所有其他线程立即获取到了相同的值。理所当然的，volatile修饰的变量存取时比一般变量消耗的资源要多一点，因为线程有它自己的变量拷贝更为高效。<br>　　既然volatile关键字已经实现了线程间数据同步，又要 synchronized干什么呢？呵呵，它们之间有两点不同。首先，synchronized获得并释放监视器——如果两个线程使用了同一个对象锁，监视器能强制保证代码块同时只被一个线程所执行——这是众所周知的事实。但是，synchronized也同步内存：事实上，synchronized在“ 主”内存区域同步整个线程的内存。因此，执行geti3()方法做了如下几步：</p>
-<pre><code>线程请求获得监视this对象的对象锁（假设未被锁，否则线程等待直到锁释放）
-线程内存的数据被消除，从“主”内存区域中读入（Java虚拟机能优化此步。。。[后面的不知道怎么表达,汗]）
-代码块被执行
-对于变量的任何改变现在可以安全地写到“主”内存区域中（不过geti3()方法不会改变变量值）
-线程释放监视this对象的对象锁
-　　因此volatile只是在线程内存和“主”内存间同步某个变量的值，而synchronized通过锁定和解锁某个监视器同步所有变量的值。显然synchronized要比volatile消耗更多资源。
-volatile关键字相信了解Java多线程的读者都很清楚它的作用。volatile关键字用于声明简单类型变量，如int、float、 boolean等数据类型。如果这些简单数据类型声明为volatile，对它们的操作就会变成原子级别的。但这有一定的限制。例如，下面的例子中的n就不是原子级别的：</code></pre><p>package  mythread;  </p>
-<p>public   class  JoinThread  extends  Thread<br>{<br>     public   static volatile int  n  =   0 ;<br>    public   void  run()<br>    {<br>         for  ( int  i  =   0 ; i  &lt;   10 ; i ++ )<br>             try<br>        {<br>                n  =  n  +   1 ;<br>                sleep( 3 );  //  为了使运行结果更随机，延迟3毫秒   </p>
-<pre><code>        }  
-         catch  (Exception e)  
-        {  
-        }  
-}  
-
- public   static   void  main(String[] args)  throws  Exception  
-{  
-
-    Thread threads[]  =   new  Thread[ 100 ];  
-     for  ( int  i  =   0 ; i  &lt;  threads.length; i ++ )  
-         //  建立100个线程   
-        threads[i]  =   new  JoinThread();  
-     for  ( int  i  =   0 ; i  &lt;  threads.length; i ++ )  
-         //  运行刚才建立的100个线程   
-        threads[i].start();  
-     for  ( int  i  =   0 ; i  &lt;  threads.length; i ++ )  
-         //  100个线程都执行完后继续   
-        threads[i].join();  
-    System.out.println( &quot; n= &quot;   +  JoinThread.n);  
-}  </code></pre><p>}   </p>
-<p>如果对n的操作是原子级别的，最后输出的结果应该为n=1000，而在执行上面积代码时，很多时侯输出的n都小于1000，这说明n=n+1不是原子级别的操作。原因是声明为volatile的简单变量如果当前值由该变量以前的值相关，那么volatile关键字不起作用，也就是说如下的表达式都不是原子操作：</p>
-<p>n  =  n  +   1 ;<br>n ++ ; </p>
-<p>如果要想使这种情况变成原子操作，需要使用synchronized关键字，如上的代码可以改成如下的形式：</p>
-<p>package  mythread;  </p>
-<p>public   class  JoinThread  extends  Thread<br>{<br>     public   static int  n  =   0 ;  </p>
-<pre><code> public static   synchronized   void  inc()  
-{  
-    n ++ ;  
-}  
- public   void  run()  
-{  
-     for  ( int  i  =   0 ; i  &lt;   10 ; i ++ )  
-         try   
-        {  
-            inc();  //  n = n + 1 改成了 inc();   
-            sleep( 3 );  //  为了使运行结果更随机，延迟3毫秒   
-
-        }  
-         catch  (Exception e)  
-        {  
-        }  
-}  
-
- public   static   void  main(String[] args)  throws  Exception  
-{  
-
-    Thread threads[]  =   new  Thread[ 100 ];  
-     for  ( int  i  =   0 ; i  &lt;  threads.length; i ++ )  
-         //  建立100个线程   
-        threads[i]  =   new  JoinThread();  
-     for  ( int  i  =   0 ; i  &lt;  threads.length; i ++ )  
-         //  运行刚才建立的100个线程   
-        threads[i].start();  
-     for  ( int  i  =   0 ; i  &lt;  threads.length; i ++ )  
-         //  100个线程都执行完后继续   
-        threads[i].join();  
-    System.out.println( &quot; n= &quot;   +  JoinThread.n);  
-}  </code></pre><p>}   </p>
-<p>上面的代码将n=n+1改成了inc()，其中inc方法使用了synchronized关键字进行方法同步。因此，在使用volatile关键字时要慎重，并不是只要简单类型变量使用volatile修饰，对这个变量的所有操作都是原来操作，当变量的值由自身的上一个决定时，如n=n+1、n++ 等，volatile关键字将失效，只有当变量的值和自身上一个值无关时对该变量的操作才是原子级别的，如n = m + 1，这个就是原级别的。所以在使用volatile关键时一定要谨慎，如果自己没有把握，可以使用synchronized来代替volatile。</p>
-]]></content>
-      <categories>
-        <category>java</category>
-      </categories>
-      <tags>
-        <tag>concurrency</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>NexT Configuration</title>
     <url>/2020/04/02/NexT-Theme-Decoration/</url>
     <content><![CDATA[<h1 id="NexT主题配置-Version-7-8-0"><a href="#NexT主题配置-Version-7-8-0" class="headerlink" title="NexT主题配置(Version 7.8.0)"></a>NexT主题配置(Version 7.8.0)</h1><h2 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h2><h3 id="声明"><a href="#声明" class="headerlink" title="声明"></a>声明</h3><p>本教程面向Hexo NexT主题v7.3.0以上版本，兼容最新v7.8.0版本。</p>
@@ -1052,6 +860,198 @@ volatile关键字相信了解Java多线程的读者都很清楚它的作用。vo
       </categories>
       <tags>
         <tag>configuration</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Quarantine in Shanghai</title>
+    <url>/2020/04/07/Quarantine-in-Shanghai/</url>
+    <content><![CDATA[<h1 id="隔离记录"><a href="#隔离记录" class="headerlink" title="隔离记录"></a>隔离记录</h1><a id="more"></a>
+
+<h2 id="Day-1"><a href="#Day-1" class="headerlink" title="Day 1"></a>Day 1</h2><p><img src="https://raw.githubusercontent.com/yifanzhang13/yifanzhang13.github.io/master/images/QuarantinePics/day1.JPG" alt="day1"></p>
+<p>早上温度：36.9摄氏度</p>
+<p>下午温度：36.1摄氏度</p>
+<h2 id="Day-2"><a href="#Day-2" class="headerlink" title="Day 2"></a>Day 2</h2><p><img src="https://raw.githubusercontent.com/yifanzhang13/yifanzhang13.github.io/master/images/QuarantinePics/day2.JPG" alt="day2"></p>
+<p>早上温度：36.6摄氏度</p>
+<p>下午温度：36.4摄氏度</p>
+<h2 id="Day-3"><a href="#Day-3" class="headerlink" title="Day 3 *"></a>Day 3 *</h2><p><img src="https://raw.githubusercontent.com/yifanzhang13/yifanzhang13.github.io/master/images/QuarantinePics/day3.JPG" alt="day3"></p>
+<p>早上温度：36.0摄氏度</p>
+<p>下午温度：36.5摄氏度</p>
+<h2 id="Day-4"><a href="#Day-4" class="headerlink" title="Day 4"></a>Day 4</h2><p><img src="https://raw.githubusercontent.com/yifanzhang13/yifanzhang13.github.io/master/images/QuarantinePics/day4.JPG" alt="day4"></p>
+<p>上午温度：36.0摄氏度</p>
+<p>下午温度：36.5摄氏度</p>
+<h2 id="Day-5"><a href="#Day-5" class="headerlink" title="Day 5 *"></a>Day 5 *</h2><p><img src="https://raw.githubusercontent.com/yifanzhang13/yifanzhang13.github.io/master/images/QuarantinePics/day5.JPG" alt=""></p>
+<p>上午温度：36.0摄氏度</p>
+<p>下午温度：36.4摄氏度</p>
+<h2 id="Day-6"><a href="#Day-6" class="headerlink" title="Day 6"></a>Day 6</h2><p><img src="https://raw.githubusercontent.com/yifanzhang13/yifanzhang13.github.io/master/images/QuarantinePics/day6.JPG" alt=""></p>
+<p>上午温度：36.5摄氏度</p>
+<p>下午温度：36.9摄氏度</p>
+<h2 id="Day-7"><a href="#Day-7" class="headerlink" title="Day 7 *"></a>Day 7 *</h2><p><img src="https://raw.githubusercontent.com/yifanzhang13/yifanzhang13.github.io/master/images/QuarantinePics/day7.JPG" alt=""></p>
+<p>上午温度：36.4摄氏度</p>
+<p>下午温度：36.7摄氏度</p>
+<h2 id="Day-8"><a href="#Day-8" class="headerlink" title="Day 8"></a>Day 8</h2><p><img src="https://raw.githubusercontent.com/yifanzhang13/yifanzhang13.github.io/master/images/QuarantinePics/day8.JPG" alt=""></p>
+<p>上午温度：36.3摄氏度</p>
+<p>下午温度：36.7摄氏度</p>
+<h2 id="Day-9"><a href="#Day-9" class="headerlink" title="Day 9 *"></a>Day 9 *</h2><p><img src="https://raw.githubusercontent.com/yifanzhang13/yifanzhang13.github.io/master/images/QuarantinePics/day9.JPG" alt=""></p>
+<p>上午温度：36.3摄氏度</p>
+<p>下午温度：36.6摄氏度</p>
+<h2 id="Day-10"><a href="#Day-10" class="headerlink" title="Day 10 *"></a>Day 10 *</h2><p><img src="https://raw.githubusercontent.com/yifanzhang13/yifanzhang13.github.io/master/images/QuarantinePics/day10.JPG" alt=""></p>
+<p>上午温度：36.2摄氏度</p>
+<p>下午温度：36.7摄氏度</p>
+<h2 id="Day-11"><a href="#Day-11" class="headerlink" title="Day 11 *"></a>Day 11 *</h2><p><img src="https://raw.githubusercontent.com/yifanzhang13/yifanzhang13.github.io/master/images/QuarantinePics/day11.JPG" alt=""></p>
+<p>上午温度：36.4摄氏度</p>
+<p>下午温度：36.5摄氏度</p>
+<h2 id="Day-12"><a href="#Day-12" class="headerlink" title="Day 12"></a>Day 12</h2><p><img src="https://raw.githubusercontent.com/yifanzhang13/yifanzhang13.github.io/master/images/QuarantinePics/day12.JPG" alt=""></p>
+<p>上午温度：36.1摄氏度</p>
+<p>下午温度：36.5摄氏度</p>
+<h2 id="Day-13"><a href="#Day-13" class="headerlink" title="Day 13"></a>Day 13</h2><p><img src="https://raw.githubusercontent.com/yifanzhang13/yifanzhang13.github.io/master/images/QuarantinePics/day13.JPG" alt=""></p>
+<p>上午温度：36.1摄氏度</p>
+<p>下午温度：36.8摄氏度</p>
+<h2 id="Day-14"><a href="#Day-14" class="headerlink" title="Day 14"></a>Day 14</h2><p><img src="https://raw.githubusercontent.com/yifanzhang13/yifanzhang13.github.io/master/images/QuarantinePics/day14.JPG" alt=""></p>
+<p>上午温度：36.2摄氏度</p>
+<p>下午温度：36.5摄氏度</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>Hexo-PDF</title>
+    <url>/2020/04/13/Hexo-PDF-Test/</url>
+    <content><![CDATA[<p><strong>Uploading PDF files without installing <code>hexo-pdf</code> extension.</strong></p>
+<a id="more"></a>
+
+<p>由于想上传一些PDF文件到博客上，查了下发现有一个<code>hexo-pdf</code>的插件可以很方便的用来潜入PDF文件。但是不知道是插件年久失修还是不支持最新Hexo版本，并不能达到预期效果。所以有了下面<del>简单粗暴</del>的方法。</p>
+<h2 id="修改根目录下的-config-yml文件"><a href="#修改根目录下的-config-yml文件" class="headerlink" title="修改根目录下的_config.yml文件"></a>修改根目录下的_config.yml文件</h2><h3 id="将-config-yml中的post-asset-folder选项置为true"><a href="#将-config-yml中的post-asset-folder选项置为true" class="headerlink" title="将_config.yml中的post_asset_folder选项置为true"></a>将_config.yml中的post_asset_folder选项置为true</h3><figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">post_asset_folder:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure>
+
+<p>关于这个选项的功能说明如下:</p>
+<blockquote>
+<p>当您设置post_asset_folder为true参数后，在建立文件时，Hexo<br> 会自动建立一个与文章同名的文件夹，您可以把与该文章相关的所有资源都放到那个文件夹，如此一来，您便可以更方便的使用资源。</p>
+</blockquote>
+<h3 id="然后新建一篇文章"><a href="#然后新建一篇文章" class="headerlink" title="然后新建一篇文章"></a>然后新建一篇文章</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new &lt;article_name&gt;</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>由于上一步已经将post_asset_folder选项设为了true<br>所以这一步新建文章时会创建一个md文件和一个同名的文件夹<br>为了方便叙述，我用test作为文件和文件夹名</p>
+</blockquote>
+<h3 id="编辑Markdown文件"><a href="#编辑Markdown文件" class="headerlink" title="编辑Markdown文件"></a>编辑Markdown文件</h3><blockquote>
+<p>用Typora或者其他编辑器打开test.md<br>test.md文件中加入如下代码</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">object</span> <span class="attr">data</span>=<span class="string">"./Hello.pdf"</span> <span class="attr">type</span>=<span class="string">"application/pdf"</span> <span class="attr">width</span>=<span class="string">"100%"</span> <span class="attr">height</span>=<span class="string">"877px"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">object</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>关于这句代码简单的解释<br>data表示你要上传的pdf的路径,使用相对路径，将你要上传的pdf放入第二步生成的test文件夹</p>
+</blockquote>
+<h2 id="效果"><a href="#效果" class="headerlink" title="效果"></a>效果</h2><br>
+
+<object data="./Hello.pdf" type="application/pdf" width="100%" height="877px">
+</object>
+<br>
+
+<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><p><a href="https://blog.csdn.net/qappleh/article/details/80250492">前端预览PDF总结</a></p>
+<p><a href="http://miracle778.site/pdf-test/pdf-test.html">hexo中插入pdf解决方法</a></p>
+]]></content>
+      <categories>
+        <category>Hexo</category>
+      </categories>
+      <tags>
+        <tag>configuration</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Usage Of Volatile In Java</title>
+    <url>/2019/12/02/Usage-Of-Volatile-In-Java/</url>
+    <content><![CDATA[<p>Volatile用在多线程，同步变量。 线程为了提高效率，将某成员变量(如A)拷贝了一份（如B），线程中对A的访问其实访问的是B。只在某些动作时才进行A和B的同步。因此存在A和B不一致的情况。volatile就是用来避免这种情况的。volatile告诉jvm， 它所修饰的变量不保留拷贝，直接访问主内存中的（也就是上面说的A)</p>
+<p>在Java内存模型中，有main memory，每个线程也有自己的memory (例如寄存器)。为了性能，一个线程会在自己的memory中保持要访问的变量的副本。这样就会出现同一个变量在某个瞬间，在一个线程的memory中的值可能与另外一个线程memory中的值，或者main memory中的值不一致的情况。</p>
+<a id="more"></a>
+
+
+
+<p>一个变量声明为volatile，就意味着这个变量是随时会被其他线程修改的，因此不能将它cache在线程memory中。以下例子展现了volatile的作用：</p>
+<p>public class StoppableTask extends Thread {  </p>
+<p>  private volatile boolean pleaseStop;  </p>
+<p>  public void run() {  </p>
+<pre><code>while (!pleaseStop) {  
+
+ // do some stuff...  
+
+}  </code></pre><p> }  </p>
+<p>  public void tellMeToStop() {  </p>
+<p>   pleaseStop = true;  </p>
+<p>  }  </p>
+<p>}  </p>
+<p>假如pleaseStop没有被声明为volatile，线程执行run的时候检查的是自己的副本，就不能及时得知其他线程已经调用tellMeToStop()修改了pleaseStop的值。</p>
+<p>Volatile一般情况下不能代替sychronized，因为volatile不能保证操作的原子性，即使只是i++，实际上也是由多个原子操作组成：read i; inc; write i，假如多个线程同时执行i++，volatile只能保证他们操作的i是同一块内存，但依然可能出现写入脏数据的情况。如果配合Java 5增加的atomic wrapper classes，对它们的increase之类的操作就不需要sychronized。</p>
+<p>Reference：<br><a href="http://www.javamex.com/tutorials/synchronization_volatile.shtml">http://www.javamex.com/tutorials/synchronization_volatile.shtml</a><br><a href="http://www.javamex.com/tutorials/synchronization_volatile_java_5.shtml">http://www.javamex.com/tutorials/synchronization_volatile_java_5.shtml</a><br><a href="http://www.ibm.com/developerworks/cn/java/j-jtp06197.html">http://www.ibm.com/developerworks/cn/java/j-jtp06197.html</a><br>恐怕比较一下volatile和synchronized的不同是最容易解释清楚的。volatile是变量修饰符，而synchronized则作用于一段代码或方法；看如下三句get代码：</p>
+<p>int i1;<br>int geti1() {return i1;}<br>volatile int i2;<br>int geti2()<br>{return i2;}<br>int i3;<br>synchronized int geti3() {return i3;}<br>　　geti1()  </p>
+<p>得到存储在当前线程中i1的数值。多个线程有多个i1变量拷贝，而且这些i1之间可以互不相同。换句话说，另一个线程可能已经改变了它线程内的i1值，而这个值可以和当前线程中的i1值不相同。事实上，Java有个思想叫“主”内存区域，这里存放了变量目前的“准确值”。每个线程可以有它自己的变量拷贝，而这个变量拷贝值可以和“主”内存区域里存放的不同。因此实际上存在一种可能：“主”内存区域里的i1值是1，线程1里的i1值是2，线程2里的i1值是3——这在线程1和线程2都改变了它们各自的i1值，而且这个改变还没来得及传递给“主”内存区域或其他线程时就会发生。<br>　　而 geti2()得到的是“主”内存区域的i2数值。用volatile修饰后的变量不允许有不同于“主”内存区域的变量拷贝。换句话说，一个变量经 volatile修饰后在所有线程中必须是同步的；任何线程中改变了它的值，所有其他线程立即获取到了相同的值。理所当然的，volatile修饰的变量存取时比一般变量消耗的资源要多一点，因为线程有它自己的变量拷贝更为高效。<br>　　既然volatile关键字已经实现了线程间数据同步，又要 synchronized干什么呢？呵呵，它们之间有两点不同。首先，synchronized获得并释放监视器——如果两个线程使用了同一个对象锁，监视器能强制保证代码块同时只被一个线程所执行——这是众所周知的事实。但是，synchronized也同步内存：事实上，synchronized在“ 主”内存区域同步整个线程的内存。因此，执行geti3()方法做了如下几步：</p>
+<pre><code>线程请求获得监视this对象的对象锁（假设未被锁，否则线程等待直到锁释放）
+线程内存的数据被消除，从“主”内存区域中读入（Java虚拟机能优化此步。。。[后面的不知道怎么表达,汗]）
+代码块被执行
+对于变量的任何改变现在可以安全地写到“主”内存区域中（不过geti3()方法不会改变变量值）
+线程释放监视this对象的对象锁
+　　因此volatile只是在线程内存和“主”内存间同步某个变量的值，而synchronized通过锁定和解锁某个监视器同步所有变量的值。显然synchronized要比volatile消耗更多资源。
+volatile关键字相信了解Java多线程的读者都很清楚它的作用。volatile关键字用于声明简单类型变量，如int、float、 boolean等数据类型。如果这些简单数据类型声明为volatile，对它们的操作就会变成原子级别的。但这有一定的限制。例如，下面的例子中的n就不是原子级别的：</code></pre><p>package  mythread;  </p>
+<p>public   class  JoinThread  extends  Thread<br>{<br>     public   static volatile int  n  =   0 ;<br>    public   void  run()<br>    {<br>         for  ( int  i  =   0 ; i  &lt;   10 ; i ++ )<br>             try<br>        {<br>                n  =  n  +   1 ;<br>                sleep( 3 );  //  为了使运行结果更随机，延迟3毫秒   </p>
+<pre><code>        }  
+         catch  (Exception e)  
+        {  
+        }  
+}  
+
+ public   static   void  main(String[] args)  throws  Exception  
+{  
+
+    Thread threads[]  =   new  Thread[ 100 ];  
+     for  ( int  i  =   0 ; i  &lt;  threads.length; i ++ )  
+         //  建立100个线程   
+        threads[i]  =   new  JoinThread();  
+     for  ( int  i  =   0 ; i  &lt;  threads.length; i ++ )  
+         //  运行刚才建立的100个线程   
+        threads[i].start();  
+     for  ( int  i  =   0 ; i  &lt;  threads.length; i ++ )  
+         //  100个线程都执行完后继续   
+        threads[i].join();  
+    System.out.println( &quot; n= &quot;   +  JoinThread.n);  
+}  </code></pre><p>}   </p>
+<p>如果对n的操作是原子级别的，最后输出的结果应该为n=1000，而在执行上面积代码时，很多时侯输出的n都小于1000，这说明n=n+1不是原子级别的操作。原因是声明为volatile的简单变量如果当前值由该变量以前的值相关，那么volatile关键字不起作用，也就是说如下的表达式都不是原子操作：</p>
+<p>n  =  n  +   1 ;<br>n ++ ; </p>
+<p>如果要想使这种情况变成原子操作，需要使用synchronized关键字，如上的代码可以改成如下的形式：</p>
+<p>package  mythread;  </p>
+<p>public   class  JoinThread  extends  Thread<br>{<br>     public   static int  n  =   0 ;  </p>
+<pre><code> public static   synchronized   void  inc()  
+{  
+    n ++ ;  
+}  
+ public   void  run()  
+{  
+     for  ( int  i  =   0 ; i  &lt;   10 ; i ++ )  
+         try   
+        {  
+            inc();  //  n = n + 1 改成了 inc();   
+            sleep( 3 );  //  为了使运行结果更随机，延迟3毫秒   
+
+        }  
+         catch  (Exception e)  
+        {  
+        }  
+}  
+
+ public   static   void  main(String[] args)  throws  Exception  
+{  
+
+    Thread threads[]  =   new  Thread[ 100 ];  
+     for  ( int  i  =   0 ; i  &lt;  threads.length; i ++ )  
+         //  建立100个线程   
+        threads[i]  =   new  JoinThread();  
+     for  ( int  i  =   0 ; i  &lt;  threads.length; i ++ )  
+         //  运行刚才建立的100个线程   
+        threads[i].start();  
+     for  ( int  i  =   0 ; i  &lt;  threads.length; i ++ )  
+         //  100个线程都执行完后继续   
+        threads[i].join();  
+    System.out.println( &quot; n= &quot;   +  JoinThread.n);  
+}  </code></pre><p>}   </p>
+<p>上面的代码将n=n+1改成了inc()，其中inc方法使用了synchronized关键字进行方法同步。因此，在使用volatile关键字时要慎重，并不是只要简单类型变量使用volatile修饰，对这个变量的所有操作都是原来操作，当变量的值由自身的上一个决定时，如n=n+1、n++ 等，volatile关键字将失效，只有当变量的值和自身上一个值无关时对该变量的操作才是原子级别的，如n = m + 1，这个就是原级别的。所以在使用volatile关键时一定要谨慎，如果自己没有把握，可以使用synchronized来代替volatile。</p>
+]]></content>
+      <categories>
+        <category>java</category>
+      </categories>
+      <tags>
+        <tag>concurrency</tag>
       </tags>
   </entry>
   <entry>
