@@ -1,17 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>COMP0011 Maths&amp;Statistics</title>
-    <url>/2020/04/08/COMP0011-Maths-Statistics/</url>
-    <content><![CDATA[<a id="more"></a>]]></content>
-      <categories>
-        <category>Notes</category>
-      </categories>
-      <tags>
-        <tag>COMP</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>COMP0008 Concurrency</title>
     <url>/2020/04/08/COMP0008-Concurrency/</url>
     <content><![CDATA[<h1 id="Java-Concurrency"><a href="#Java-Concurrency" class="headerlink" title="Java Concurrency"></a>Java Concurrency</h1><a id="more"></a>
@@ -46,8 +35,8 @@
       </tags>
   </entry>
   <entry>
-    <title>COMP0009 Logic&amp;Database</title>
-    <url>/2020/04/08/COMP0009-Logic-Database/</url>
+    <title>COMP0011 Maths&amp;Statistics</title>
+    <url>/2020/04/08/COMP0011-Maths-Statistics/</url>
     <content><![CDATA[<a id="more"></a>]]></content>
       <categories>
         <category>Notes</category>
@@ -71,6 +60,17 @@
       </tags>
   </entry>
   <entry>
+    <title>COMP0009 Logic&amp;Database</title>
+    <url>/2020/04/08/COMP0009-Logic-Database/</url>
+    <content><![CDATA[<a id="more"></a>]]></content>
+      <categories>
+        <category>Notes</category>
+      </categories>
+      <tags>
+        <tag>COMP</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Hexo ERROR Render HTML failed</title>
     <url>/2020/04/01/Hexo-ERROR-Render-HTML-failed/</url>
     <content><![CDATA[<h1 id="ERROR-Render-HTML-failed"><a href="#ERROR-Render-HTML-failed" class="headerlink" title="ERROR-Render-HTML-failed"></a>ERROR-Render-HTML-failed</h1><p>Error reported when I entered <code>hexo g</code> to convert md file into HTML file</p>
@@ -90,46 +90,6 @@
       </categories>
       <tags>
         <tag>ERROR</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Hexo-PDF</title>
-    <url>/2020/04/13/Hexo-PDF-Test/</url>
-    <content><![CDATA[<p><strong>Uploading PDF files without installing <code>hexo-pdf</code> extension.</strong></p>
-<a id="more"></a>
-
-<p>由于想上传一些PDF文件到博客上，查了下发现有一个<code>hexo-pdf</code>的插件可以很方便的用来潜入PDF文件。但是不知道是插件年久失修还是不支持最新Hexo版本，并不能达到预期效果。所以有了下面<del>简单粗暴</del>的方法。</p>
-<h2 id="修改根目录下的-config-yml文件"><a href="#修改根目录下的-config-yml文件" class="headerlink" title="修改根目录下的_config.yml文件"></a>修改根目录下的_config.yml文件</h2><h3 id="将-config-yml中的post-asset-folder选项置为true"><a href="#将-config-yml中的post-asset-folder选项置为true" class="headerlink" title="将_config.yml中的post_asset_folder选项置为true"></a>将_config.yml中的post_asset_folder选项置为true</h3><figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">post_asset_folder:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure>
-
-<p>关于这个选项的功能说明如下:</p>
-<blockquote>
-<p>当您设置post_asset_folder为true参数后，在建立文件时，Hexo<br> 会自动建立一个与文章同名的文件夹，您可以把与该文章相关的所有资源都放到那个文件夹，如此一来，您便可以更方便的使用资源。</p>
-</blockquote>
-<h3 id="然后新建一篇文章"><a href="#然后新建一篇文章" class="headerlink" title="然后新建一篇文章"></a>然后新建一篇文章</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new &lt;article_name&gt;</span><br></pre></td></tr></table></figure>
-
-<blockquote>
-<p>由于上一步已经将post_asset_folder选项设为了true<br>所以这一步新建文章时会创建一个md文件和一个同名的文件夹<br>为了方便叙述，我用test作为文件和文件夹名</p>
-</blockquote>
-<h3 id="编辑Markdown文件"><a href="#编辑Markdown文件" class="headerlink" title="编辑Markdown文件"></a>编辑Markdown文件</h3><blockquote>
-<p>用Typora或者其他编辑器打开test.md<br>test.md文件中加入如下代码</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">object</span> <span class="attr">data</span>=<span class="string">"./Hello.pdf"</span> <span class="attr">type</span>=<span class="string">"application/pdf"</span> <span class="attr">width</span>=<span class="string">"100%"</span> <span class="attr">height</span>=<span class="string">"877px"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">object</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<p>关于这句代码简单的解释<br>data表示你要上传的pdf的路径,使用相对路径，将你要上传的pdf放入第二步生成的test文件夹</p>
-</blockquote>
-<h2 id="效果"><a href="#效果" class="headerlink" title="效果"></a>效果</h2><br>
-
-<object data="./Hello.pdf" type="application/pdf" width="100%" height="877px">
-</object>
-<br>
-
-<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><p><a href="https://blog.csdn.net/qappleh/article/details/80250492">前端预览PDF总结</a></p>
-<p><a href="http://miracle778.site/pdf-test/pdf-test.html">hexo中插入pdf解决方法</a></p>
-]]></content>
-      <categories>
-        <category>Hexo</category>
-      </categories>
-      <tags>
-        <tag>configuration</tag>
       </tags>
   </entry>
   <entry>
@@ -701,6 +661,78 @@
       </tags>
   </entry>
   <entry>
+    <title>Hexo-PDF</title>
+    <url>/2020/04/13/Hexo-PDF-Test/</url>
+    <content><![CDATA[<p><strong>Uploading PDF files without installing <code>hexo-pdf</code> extension.</strong></p>
+<a id="more"></a>
+
+<p>由于想上传一些PDF文件到博客上，查了下发现有一个<code>hexo-pdf</code>的插件可以很方便的用来潜入PDF文件。但是不知道是插件年久失修还是不支持最新Hexo版本，并不能达到预期效果。所以有了下面<del>简单粗暴</del>的方法。</p>
+<h2 id="修改根目录下的-config-yml文件"><a href="#修改根目录下的-config-yml文件" class="headerlink" title="修改根目录下的_config.yml文件"></a>修改根目录下的_config.yml文件</h2><h3 id="将-config-yml中的post-asset-folder选项置为true"><a href="#将-config-yml中的post-asset-folder选项置为true" class="headerlink" title="将_config.yml中的post_asset_folder选项置为true"></a>将_config.yml中的post_asset_folder选项置为true</h3><figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">post_asset_folder:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure>
+
+<p>关于这个选项的功能说明如下:</p>
+<blockquote>
+<p>当您设置post_asset_folder为true参数后，在建立文件时，Hexo<br> 会自动建立一个与文章同名的文件夹，您可以把与该文章相关的所有资源都放到那个文件夹，如此一来，您便可以更方便的使用资源。</p>
+</blockquote>
+<h3 id="然后新建一篇文章"><a href="#然后新建一篇文章" class="headerlink" title="然后新建一篇文章"></a>然后新建一篇文章</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new &lt;article_name&gt;</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>由于上一步已经将post_asset_folder选项设为了true<br>所以这一步新建文章时会创建一个md文件和一个同名的文件夹<br>为了方便叙述，我用test作为文件和文件夹名</p>
+</blockquote>
+<h3 id="编辑Markdown文件"><a href="#编辑Markdown文件" class="headerlink" title="编辑Markdown文件"></a>编辑Markdown文件</h3><blockquote>
+<p>用Typora或者其他编辑器打开test.md<br>test.md文件中加入如下代码</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">object</span> <span class="attr">data</span>=<span class="string">"./Hello.pdf"</span> <span class="attr">type</span>=<span class="string">"application/pdf"</span> <span class="attr">width</span>=<span class="string">"100%"</span> <span class="attr">height</span>=<span class="string">"877px"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">object</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>关于这句代码简单的解释<br>data表示你要上传的pdf的路径,使用相对路径，将你要上传的pdf放入第二步生成的test文件夹</p>
+</blockquote>
+<h2 id="效果"><a href="#效果" class="headerlink" title="效果"></a>效果</h2><br>
+
+<object data="./Hello.pdf" type="application/pdf" width="100%" height="877px">
+</object>
+<br>
+
+<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><p><a href="https://blog.csdn.net/qappleh/article/details/80250492">前端预览PDF总结</a></p>
+<p><a href="http://miracle778.site/pdf-test/pdf-test.html">hexo中插入pdf解决方法</a></p>
+]]></content>
+      <categories>
+        <category>Hexo</category>
+      </categories>
+      <tags>
+        <tag>configuration</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>LeetCode做题记录</title>
+    <url>/2020/04/23/LeetCode%E5%81%9A%E9%A2%98%E8%AE%B0%E5%BD%95/</url>
+    <content><![CDATA[<a id="more"></a>
+
+<h1 id="205-同构字符串"><a href="#205-同构字符串" class="headerlink" title="205.同构字符串"></a><a href="https://leetcode-cn.com/problems/isomorphic-strings/">205.同构字符串</a></h1><p><u><strong>思路分析</strong></u></p>
+<ul>
+<li><p>我们可以利用一个 HashMap 来处理映射。对于 s 到 t 的映射，我们同时遍历 s 和 t ，假设当前遇到的字母分别是 c1 和 c2 。</p>
+</li>
+<li><p>如果 map[c1] 不存在，那么就将 c1 映射到 c2 ，即 map[c1] = c2。</p>
+</li>
+<li><p>如果 map[c1] 存在，那么就判断 map[c1] 是否等于 c2，也就是验证之前的映射和当前的字母是否相同。</p>
+</li>
+<li><p>对于这道题，我们只需要验证 s - &gt; t 和 t -&gt; s 两个方向即可。如果验证一个方向，是不可以的。</p>
+</li>
+<li><p>举个例子，s = ab, t = cc，如果单看 s -&gt; t ，那么 a -&gt; c, b -&gt; c 是没有问题的。</p>
+</li>
+<li><p>必须再验证 t -&gt; s，此时，c -&gt; a, c -&gt; b，一个字母对应了多个字母，所以不是同构的。代码的话，只需要调用两次上边的代码即可。</p>
+</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">egg 和 add 同构，就意味着下边的映射成立</span><br><span class="line">e -&gt; a</span><br><span class="line">g -&gt; d</span><br><span class="line">也就是将 egg 的 e 换成 a, g 换成 d, 就变成了 add</span><br><span class="line"></span><br><span class="line">同时倒过来也成立</span><br><span class="line">a -&gt; e</span><br><span class="line">d -&gt; g</span><br><span class="line">也就是将 add 的 a 换成 e, d 换成 g, 就变成了 egg</span><br><span class="line"></span><br><span class="line">foo 和 bar 不同构，原因就是映射不唯一</span><br><span class="line">o -&gt; a</span><br><span class="line">o -&gt; r</span><br><span class="line">其中 o 映射到了两个字母</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">isIsomorphic1</span><span class="params">(String s,String t)</span></span>&#123;</span><br><span class="line">        <span class="keyword">return</span> isIsomorphicHelper(s,t) &amp;&amp; isIsomorphicHelper(t,s);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">isIsomorphicHelper</span><span class="params">(String s, String t)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> len = s.length();</span><br><span class="line">        HashMap&lt;Character,Character&gt; map = <span class="keyword">new</span> HashMap&lt;&gt;();</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;len;i++)&#123;</span><br><span class="line">            <span class="keyword">char</span> c1 = s.charAt(i);</span><br><span class="line">            <span class="keyword">char</span> c2 = t.charAt(i);</span><br><span class="line">            <span class="keyword">if</span> (!map.containsKey(c1))&#123;</span><br><span class="line">                map.put(c1,c2);</span><br><span class="line">            &#125;<span class="keyword">else</span> &#123;</span><br><span class="line">                <span class="keyword">if</span> (map.get(c1)!=c2)&#123;</span><br><span class="line">                    <span class="keyword">return</span> <span class="keyword">false</span>;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>Notes</category>
+      </categories>
+      <tags>
+        <tag>LeetCode</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Quarantine in Shanghai</title>
     <url>/2020/04/07/Quarantine-in-Shanghai/</url>
     <content><![CDATA[<h1 id="隔离记录"><a href="#隔离记录" class="headerlink" title="隔离记录"></a>隔离记录</h1><a id="more"></a>
@@ -748,38 +780,6 @@
 <p>上午温度：36.2摄氏度</p>
 <p>下午温度：36.5摄氏度</p>
 ]]></content>
-  </entry>
-  <entry>
-    <title>LeetCode做题记录</title>
-    <url>/2020/04/23/LeetCode%E5%81%9A%E9%A2%98%E8%AE%B0%E5%BD%95/</url>
-    <content><![CDATA[<a id="more"></a>
-
-<h1 id="205-同构字符串"><a href="#205-同构字符串" class="headerlink" title="205.同构字符串"></a><a href="https://leetcode-cn.com/problems/isomorphic-strings/">205.同构字符串</a></h1><p><u><strong>思路分析</strong></u></p>
-<ul>
-<li><p>我们可以利用一个 HashMap 来处理映射。对于 s 到 t 的映射，我们同时遍历 s 和 t ，假设当前遇到的字母分别是 c1 和 c2 。</p>
-</li>
-<li><p>如果 map[c1] 不存在，那么就将 c1 映射到 c2 ，即 map[c1] = c2。</p>
-</li>
-<li><p>如果 map[c1] 存在，那么就判断 map[c1] 是否等于 c2，也就是验证之前的映射和当前的字母是否相同。</p>
-</li>
-<li><p>对于这道题，我们只需要验证 s - &gt; t 和 t -&gt; s 两个方向即可。如果验证一个方向，是不可以的。</p>
-</li>
-<li><p>举个例子，s = ab, t = cc，如果单看 s -&gt; t ，那么 a -&gt; c, b -&gt; c 是没有问题的。</p>
-</li>
-<li><p>必须再验证 t -&gt; s，此时，c -&gt; a, c -&gt; b，一个字母对应了多个字母，所以不是同构的。代码的话，只需要调用两次上边的代码即可。</p>
-</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">egg 和 add 同构，就意味着下边的映射成立</span><br><span class="line">e -&gt; a</span><br><span class="line">g -&gt; d</span><br><span class="line">也就是将 egg 的 e 换成 a, g 换成 d, 就变成了 add</span><br><span class="line"></span><br><span class="line">同时倒过来也成立</span><br><span class="line">a -&gt; e</span><br><span class="line">d -&gt; g</span><br><span class="line">也就是将 add 的 a 换成 e, d 换成 g, 就变成了 egg</span><br><span class="line"></span><br><span class="line">foo 和 bar 不同构，原因就是映射不唯一</span><br><span class="line">o -&gt; a</span><br><span class="line">o -&gt; r</span><br><span class="line">其中 o 映射到了两个字母</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">isIsomorphic1</span><span class="params">(String s,String t)</span></span>&#123;</span><br><span class="line">        <span class="keyword">return</span> isIsomorphicHelper(s,t) &amp;&amp; isIsomorphicHelper(t,s);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">isIsomorphicHelper</span><span class="params">(String s, String t)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> len = s.length();</span><br><span class="line">        HashMap&lt;Character,Character&gt; map = <span class="keyword">new</span> HashMap&lt;&gt;();</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;len;i++)&#123;</span><br><span class="line">            <span class="keyword">char</span> c1 = s.charAt(i);</span><br><span class="line">            <span class="keyword">char</span> c2 = t.charAt(i);</span><br><span class="line">            <span class="keyword">if</span> (!map.containsKey(c1))&#123;</span><br><span class="line">                map.put(c1,c2);</span><br><span class="line">            &#125;<span class="keyword">else</span> &#123;</span><br><span class="line">                <span class="keyword">if</span> (map.get(c1)!=c2)&#123;</span><br><span class="line">                    <span class="keyword">return</span> <span class="keyword">false</span>;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
-
-]]></content>
-      <categories>
-        <category>Notes</category>
-      </categories>
-      <tags>
-        <tag>LeetCode</tag>
-      </tags>
   </entry>
   <entry>
     <title>NexT Configuration</title>
