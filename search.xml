@@ -1,20 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>First Blog</title>
-    <url>/2019/11/14/First-Blog/</url>
-    <content><![CDATA[<p>Hello World!</p>
-<p>Personal Blog Test!</p>
-<p>Done!</p>
-]]></content>
-      <categories>
-        <category>Hello World!</category>
-      </categories>
-      <tags>
-        <tag>Hello World!</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>COMP0141 Security</title>
     <url>/2020/04/08/COMP0141-Security/</url>
     <content><![CDATA[<h1 id="Lecture-1-1"><a href="#Lecture-1-1" class="headerlink" title="Lecture 1-1"></a>Lecture 1-1</h1><h2 id="CIA-Triangle"><a href="#CIA-Triangle" class="headerlink" title="CIA Triangle"></a>CIA Triangle</h2><ul>
@@ -633,6 +619,42 @@
       </tags>
   </entry>
   <entry>
+    <title>First Blog</title>
+    <url>/2019/11/14/First-Blog/</url>
+    <content><![CDATA[<p>Hello World!</p>
+<p>Personal Blog Test!</p>
+<p>Done!</p>
+]]></content>
+      <categories>
+        <category>Hello World!</category>
+      </categories>
+      <tags>
+        <tag>Hello World!</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hexo ERROR Render HTML failed</title>
+    <url>/2020/04/01/Hexo-ERROR-Render-HTML-failed/</url>
+    <content><![CDATA[<h1 id="ERROR-Render-HTML-failed"><a href="#ERROR-Render-HTML-failed" class="headerlink" title="ERROR-Render-HTML-failed"></a>ERROR-Render-HTML-failed</h1><p>Error reported when I entered <code>hexo g</code> to convert md file into HTML file</p>
+<a id="more"></a>
+
+<h2 id="Error"><a href="#Error" class="headerlink" title="Error"></a>Error</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo g</span><br><span class="line">INFO  Start processing</span><br><span class="line">INFO  Files loaded <span class="keyword">in</span> 627 ms</span><br><span class="line">ERROR Render HTML failed: about/index.html</span><br><span class="line">TypeError: Cannot <span class="built_in">read</span> property <span class="string">'replace'</span> of null</span><br><span class="line">    at Hexo.externalLinkFilter (/Users/xiaqiulei/Documents/blog/node_modules/hexo/lib/plugins/filter/after_render/external_link.js:45:15)</span><br><span class="line">    at Hexo.tryCatcher (/Users/xiaqiulei/Documents/blog/node_modules/bluebird/js/release/util.js:16:23)</span><br><span class="line">    at Hexo.&lt;anonymous&gt; (/Users/xiaqiulei/Documents/blog/node_modules/bluebird/js/release/method.js:15:34)</span><br><span class="line">    at /Users/xiaqiulei/Documents/blog/node_modules/hexo/lib/extend/filter.js:60:50</span><br><span class="line">    at tryCatcher (/Users/xiaqiulei/Documents/blog/node_modules/bluebird/js/release/util.js:16:23)</span><br><span class="line">    at Object.gotValue (/Users/xiaqiulei/Documents/blog/node_modules/bluebird/js/release/reduce.js:155:18)</span><br><span class="line">    at Object.gotAccum (/Users/xiaqiulei/Documents/blog/node_modules/bluebird/js/release/reduce.js:144:25)</span><br><span class="line">    at Object.tryCatcher (/Users/xiaqiulei/Documents/blog/node_modules/bluebird/js/release/util.js:16:23)</span><br><span class="line">    at Promise._settlePromiseFromHandler (/Users/xiaqiulei/Documents/blog/node_modules/bluebird/js/release/promise.js:512:31)</span><br><span class="line">    at Promise._settlePromise (/Users/xiaqiulei/Documents/blog/node_modules/bluebird/js/release/promise.js:569:18)</span><br><span class="line">    at Promise._settlePromiseCtx (/Users/xiaqiulei/Documents/blog/node_modules/bluebird/js/release/promise.js:606:10)</span><br><span class="line">    at _drainQueueStep (/Users/xiaqiulei/Documents/blog/node_modules/bluebird/js/release/async.js:142:12)</span><br><span class="line">    at _drainQueue (/Users/xiaqiulei/Documents/blog/node_modules/bluebird/js/release/async.js:131:9)</span><br><span class="line">    at Async._drainQueues (/Users/xiaqiulei/Documents/blog/node_modules/bluebird/js/release/async.js:147:5)</span><br><span class="line">    at Immediate.Async.drainQueues [as _onImmediate] (/Users/xiaqiulei/Documents/blog/node_modules/bluebird/js/release/async.js:17:14)</span><br><span class="line">    at processImmediate (internal/timers.js:439:21)</span><br><span class="line">ERROR Cannot <span class="built_in">read</span> property <span class="string">'replace'</span> of null</span><br><span class="line">TypeError: Cannot <span class="built_in">read</span> property <span class="string">'replace'</span> of null</span><br><span class="line">    at Hexo.externalLinkFilter (/Users/xiaqiulei/Documents/blog/node_modules/hexo/lib/plugins/filter/after_render/external_link.js:45:15)</span><br><span class="line">    at Hexo.tryCatcher (/Users/xiaqiulei/Documents/blog/node_modules/bluebird/js/release/util.js:16:23)</span><br><span class="line">    at Hexo.&lt;anonymous&gt; (/Users/xiaqiulei/Documents/blog/node_modules/bluebird/js/release/method.js:15:34)</span><br><span class="line">    at /Users/xiaqiulei/Documents/blog/node_modules/hexo/lib/extend/filter.js:60:50</span><br><span class="line">    at tryCatcher (/Users/xiaqiulei/Documents/blog/node_modules/bluebird/js/release/util.js:16:23)</span><br><span class="line">    at Object.gotValue (/Users/xiaqiulei/Documents/blog/node_modules/bluebird/js/release/reduce.js:155:18)</span><br><span class="line">    at Object.gotAccum (/Users/xiaqiulei/Documents/blog/node_modules/bluebird/js/release/reduce.js:144:25)</span><br><span class="line">    at Object.tryCatcher (/Users/xiaqiulei/Documents/blog/node_modules/bluebird/js/release/util.js:16:23)</span><br><span class="line">    at Promise._settlePromiseFromHandler (/Users/xiaqiulei/Documents/blog/node_modules/bluebird/js/release/promise.js:512:31)</span><br><span class="line">    at Promise._settlePromise (/Users/xiaqiulei/Documents/blog/node_modules/bluebird/js/release/promise.js:569:18)</span><br><span class="line">    at Promise._settlePromiseCtx (/Users/xiaqiulei/Documents/blog/node_modules/bluebird/js/release/promise.js:606:10)</span><br><span class="line">    at _drainQueueStep (/Users/xiaqiulei/Documents/blog/node_modules/bluebird/js/release/async.js:142:12)</span><br><span class="line">    at _drainQueue (/Users/xiaqiulei/Documents/blog/node_modules/bluebird/js/release/async.js:131:9)</span><br><span class="line">    at Async._drainQueues (/Users/xiaqiulei/Documents/blog/node_modules/bluebird/js/release/async.js:147:5)</span><br><span class="line">    at Immediate.Async.drainQueues [as _onImmediate] (/Users/xiaqiulei/Documents/blog/node_modules/bluebird/js/release/async.js:17:14)</span><br><span class="line">    at processImmediate (internal/timers.js:439:21)</span><br><span class="line">INFO  0 files generated <span class="keyword">in</span> 1.6 s</span><br></pre></td></tr></table></figure>
+
+<h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><ul>
+<li><p>Uninstall the extension of ‘Relative article recommendation’</p>
+</li>
+<li><p>Set the <code>enable</code> into false</p>
+<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">external_link:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">false</span> <span class="comment"># Open external links in new tab</span></span><br><span class="line">  <span class="attr">field:</span> <span class="string">site</span> <span class="comment"># Apply to the whole site</span></span><br><span class="line">  <span class="attr">exclude:</span> <span class="string">'</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+]]></content>
+      <categories>
+        <category>Hexo</category>
+      </categories>
+      <tags>
+        <tag>ERROR</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Hexo-PDF</title>
     <url>/2020/04/13/Hexo-PDF-Test/</url>
     <content><![CDATA[<p><strong>Uploading PDF files without installing <code>hexo-pdf</code> extension.</strong></p>
@@ -673,25 +695,35 @@
       </tags>
   </entry>
   <entry>
-    <title>Hexo ERROR Render HTML failed</title>
-    <url>/2020/04/01/Hexo-ERROR-Render-HTML-failed/</url>
-    <content><![CDATA[<h1 id="ERROR-Render-HTML-failed"><a href="#ERROR-Render-HTML-failed" class="headerlink" title="ERROR-Render-HTML-failed"></a>ERROR-Render-HTML-failed</h1><p>Error reported when I entered <code>hexo g</code> to convert md file into HTML file</p>
-<a id="more"></a>
+    <title>LeetCode做题记录</title>
+    <url>/2020/04/23/LeetCode%E5%81%9A%E9%A2%98%E8%AE%B0%E5%BD%95/</url>
+    <content><![CDATA[<a id="more"></a>
 
-<h2 id="Error"><a href="#Error" class="headerlink" title="Error"></a>Error</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo g</span><br><span class="line">INFO  Start processing</span><br><span class="line">INFO  Files loaded <span class="keyword">in</span> 627 ms</span><br><span class="line">ERROR Render HTML failed: about/index.html</span><br><span class="line">TypeError: Cannot <span class="built_in">read</span> property <span class="string">'replace'</span> of null</span><br><span class="line">    at Hexo.externalLinkFilter (/Users/xiaqiulei/Documents/blog/node_modules/hexo/lib/plugins/filter/after_render/external_link.js:45:15)</span><br><span class="line">    at Hexo.tryCatcher (/Users/xiaqiulei/Documents/blog/node_modules/bluebird/js/release/util.js:16:23)</span><br><span class="line">    at Hexo.&lt;anonymous&gt; (/Users/xiaqiulei/Documents/blog/node_modules/bluebird/js/release/method.js:15:34)</span><br><span class="line">    at /Users/xiaqiulei/Documents/blog/node_modules/hexo/lib/extend/filter.js:60:50</span><br><span class="line">    at tryCatcher (/Users/xiaqiulei/Documents/blog/node_modules/bluebird/js/release/util.js:16:23)</span><br><span class="line">    at Object.gotValue (/Users/xiaqiulei/Documents/blog/node_modules/bluebird/js/release/reduce.js:155:18)</span><br><span class="line">    at Object.gotAccum (/Users/xiaqiulei/Documents/blog/node_modules/bluebird/js/release/reduce.js:144:25)</span><br><span class="line">    at Object.tryCatcher (/Users/xiaqiulei/Documents/blog/node_modules/bluebird/js/release/util.js:16:23)</span><br><span class="line">    at Promise._settlePromiseFromHandler (/Users/xiaqiulei/Documents/blog/node_modules/bluebird/js/release/promise.js:512:31)</span><br><span class="line">    at Promise._settlePromise (/Users/xiaqiulei/Documents/blog/node_modules/bluebird/js/release/promise.js:569:18)</span><br><span class="line">    at Promise._settlePromiseCtx (/Users/xiaqiulei/Documents/blog/node_modules/bluebird/js/release/promise.js:606:10)</span><br><span class="line">    at _drainQueueStep (/Users/xiaqiulei/Documents/blog/node_modules/bluebird/js/release/async.js:142:12)</span><br><span class="line">    at _drainQueue (/Users/xiaqiulei/Documents/blog/node_modules/bluebird/js/release/async.js:131:9)</span><br><span class="line">    at Async._drainQueues (/Users/xiaqiulei/Documents/blog/node_modules/bluebird/js/release/async.js:147:5)</span><br><span class="line">    at Immediate.Async.drainQueues [as _onImmediate] (/Users/xiaqiulei/Documents/blog/node_modules/bluebird/js/release/async.js:17:14)</span><br><span class="line">    at processImmediate (internal/timers.js:439:21)</span><br><span class="line">ERROR Cannot <span class="built_in">read</span> property <span class="string">'replace'</span> of null</span><br><span class="line">TypeError: Cannot <span class="built_in">read</span> property <span class="string">'replace'</span> of null</span><br><span class="line">    at Hexo.externalLinkFilter (/Users/xiaqiulei/Documents/blog/node_modules/hexo/lib/plugins/filter/after_render/external_link.js:45:15)</span><br><span class="line">    at Hexo.tryCatcher (/Users/xiaqiulei/Documents/blog/node_modules/bluebird/js/release/util.js:16:23)</span><br><span class="line">    at Hexo.&lt;anonymous&gt; (/Users/xiaqiulei/Documents/blog/node_modules/bluebird/js/release/method.js:15:34)</span><br><span class="line">    at /Users/xiaqiulei/Documents/blog/node_modules/hexo/lib/extend/filter.js:60:50</span><br><span class="line">    at tryCatcher (/Users/xiaqiulei/Documents/blog/node_modules/bluebird/js/release/util.js:16:23)</span><br><span class="line">    at Object.gotValue (/Users/xiaqiulei/Documents/blog/node_modules/bluebird/js/release/reduce.js:155:18)</span><br><span class="line">    at Object.gotAccum (/Users/xiaqiulei/Documents/blog/node_modules/bluebird/js/release/reduce.js:144:25)</span><br><span class="line">    at Object.tryCatcher (/Users/xiaqiulei/Documents/blog/node_modules/bluebird/js/release/util.js:16:23)</span><br><span class="line">    at Promise._settlePromiseFromHandler (/Users/xiaqiulei/Documents/blog/node_modules/bluebird/js/release/promise.js:512:31)</span><br><span class="line">    at Promise._settlePromise (/Users/xiaqiulei/Documents/blog/node_modules/bluebird/js/release/promise.js:569:18)</span><br><span class="line">    at Promise._settlePromiseCtx (/Users/xiaqiulei/Documents/blog/node_modules/bluebird/js/release/promise.js:606:10)</span><br><span class="line">    at _drainQueueStep (/Users/xiaqiulei/Documents/blog/node_modules/bluebird/js/release/async.js:142:12)</span><br><span class="line">    at _drainQueue (/Users/xiaqiulei/Documents/blog/node_modules/bluebird/js/release/async.js:131:9)</span><br><span class="line">    at Async._drainQueues (/Users/xiaqiulei/Documents/blog/node_modules/bluebird/js/release/async.js:147:5)</span><br><span class="line">    at Immediate.Async.drainQueues [as _onImmediate] (/Users/xiaqiulei/Documents/blog/node_modules/bluebird/js/release/async.js:17:14)</span><br><span class="line">    at processImmediate (internal/timers.js:439:21)</span><br><span class="line">INFO  0 files generated <span class="keyword">in</span> 1.6 s</span><br></pre></td></tr></table></figure>
-
-<h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><ul>
-<li><p>Uninstall the extension of ‘Relative article recommendation’</p>
+<h1 id="205-同构字符串"><a href="#205-同构字符串" class="headerlink" title="205.同构字符串"></a><a href="https://leetcode-cn.com/problems/isomorphic-strings/">205.同构字符串</a></h1><p><u><strong>思路分析</strong></u></p>
+<ul>
+<li><p>我们可以利用一个 HashMap 来处理映射。对于 s 到 t 的映射，我们同时遍历 s 和 t ，假设当前遇到的字母分别是 c1 和 c2 。</p>
 </li>
-<li><p>Set the <code>enable</code> into false</p>
-<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">external_link:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">false</span> <span class="comment"># Open external links in new tab</span></span><br><span class="line">  <span class="attr">field:</span> <span class="string">site</span> <span class="comment"># Apply to the whole site</span></span><br><span class="line">  <span class="attr">exclude:</span> <span class="string">'</span></span><br></pre></td></tr></table></figure></li>
+<li><p>如果 map[c1] 不存在，那么就将 c1 映射到 c2 ，即 map[c1] = c2。</p>
+</li>
+<li><p>如果 map[c1] 存在，那么就判断 map[c1] 是否等于 c2，也就是验证之前的映射和当前的字母是否相同。</p>
+</li>
+<li><p>对于这道题，我们只需要验证 s - &gt; t 和 t -&gt; s 两个方向即可。如果验证一个方向，是不可以的。</p>
+</li>
+<li><p>举个例子，s = ab, t = cc，如果单看 s -&gt; t ，那么 a -&gt; c, b -&gt; c 是没有问题的。</p>
+</li>
+<li><p>必须再验证 t -&gt; s，此时，c -&gt; a, c -&gt; b，一个字母对应了多个字母，所以不是同构的。代码的话，只需要调用两次上边的代码即可。</p>
+</li>
 </ul>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">egg 和 add 同构，就意味着下边的映射成立</span><br><span class="line">e -&gt; a</span><br><span class="line">g -&gt; d</span><br><span class="line">也就是将 egg 的 e 换成 a, g 换成 d, 就变成了 add</span><br><span class="line"></span><br><span class="line">同时倒过来也成立</span><br><span class="line">a -&gt; e</span><br><span class="line">d -&gt; g</span><br><span class="line">也就是将 add 的 a 换成 e, d 换成 g, 就变成了 egg</span><br><span class="line"></span><br><span class="line">foo 和 bar 不同构，原因就是映射不唯一</span><br><span class="line">o -&gt; a</span><br><span class="line">o -&gt; r</span><br><span class="line">其中 o 映射到了两个字母</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">isIsomorphic1</span><span class="params">(String s,String t)</span></span>&#123;</span><br><span class="line">        <span class="keyword">return</span> isIsomorphicHelper(s,t) &amp;&amp; isIsomorphicHelper(t,s);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">isIsomorphicHelper</span><span class="params">(String s, String t)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> len = s.length();</span><br><span class="line">        HashMap&lt;Character,Character&gt; map = <span class="keyword">new</span> HashMap&lt;&gt;();</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;len;i++)&#123;</span><br><span class="line">            <span class="keyword">char</span> c1 = s.charAt(i);</span><br><span class="line">            <span class="keyword">char</span> c2 = t.charAt(i);</span><br><span class="line">            <span class="keyword">if</span> (!map.containsKey(c1))&#123;</span><br><span class="line">                map.put(c1,c2);</span><br><span class="line">            &#125;<span class="keyword">else</span> &#123;</span><br><span class="line">                <span class="keyword">if</span> (map.get(c1)!=c2)&#123;</span><br><span class="line">                    <span class="keyword">return</span> <span class="keyword">false</span>;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+
 ]]></content>
       <categories>
-        <category>Hexo</category>
+        <category>Notes</category>
       </categories>
       <tags>
-        <tag>ERROR</tag>
+        <tag>LeetCode</tag>
       </tags>
   </entry>
   <entry>
@@ -745,196 +777,17 @@
 <p>![image-20200615205601781](/Users/yifancheung/Library/Application Support/typora-user-images/image-20200615205601781.png)</p>
 <h2 id="Parameter-Learning"><a href="#Parameter-Learning" class="headerlink" title="Parameter Learning"></a>Parameter Learning</h2><h3 id="Gradient-Descent-Algorithm-1-0"><a href="#Gradient-Descent-Algorithm-1-0" class="headerlink" title="Gradient Descent Algorithm 1.0"></a>Gradient Descent Algorithm 1.0</h3><p>![image-20200615225814617](/Users/yifancheung/Library/Application Support/typora-user-images/image-20200615225814617.png)</p>
 <p>![image-20200615225826171](/Users/yifancheung/Library/Application Support/typora-user-images/image-20200615225826171.png)</p>
+<h3 id="Gradient-Descent-Algorithm-1-1"><a href="#Gradient-Descent-Algorithm-1-1" class="headerlink" title="Gradient Descent Algorithm 1.1"></a>Gradient Descent Algorithm 1.1</h3><p>![image-20200616095147861](/Users/yifancheung/Library/Application Support/typora-user-images/image-20200616095147861.png)</p>
+<p>![image-20200616095158666](/Users/yifancheung/Library/Application Support/typora-user-images/image-20200616095158666.png)</p>
+<p>![image-20200616095206864](/Users/yifancheung/Library/Application Support/typora-user-images/image-20200616095206864.png)</p>
+<h3 id="Gradient-Descent-Algorithm-1-2"><a href="#Gradient-Descent-Algorithm-1-2" class="headerlink" title="Gradient Descent Algorithm 1.2"></a>Gradient Descent Algorithm 1.2</h3><p>![image-20200616101447288](/Users/yifancheung/Library/Application Support/typora-user-images/image-20200616101447288.png)</p>
+<p>![image-20200616101544398](/Users/yifancheung/Library/Application Support/typora-user-images/image-20200616101544398.png)</p>
 ]]></content>
       <categories>
         <category>Note</category>
       </categories>
       <tags>
         <tag>Machine Learning</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>LeetCode做题记录</title>
-    <url>/2020/04/23/LeetCode%E5%81%9A%E9%A2%98%E8%AE%B0%E5%BD%95/</url>
-    <content><![CDATA[<a id="more"></a>
-
-<h1 id="205-同构字符串"><a href="#205-同构字符串" class="headerlink" title="205.同构字符串"></a><a href="https://leetcode-cn.com/problems/isomorphic-strings/">205.同构字符串</a></h1><p><u><strong>思路分析</strong></u></p>
-<ul>
-<li><p>我们可以利用一个 HashMap 来处理映射。对于 s 到 t 的映射，我们同时遍历 s 和 t ，假设当前遇到的字母分别是 c1 和 c2 。</p>
-</li>
-<li><p>如果 map[c1] 不存在，那么就将 c1 映射到 c2 ，即 map[c1] = c2。</p>
-</li>
-<li><p>如果 map[c1] 存在，那么就判断 map[c1] 是否等于 c2，也就是验证之前的映射和当前的字母是否相同。</p>
-</li>
-<li><p>对于这道题，我们只需要验证 s - &gt; t 和 t -&gt; s 两个方向即可。如果验证一个方向，是不可以的。</p>
-</li>
-<li><p>举个例子，s = ab, t = cc，如果单看 s -&gt; t ，那么 a -&gt; c, b -&gt; c 是没有问题的。</p>
-</li>
-<li><p>必须再验证 t -&gt; s，此时，c -&gt; a, c -&gt; b，一个字母对应了多个字母，所以不是同构的。代码的话，只需要调用两次上边的代码即可。</p>
-</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">egg 和 add 同构，就意味着下边的映射成立</span><br><span class="line">e -&gt; a</span><br><span class="line">g -&gt; d</span><br><span class="line">也就是将 egg 的 e 换成 a, g 换成 d, 就变成了 add</span><br><span class="line"></span><br><span class="line">同时倒过来也成立</span><br><span class="line">a -&gt; e</span><br><span class="line">d -&gt; g</span><br><span class="line">也就是将 add 的 a 换成 e, d 换成 g, 就变成了 egg</span><br><span class="line"></span><br><span class="line">foo 和 bar 不同构，原因就是映射不唯一</span><br><span class="line">o -&gt; a</span><br><span class="line">o -&gt; r</span><br><span class="line">其中 o 映射到了两个字母</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">isIsomorphic1</span><span class="params">(String s,String t)</span></span>&#123;</span><br><span class="line">        <span class="keyword">return</span> isIsomorphicHelper(s,t) &amp;&amp; isIsomorphicHelper(t,s);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">isIsomorphicHelper</span><span class="params">(String s, String t)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> len = s.length();</span><br><span class="line">        HashMap&lt;Character,Character&gt; map = <span class="keyword">new</span> HashMap&lt;&gt;();</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;len;i++)&#123;</span><br><span class="line">            <span class="keyword">char</span> c1 = s.charAt(i);</span><br><span class="line">            <span class="keyword">char</span> c2 = t.charAt(i);</span><br><span class="line">            <span class="keyword">if</span> (!map.containsKey(c1))&#123;</span><br><span class="line">                map.put(c1,c2);</span><br><span class="line">            &#125;<span class="keyword">else</span> &#123;</span><br><span class="line">                <span class="keyword">if</span> (map.get(c1)!=c2)&#123;</span><br><span class="line">                    <span class="keyword">return</span> <span class="keyword">false</span>;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
-
-]]></content>
-      <categories>
-        <category>Notes</category>
-      </categories>
-      <tags>
-        <tag>LeetCode</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Quarantine in Shanghai</title>
-    <url>/2020/04/07/Quarantine-in-Shanghai/</url>
-    <content><![CDATA[<h1 id="隔离记录"><a href="#隔离记录" class="headerlink" title="隔离记录"></a>隔离记录</h1><a id="more"></a>
-
-<h2 id="Day-1"><a href="#Day-1" class="headerlink" title="Day 1"></a>Day 1</h2><p><img src="https://raw.githubusercontent.com/yifanzhang13/yifanzhang13.github.io/master/images/QuarantinePics/day1.JPG" alt="day1"></p>
-<p>早上温度：36.9摄氏度</p>
-<p>下午温度：36.1摄氏度</p>
-<h2 id="Day-2"><a href="#Day-2" class="headerlink" title="Day 2"></a>Day 2</h2><p><img src="https://raw.githubusercontent.com/yifanzhang13/yifanzhang13.github.io/master/images/QuarantinePics/day2.JPG" alt="day2"></p>
-<p>早上温度：36.6摄氏度</p>
-<p>下午温度：36.4摄氏度</p>
-<h2 id="Day-3"><a href="#Day-3" class="headerlink" title="Day 3 *"></a>Day 3 *</h2><p><img src="https://raw.githubusercontent.com/yifanzhang13/yifanzhang13.github.io/master/images/QuarantinePics/day3.JPG" alt="day3"></p>
-<p>早上温度：36.0摄氏度</p>
-<p>下午温度：36.5摄氏度</p>
-<h2 id="Day-4"><a href="#Day-4" class="headerlink" title="Day 4"></a>Day 4</h2><p><img src="https://raw.githubusercontent.com/yifanzhang13/yifanzhang13.github.io/master/images/QuarantinePics/day4.JPG" alt="day4"></p>
-<p>上午温度：36.0摄氏度</p>
-<p>下午温度：36.5摄氏度</p>
-<h2 id="Day-5"><a href="#Day-5" class="headerlink" title="Day 5 *"></a>Day 5 *</h2><p><img src="https://raw.githubusercontent.com/yifanzhang13/yifanzhang13.github.io/master/images/QuarantinePics/day5.JPG" alt=""></p>
-<p>上午温度：36.0摄氏度</p>
-<p>下午温度：36.4摄氏度</p>
-<h2 id="Day-6"><a href="#Day-6" class="headerlink" title="Day 6"></a>Day 6</h2><p><img src="https://raw.githubusercontent.com/yifanzhang13/yifanzhang13.github.io/master/images/QuarantinePics/day6.JPG" alt=""></p>
-<p>上午温度：36.5摄氏度</p>
-<p>下午温度：36.9摄氏度</p>
-<h2 id="Day-7"><a href="#Day-7" class="headerlink" title="Day 7 *"></a>Day 7 *</h2><p><img src="https://raw.githubusercontent.com/yifanzhang13/yifanzhang13.github.io/master/images/QuarantinePics/day7.JPG" alt=""></p>
-<p>上午温度：36.4摄氏度</p>
-<p>下午温度：36.7摄氏度</p>
-<h2 id="Day-8"><a href="#Day-8" class="headerlink" title="Day 8"></a>Day 8</h2><p><img src="https://raw.githubusercontent.com/yifanzhang13/yifanzhang13.github.io/master/images/QuarantinePics/day8.JPG" alt=""></p>
-<p>上午温度：36.3摄氏度</p>
-<p>下午温度：36.7摄氏度</p>
-<h2 id="Day-9"><a href="#Day-9" class="headerlink" title="Day 9 *"></a>Day 9 *</h2><p><img src="https://raw.githubusercontent.com/yifanzhang13/yifanzhang13.github.io/master/images/QuarantinePics/day9.JPG" alt=""></p>
-<p>上午温度：36.3摄氏度</p>
-<p>下午温度：36.6摄氏度</p>
-<h2 id="Day-10"><a href="#Day-10" class="headerlink" title="Day 10 *"></a>Day 10 *</h2><p><img src="https://raw.githubusercontent.com/yifanzhang13/yifanzhang13.github.io/master/images/QuarantinePics/day10.JPG" alt=""></p>
-<p>上午温度：36.2摄氏度</p>
-<p>下午温度：36.7摄氏度</p>
-<h2 id="Day-11"><a href="#Day-11" class="headerlink" title="Day 11 *"></a>Day 11 *</h2><p><img src="https://raw.githubusercontent.com/yifanzhang13/yifanzhang13.github.io/master/images/QuarantinePics/day11.JPG" alt=""></p>
-<p>上午温度：36.4摄氏度</p>
-<p>下午温度：36.5摄氏度</p>
-<h2 id="Day-12"><a href="#Day-12" class="headerlink" title="Day 12"></a>Day 12</h2><p><img src="https://raw.githubusercontent.com/yifanzhang13/yifanzhang13.github.io/master/images/QuarantinePics/day12.JPG" alt=""></p>
-<p>上午温度：36.1摄氏度</p>
-<p>下午温度：36.5摄氏度</p>
-<h2 id="Day-13"><a href="#Day-13" class="headerlink" title="Day 13"></a>Day 13</h2><p><img src="https://raw.githubusercontent.com/yifanzhang13/yifanzhang13.github.io/master/images/QuarantinePics/day13.JPG" alt=""></p>
-<p>上午温度：36.1摄氏度</p>
-<p>下午温度：36.8摄氏度</p>
-<h2 id="Day-14"><a href="#Day-14" class="headerlink" title="Day 14"></a>Day 14</h2><p><img src="https://raw.githubusercontent.com/yifanzhang13/yifanzhang13.github.io/master/images/QuarantinePics/day14.JPG" alt=""></p>
-<p>上午温度：36.2摄氏度</p>
-<p>下午温度：36.5摄氏度</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>Usage Of Volatile In Java</title>
-    <url>/2019/12/02/Usage-Of-Volatile-In-Java/</url>
-    <content><![CDATA[<p>Volatile用在多线程，同步变量。 线程为了提高效率，将某成员变量(如A)拷贝了一份（如B），线程中对A的访问其实访问的是B。只在某些动作时才进行A和B的同步。因此存在A和B不一致的情况。volatile就是用来避免这种情况的。volatile告诉jvm， 它所修饰的变量不保留拷贝，直接访问主内存中的（也就是上面说的A)</p>
-<p>在Java内存模型中，有main memory，每个线程也有自己的memory (例如寄存器)。为了性能，一个线程会在自己的memory中保持要访问的变量的副本。这样就会出现同一个变量在某个瞬间，在一个线程的memory中的值可能与另外一个线程memory中的值，或者main memory中的值不一致的情况。</p>
-<a id="more"></a>
-
-
-
-<p>一个变量声明为volatile，就意味着这个变量是随时会被其他线程修改的，因此不能将它cache在线程memory中。以下例子展现了volatile的作用：</p>
-<p>public class StoppableTask extends Thread {  </p>
-<p>  private volatile boolean pleaseStop;  </p>
-<p>  public void run() {  </p>
-<pre><code>while (!pleaseStop) {  
-
- // do some stuff...  
-
-}  </code></pre><p> }  </p>
-<p>  public void tellMeToStop() {  </p>
-<p>   pleaseStop = true;  </p>
-<p>  }  </p>
-<p>}  </p>
-<p>假如pleaseStop没有被声明为volatile，线程执行run的时候检查的是自己的副本，就不能及时得知其他线程已经调用tellMeToStop()修改了pleaseStop的值。</p>
-<p>Volatile一般情况下不能代替sychronized，因为volatile不能保证操作的原子性，即使只是i++，实际上也是由多个原子操作组成：read i; inc; write i，假如多个线程同时执行i++，volatile只能保证他们操作的i是同一块内存，但依然可能出现写入脏数据的情况。如果配合Java 5增加的atomic wrapper classes，对它们的increase之类的操作就不需要sychronized。</p>
-<p>Reference：<br><a href="http://www.javamex.com/tutorials/synchronization_volatile.shtml">http://www.javamex.com/tutorials/synchronization_volatile.shtml</a><br><a href="http://www.javamex.com/tutorials/synchronization_volatile_java_5.shtml">http://www.javamex.com/tutorials/synchronization_volatile_java_5.shtml</a><br><a href="http://www.ibm.com/developerworks/cn/java/j-jtp06197.html">http://www.ibm.com/developerworks/cn/java/j-jtp06197.html</a><br>恐怕比较一下volatile和synchronized的不同是最容易解释清楚的。volatile是变量修饰符，而synchronized则作用于一段代码或方法；看如下三句get代码：</p>
-<p>int i1;<br>int geti1() {return i1;}<br>volatile int i2;<br>int geti2()<br>{return i2;}<br>int i3;<br>synchronized int geti3() {return i3;}<br>　　geti1()  </p>
-<p>得到存储在当前线程中i1的数值。多个线程有多个i1变量拷贝，而且这些i1之间可以互不相同。换句话说，另一个线程可能已经改变了它线程内的i1值，而这个值可以和当前线程中的i1值不相同。事实上，Java有个思想叫“主”内存区域，这里存放了变量目前的“准确值”。每个线程可以有它自己的变量拷贝，而这个变量拷贝值可以和“主”内存区域里存放的不同。因此实际上存在一种可能：“主”内存区域里的i1值是1，线程1里的i1值是2，线程2里的i1值是3——这在线程1和线程2都改变了它们各自的i1值，而且这个改变还没来得及传递给“主”内存区域或其他线程时就会发生。<br>　　而 geti2()得到的是“主”内存区域的i2数值。用volatile修饰后的变量不允许有不同于“主”内存区域的变量拷贝。换句话说，一个变量经 volatile修饰后在所有线程中必须是同步的；任何线程中改变了它的值，所有其他线程立即获取到了相同的值。理所当然的，volatile修饰的变量存取时比一般变量消耗的资源要多一点，因为线程有它自己的变量拷贝更为高效。<br>　　既然volatile关键字已经实现了线程间数据同步，又要 synchronized干什么呢？呵呵，它们之间有两点不同。首先，synchronized获得并释放监视器——如果两个线程使用了同一个对象锁，监视器能强制保证代码块同时只被一个线程所执行——这是众所周知的事实。但是，synchronized也同步内存：事实上，synchronized在“ 主”内存区域同步整个线程的内存。因此，执行geti3()方法做了如下几步：</p>
-<pre><code>线程请求获得监视this对象的对象锁（假设未被锁，否则线程等待直到锁释放）
-线程内存的数据被消除，从“主”内存区域中读入（Java虚拟机能优化此步。。。[后面的不知道怎么表达,汗]）
-代码块被执行
-对于变量的任何改变现在可以安全地写到“主”内存区域中（不过geti3()方法不会改变变量值）
-线程释放监视this对象的对象锁
-　　因此volatile只是在线程内存和“主”内存间同步某个变量的值，而synchronized通过锁定和解锁某个监视器同步所有变量的值。显然synchronized要比volatile消耗更多资源。
-volatile关键字相信了解Java多线程的读者都很清楚它的作用。volatile关键字用于声明简单类型变量，如int、float、 boolean等数据类型。如果这些简单数据类型声明为volatile，对它们的操作就会变成原子级别的。但这有一定的限制。例如，下面的例子中的n就不是原子级别的：</code></pre><p>package  mythread;  </p>
-<p>public   class  JoinThread  extends  Thread<br>{<br>     public   static volatile int  n  =   0 ;<br>    public   void  run()<br>    {<br>         for  ( int  i  =   0 ; i  &lt;   10 ; i ++ )<br>             try<br>        {<br>                n  =  n  +   1 ;<br>                sleep( 3 );  //  为了使运行结果更随机，延迟3毫秒   </p>
-<pre><code>        }  
-         catch  (Exception e)  
-        {  
-        }  
-}  
-
- public   static   void  main(String[] args)  throws  Exception  
-{  
-
-    Thread threads[]  =   new  Thread[ 100 ];  
-     for  ( int  i  =   0 ; i  &lt;  threads.length; i ++ )  
-         //  建立100个线程   
-        threads[i]  =   new  JoinThread();  
-     for  ( int  i  =   0 ; i  &lt;  threads.length; i ++ )  
-         //  运行刚才建立的100个线程   
-        threads[i].start();  
-     for  ( int  i  =   0 ; i  &lt;  threads.length; i ++ )  
-         //  100个线程都执行完后继续   
-        threads[i].join();  
-    System.out.println( &quot; n= &quot;   +  JoinThread.n);  
-}  </code></pre><p>}   </p>
-<p>如果对n的操作是原子级别的，最后输出的结果应该为n=1000，而在执行上面积代码时，很多时侯输出的n都小于1000，这说明n=n+1不是原子级别的操作。原因是声明为volatile的简单变量如果当前值由该变量以前的值相关，那么volatile关键字不起作用，也就是说如下的表达式都不是原子操作：</p>
-<p>n  =  n  +   1 ;<br>n ++ ; </p>
-<p>如果要想使这种情况变成原子操作，需要使用synchronized关键字，如上的代码可以改成如下的形式：</p>
-<p>package  mythread;  </p>
-<p>public   class  JoinThread  extends  Thread<br>{<br>     public   static int  n  =   0 ;  </p>
-<pre><code> public static   synchronized   void  inc()  
-{  
-    n ++ ;  
-}  
- public   void  run()  
-{  
-     for  ( int  i  =   0 ; i  &lt;   10 ; i ++ )  
-         try   
-        {  
-            inc();  //  n = n + 1 改成了 inc();   
-            sleep( 3 );  //  为了使运行结果更随机，延迟3毫秒   
-
-        }  
-         catch  (Exception e)  
-        {  
-        }  
-}  
-
- public   static   void  main(String[] args)  throws  Exception  
-{  
-
-    Thread threads[]  =   new  Thread[ 100 ];  
-     for  ( int  i  =   0 ; i  &lt;  threads.length; i ++ )  
-         //  建立100个线程   
-        threads[i]  =   new  JoinThread();  
-     for  ( int  i  =   0 ; i  &lt;  threads.length; i ++ )  
-         //  运行刚才建立的100个线程   
-        threads[i].start();  
-     for  ( int  i  =   0 ; i  &lt;  threads.length; i ++ )  
-         //  100个线程都执行完后继续   
-        threads[i].join();  
-    System.out.println( &quot; n= &quot;   +  JoinThread.n);  
-}  </code></pre><p>}   </p>
-<p>上面的代码将n=n+1改成了inc()，其中inc方法使用了synchronized关键字进行方法同步。因此，在使用volatile关键字时要慎重，并不是只要简单类型变量使用volatile修饰，对这个变量的所有操作都是原来操作，当变量的值由自身的上一个决定时，如n=n+1、n++ 等，volatile关键字将失效，只有当变量的值和自身上一个值无关时对该变量的操作才是原子级别的，如n = m + 1，这个就是原级别的。所以在使用volatile关键时一定要谨慎，如果自己没有把握，可以使用synchronized来代替volatile。</p>
-]]></content>
-      <categories>
-        <category>java</category>
-      </categories>
-      <tags>
-        <tag>concurrency</tag>
       </tags>
   </entry>
   <entry>
@@ -1105,6 +958,158 @@ volatile关键字相信了解Java多线程的读者都很清楚它的作用。vo
       </categories>
       <tags>
         <tag>configuration</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Quarantine in Shanghai</title>
+    <url>/2020/04/07/Quarantine-in-Shanghai/</url>
+    <content><![CDATA[<h1 id="隔离记录"><a href="#隔离记录" class="headerlink" title="隔离记录"></a>隔离记录</h1><a id="more"></a>
+
+<h2 id="Day-1"><a href="#Day-1" class="headerlink" title="Day 1"></a>Day 1</h2><p><img src="https://raw.githubusercontent.com/yifanzhang13/yifanzhang13.github.io/master/images/QuarantinePics/day1.JPG" alt="day1"></p>
+<p>早上温度：36.9摄氏度</p>
+<p>下午温度：36.1摄氏度</p>
+<h2 id="Day-2"><a href="#Day-2" class="headerlink" title="Day 2"></a>Day 2</h2><p><img src="https://raw.githubusercontent.com/yifanzhang13/yifanzhang13.github.io/master/images/QuarantinePics/day2.JPG" alt="day2"></p>
+<p>早上温度：36.6摄氏度</p>
+<p>下午温度：36.4摄氏度</p>
+<h2 id="Day-3"><a href="#Day-3" class="headerlink" title="Day 3 *"></a>Day 3 *</h2><p><img src="https://raw.githubusercontent.com/yifanzhang13/yifanzhang13.github.io/master/images/QuarantinePics/day3.JPG" alt="day3"></p>
+<p>早上温度：36.0摄氏度</p>
+<p>下午温度：36.5摄氏度</p>
+<h2 id="Day-4"><a href="#Day-4" class="headerlink" title="Day 4"></a>Day 4</h2><p><img src="https://raw.githubusercontent.com/yifanzhang13/yifanzhang13.github.io/master/images/QuarantinePics/day4.JPG" alt="day4"></p>
+<p>上午温度：36.0摄氏度</p>
+<p>下午温度：36.5摄氏度</p>
+<h2 id="Day-5"><a href="#Day-5" class="headerlink" title="Day 5 *"></a>Day 5 *</h2><p><img src="https://raw.githubusercontent.com/yifanzhang13/yifanzhang13.github.io/master/images/QuarantinePics/day5.JPG" alt=""></p>
+<p>上午温度：36.0摄氏度</p>
+<p>下午温度：36.4摄氏度</p>
+<h2 id="Day-6"><a href="#Day-6" class="headerlink" title="Day 6"></a>Day 6</h2><p><img src="https://raw.githubusercontent.com/yifanzhang13/yifanzhang13.github.io/master/images/QuarantinePics/day6.JPG" alt=""></p>
+<p>上午温度：36.5摄氏度</p>
+<p>下午温度：36.9摄氏度</p>
+<h2 id="Day-7"><a href="#Day-7" class="headerlink" title="Day 7 *"></a>Day 7 *</h2><p><img src="https://raw.githubusercontent.com/yifanzhang13/yifanzhang13.github.io/master/images/QuarantinePics/day7.JPG" alt=""></p>
+<p>上午温度：36.4摄氏度</p>
+<p>下午温度：36.7摄氏度</p>
+<h2 id="Day-8"><a href="#Day-8" class="headerlink" title="Day 8"></a>Day 8</h2><p><img src="https://raw.githubusercontent.com/yifanzhang13/yifanzhang13.github.io/master/images/QuarantinePics/day8.JPG" alt=""></p>
+<p>上午温度：36.3摄氏度</p>
+<p>下午温度：36.7摄氏度</p>
+<h2 id="Day-9"><a href="#Day-9" class="headerlink" title="Day 9 *"></a>Day 9 *</h2><p><img src="https://raw.githubusercontent.com/yifanzhang13/yifanzhang13.github.io/master/images/QuarantinePics/day9.JPG" alt=""></p>
+<p>上午温度：36.3摄氏度</p>
+<p>下午温度：36.6摄氏度</p>
+<h2 id="Day-10"><a href="#Day-10" class="headerlink" title="Day 10 *"></a>Day 10 *</h2><p><img src="https://raw.githubusercontent.com/yifanzhang13/yifanzhang13.github.io/master/images/QuarantinePics/day10.JPG" alt=""></p>
+<p>上午温度：36.2摄氏度</p>
+<p>下午温度：36.7摄氏度</p>
+<h2 id="Day-11"><a href="#Day-11" class="headerlink" title="Day 11 *"></a>Day 11 *</h2><p><img src="https://raw.githubusercontent.com/yifanzhang13/yifanzhang13.github.io/master/images/QuarantinePics/day11.JPG" alt=""></p>
+<p>上午温度：36.4摄氏度</p>
+<p>下午温度：36.5摄氏度</p>
+<h2 id="Day-12"><a href="#Day-12" class="headerlink" title="Day 12"></a>Day 12</h2><p><img src="https://raw.githubusercontent.com/yifanzhang13/yifanzhang13.github.io/master/images/QuarantinePics/day12.JPG" alt=""></p>
+<p>上午温度：36.1摄氏度</p>
+<p>下午温度：36.5摄氏度</p>
+<h2 id="Day-13"><a href="#Day-13" class="headerlink" title="Day 13"></a>Day 13</h2><p><img src="https://raw.githubusercontent.com/yifanzhang13/yifanzhang13.github.io/master/images/QuarantinePics/day13.JPG" alt=""></p>
+<p>上午温度：36.1摄氏度</p>
+<p>下午温度：36.8摄氏度</p>
+<h2 id="Day-14"><a href="#Day-14" class="headerlink" title="Day 14"></a>Day 14</h2><p><img src="https://raw.githubusercontent.com/yifanzhang13/yifanzhang13.github.io/master/images/QuarantinePics/day14.JPG" alt=""></p>
+<p>上午温度：36.2摄氏度</p>
+<p>下午温度：36.5摄氏度</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>Usage Of Volatile In Java</title>
+    <url>/2019/12/02/Usage-Of-Volatile-In-Java/</url>
+    <content><![CDATA[<p>Volatile用在多线程，同步变量。 线程为了提高效率，将某成员变量(如A)拷贝了一份（如B），线程中对A的访问其实访问的是B。只在某些动作时才进行A和B的同步。因此存在A和B不一致的情况。volatile就是用来避免这种情况的。volatile告诉jvm， 它所修饰的变量不保留拷贝，直接访问主内存中的（也就是上面说的A)</p>
+<p>在Java内存模型中，有main memory，每个线程也有自己的memory (例如寄存器)。为了性能，一个线程会在自己的memory中保持要访问的变量的副本。这样就会出现同一个变量在某个瞬间，在一个线程的memory中的值可能与另外一个线程memory中的值，或者main memory中的值不一致的情况。</p>
+<a id="more"></a>
+
+
+
+<p>一个变量声明为volatile，就意味着这个变量是随时会被其他线程修改的，因此不能将它cache在线程memory中。以下例子展现了volatile的作用：</p>
+<p>public class StoppableTask extends Thread {  </p>
+<p>  private volatile boolean pleaseStop;  </p>
+<p>  public void run() {  </p>
+<pre><code>while (!pleaseStop) {  
+
+ // do some stuff...  
+
+}  </code></pre><p> }  </p>
+<p>  public void tellMeToStop() {  </p>
+<p>   pleaseStop = true;  </p>
+<p>  }  </p>
+<p>}  </p>
+<p>假如pleaseStop没有被声明为volatile，线程执行run的时候检查的是自己的副本，就不能及时得知其他线程已经调用tellMeToStop()修改了pleaseStop的值。</p>
+<p>Volatile一般情况下不能代替sychronized，因为volatile不能保证操作的原子性，即使只是i++，实际上也是由多个原子操作组成：read i; inc; write i，假如多个线程同时执行i++，volatile只能保证他们操作的i是同一块内存，但依然可能出现写入脏数据的情况。如果配合Java 5增加的atomic wrapper classes，对它们的increase之类的操作就不需要sychronized。</p>
+<p>Reference：<br><a href="http://www.javamex.com/tutorials/synchronization_volatile.shtml">http://www.javamex.com/tutorials/synchronization_volatile.shtml</a><br><a href="http://www.javamex.com/tutorials/synchronization_volatile_java_5.shtml">http://www.javamex.com/tutorials/synchronization_volatile_java_5.shtml</a><br><a href="http://www.ibm.com/developerworks/cn/java/j-jtp06197.html">http://www.ibm.com/developerworks/cn/java/j-jtp06197.html</a><br>恐怕比较一下volatile和synchronized的不同是最容易解释清楚的。volatile是变量修饰符，而synchronized则作用于一段代码或方法；看如下三句get代码：</p>
+<p>int i1;<br>int geti1() {return i1;}<br>volatile int i2;<br>int geti2()<br>{return i2;}<br>int i3;<br>synchronized int geti3() {return i3;}<br>　　geti1()  </p>
+<p>得到存储在当前线程中i1的数值。多个线程有多个i1变量拷贝，而且这些i1之间可以互不相同。换句话说，另一个线程可能已经改变了它线程内的i1值，而这个值可以和当前线程中的i1值不相同。事实上，Java有个思想叫“主”内存区域，这里存放了变量目前的“准确值”。每个线程可以有它自己的变量拷贝，而这个变量拷贝值可以和“主”内存区域里存放的不同。因此实际上存在一种可能：“主”内存区域里的i1值是1，线程1里的i1值是2，线程2里的i1值是3——这在线程1和线程2都改变了它们各自的i1值，而且这个改变还没来得及传递给“主”内存区域或其他线程时就会发生。<br>　　而 geti2()得到的是“主”内存区域的i2数值。用volatile修饰后的变量不允许有不同于“主”内存区域的变量拷贝。换句话说，一个变量经 volatile修饰后在所有线程中必须是同步的；任何线程中改变了它的值，所有其他线程立即获取到了相同的值。理所当然的，volatile修饰的变量存取时比一般变量消耗的资源要多一点，因为线程有它自己的变量拷贝更为高效。<br>　　既然volatile关键字已经实现了线程间数据同步，又要 synchronized干什么呢？呵呵，它们之间有两点不同。首先，synchronized获得并释放监视器——如果两个线程使用了同一个对象锁，监视器能强制保证代码块同时只被一个线程所执行——这是众所周知的事实。但是，synchronized也同步内存：事实上，synchronized在“ 主”内存区域同步整个线程的内存。因此，执行geti3()方法做了如下几步：</p>
+<pre><code>线程请求获得监视this对象的对象锁（假设未被锁，否则线程等待直到锁释放）
+线程内存的数据被消除，从“主”内存区域中读入（Java虚拟机能优化此步。。。[后面的不知道怎么表达,汗]）
+代码块被执行
+对于变量的任何改变现在可以安全地写到“主”内存区域中（不过geti3()方法不会改变变量值）
+线程释放监视this对象的对象锁
+　　因此volatile只是在线程内存和“主”内存间同步某个变量的值，而synchronized通过锁定和解锁某个监视器同步所有变量的值。显然synchronized要比volatile消耗更多资源。
+volatile关键字相信了解Java多线程的读者都很清楚它的作用。volatile关键字用于声明简单类型变量，如int、float、 boolean等数据类型。如果这些简单数据类型声明为volatile，对它们的操作就会变成原子级别的。但这有一定的限制。例如，下面的例子中的n就不是原子级别的：</code></pre><p>package  mythread;  </p>
+<p>public   class  JoinThread  extends  Thread<br>{<br>     public   static volatile int  n  =   0 ;<br>    public   void  run()<br>    {<br>         for  ( int  i  =   0 ; i  &lt;   10 ; i ++ )<br>             try<br>        {<br>                n  =  n  +   1 ;<br>                sleep( 3 );  //  为了使运行结果更随机，延迟3毫秒   </p>
+<pre><code>        }  
+         catch  (Exception e)  
+        {  
+        }  
+}  
+
+ public   static   void  main(String[] args)  throws  Exception  
+{  
+
+    Thread threads[]  =   new  Thread[ 100 ];  
+     for  ( int  i  =   0 ; i  &lt;  threads.length; i ++ )  
+         //  建立100个线程   
+        threads[i]  =   new  JoinThread();  
+     for  ( int  i  =   0 ; i  &lt;  threads.length; i ++ )  
+         //  运行刚才建立的100个线程   
+        threads[i].start();  
+     for  ( int  i  =   0 ; i  &lt;  threads.length; i ++ )  
+         //  100个线程都执行完后继续   
+        threads[i].join();  
+    System.out.println( &quot; n= &quot;   +  JoinThread.n);  
+}  </code></pre><p>}   </p>
+<p>如果对n的操作是原子级别的，最后输出的结果应该为n=1000，而在执行上面积代码时，很多时侯输出的n都小于1000，这说明n=n+1不是原子级别的操作。原因是声明为volatile的简单变量如果当前值由该变量以前的值相关，那么volatile关键字不起作用，也就是说如下的表达式都不是原子操作：</p>
+<p>n  =  n  +   1 ;<br>n ++ ; </p>
+<p>如果要想使这种情况变成原子操作，需要使用synchronized关键字，如上的代码可以改成如下的形式：</p>
+<p>package  mythread;  </p>
+<p>public   class  JoinThread  extends  Thread<br>{<br>     public   static int  n  =   0 ;  </p>
+<pre><code> public static   synchronized   void  inc()  
+{  
+    n ++ ;  
+}  
+ public   void  run()  
+{  
+     for  ( int  i  =   0 ; i  &lt;   10 ; i ++ )  
+         try   
+        {  
+            inc();  //  n = n + 1 改成了 inc();   
+            sleep( 3 );  //  为了使运行结果更随机，延迟3毫秒   
+
+        }  
+         catch  (Exception e)  
+        {  
+        }  
+}  
+
+ public   static   void  main(String[] args)  throws  Exception  
+{  
+
+    Thread threads[]  =   new  Thread[ 100 ];  
+     for  ( int  i  =   0 ; i  &lt;  threads.length; i ++ )  
+         //  建立100个线程   
+        threads[i]  =   new  JoinThread();  
+     for  ( int  i  =   0 ; i  &lt;  threads.length; i ++ )  
+         //  运行刚才建立的100个线程   
+        threads[i].start();  
+     for  ( int  i  =   0 ; i  &lt;  threads.length; i ++ )  
+         //  100个线程都执行完后继续   
+        threads[i].join();  
+    System.out.println( &quot; n= &quot;   +  JoinThread.n);  
+}  </code></pre><p>}   </p>
+<p>上面的代码将n=n+1改成了inc()，其中inc方法使用了synchronized关键字进行方法同步。因此，在使用volatile关键字时要慎重，并不是只要简单类型变量使用volatile修饰，对这个变量的所有操作都是原来操作，当变量的值由自身的上一个决定时，如n=n+1、n++ 等，volatile关键字将失效，只有当变量的值和自身上一个值无关时对该变量的操作才是原子级别的，如n = m + 1，这个就是原级别的。所以在使用volatile关键时一定要谨慎，如果自己没有把握，可以使用synchronized来代替volatile。</p>
+]]></content>
+      <categories>
+        <category>java</category>
+      </categories>
+      <tags>
+        <tag>concurrency</tag>
       </tags>
   </entry>
   <entry>
@@ -1870,6 +1875,47 @@ volatile关键字相信了解Java多线程的读者都很清楚它的作用。vo
       </categories>
       <tags>
         <tag>concurrency</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Sword_Offer</title>
+    <url>/2020/07/20/%E5%89%91%E6%8C%87Offer_%E8%A7%A3%E9%A2%98%E8%AE%B0%E5%BD%95/</url>
+    <content><![CDATA[<h1 id="剑指Offer-解题记录"><a href="#剑指Offer-解题记录" class="headerlink" title="剑指Offer_解题记录"></a>剑指Offer_解题记录</h1><ul>
+<li>📝分享和记录做题的思路</li>
+<li>哈哈</li>
+</ul>
+<a id="more"></a>
+
+<h2 id="LinkedList"><a href="#LinkedList" class="headerlink" title="LinkedList"></a><strong>LinkedList</strong></h2><h3 id="06-从尾到头打印链表"><a href="#06-从尾到头打印链表" class="headerlink" title="06-从尾到头打印链表 "></a><a href="https://leetcode-cn.com/problems/cong-wei-dao-tou-da-yin-lian-biao-lcof/">06-从尾到头打印链表 </a></h3><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.ArrayList;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">HeadTailLinkedNode_06</span> </span>&#123;</span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 输入一个链表的头节点，从尾到头反过来返回每个节点的值（用数组返回）。</span></span><br><span class="line"><span class="comment">     * 示例 1：</span></span><br><span class="line"><span class="comment">     *</span></span><br><span class="line"><span class="comment">     * 输入：head = [1,3,2]</span></span><br><span class="line"><span class="comment">     * 输出：[2,3,1]</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution_06_0</span></span>&#123;</span><br><span class="line">    <span class="comment">//创建一个arraylist来储存从尾到头的element</span></span><br><span class="line">    ArrayList&lt;Integer&gt; list = <span class="keyword">new</span> ArrayList&lt;&gt;();</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">int</span>[] reversePrint(ListNode head) &#123;</span><br><span class="line">        recur(head);</span><br><span class="line">        <span class="comment">//创建一个list大小的数组</span></span><br><span class="line">        <span class="keyword">int</span>[] res = <span class="keyword">new</span> <span class="keyword">int</span>[list.size()];</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">0</span>; i&lt;list.size();i++)&#123;</span><br><span class="line">            res[i] = list.get(i);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> res;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">recur</span><span class="params">(ListNode node)</span></span>&#123;</span><br><span class="line">        <span class="comment">/**</span></span><br><span class="line"><span class="comment">         * 这是一个递归方法</span></span><br><span class="line"><span class="comment">         * 终止条件：当node为null的时候说明已经到尾巴了</span></span><br><span class="line"><span class="comment">         * 当终止递归的时候开始回朔</span></span><br><span class="line"><span class="comment">         * 回朔会从尾巴到头一个一个的通过list.add(node.val)把值加到list中</span></span><br><span class="line"><span class="comment">         */</span></span><br><span class="line">        <span class="keyword">if</span>(node == <span class="keyword">null</span>) <span class="keyword">return</span>;</span><br><span class="line">        recur(node.next);</span><br><span class="line">        list.add(node.val);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="22-链表中倒数第k个结点"><a href="#22-链表中倒数第k个结点" class="headerlink" title="22-链表中倒数第k个结点 "></a><a href="https://leetcode-cn.com/problems/lian-biao-zhong-dao-shu-di-kge-jie-dian-lcof/">22-链表中倒数第k个结点 </a></h3><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.ArrayList;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">getKthFromEnd_22</span> </span>&#123;</span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 输入一个链表，输出该链表中倒数第k个节点。为了符合大多数人的习惯，本题从1开始计数，即链表的尾节点是倒数第1个节点。例如，一个链表有6个节点，从头节点开始，它们的值依次是1、2、3、4、5、6。这个链表的倒数第3个节点是值为4的节点。</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * 示例：</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * 给定一个链表: 1-&gt;2-&gt;3-&gt;4-&gt;5, 和 k = 2.</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * 返回链表 4-&gt;5.</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution_22_0</span></span>&#123;</span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 这个是递归的解法</span></span><br><span class="line"><span class="comment">     * 通过递归得到一个储存从尾到头的元素的list</span></span><br><span class="line"><span class="comment">     * 然后直接通过index k 来得到答案</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line"></span><br><span class="line">    ArrayList&lt;ListNode&gt; list = <span class="keyword">new</span> ArrayList&lt;&gt;();</span><br><span class="line">    <span class="keyword">boolean</span> FindOrNot = <span class="keyword">true</span>;</span><br><span class="line">    <span class="keyword">int</span> count=<span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> ListNode <span class="title">getKthFromEnd</span><span class="params">(ListNode head, <span class="keyword">int</span> k)</span> </span>&#123;</span><br><span class="line">        <span class="comment">//先递归，把element从尾巴到头储存到list中</span></span><br><span class="line">        recur(head);</span><br><span class="line">        <span class="keyword">return</span> list.get(k-<span class="number">1</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">recur</span><span class="params">(ListNode node)</span></span>&#123;</span><br><span class="line">        <span class="comment">/**</span></span><br><span class="line"><span class="comment">         * 递归解决</span></span><br><span class="line"><span class="comment">         * 从尾巴到头依次把element加到list中</span></span><br><span class="line"><span class="comment">         */</span></span><br><span class="line">        <span class="keyword">if</span> (node==<span class="keyword">null</span>) <span class="keyword">return</span>;</span><br><span class="line">        recur(node.next);</span><br><span class="line">        list.add(node);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">solution_22_1</span></span>&#123;</span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 这题用双指针</span></span><br><span class="line"><span class="comment">     * 算法流程：</span></span><br><span class="line"><span class="comment">     *</span></span><br><span class="line"><span class="comment">     * 初始化： 前指针 former 、后指针 latter ，双指针都指向头节点 head​ 。</span></span><br><span class="line"><span class="comment">     * 构建双指针距离： 前指针 former 先向前走 kkk 步（结束后，双指针 former 和 latter 间相距 kkk 步）。</span></span><br><span class="line"><span class="comment">     * 双指针共同移动： 循环中，双指针 former 和 latter 每轮都向前走一步，直至 former 走过链表 尾节点 时跳出（跳出后， latter 与尾节点距离为 k−1k-1k−1，即 latter 指向倒数第 kkk 个节点）。</span></span><br><span class="line"><span class="comment">     * 返回值： 返回 latter 即可。</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> ListNode <span class="title">getKthFromEnd</span><span class="params">(ListNode head, <span class="keyword">int</span> k)</span> </span>&#123;</span><br><span class="line">        <span class="comment">//两个指针最初都指向head</span></span><br><span class="line">        ListNode former=head, latter=head;</span><br><span class="line">        <span class="comment">//先让former指针移动k个位置</span></span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;k;i++)&#123;</span><br><span class="line">            <span class="comment">//如果只有一个node就是head，则直接返回latter</span></span><br><span class="line">            <span class="keyword">if</span> (former==<span class="keyword">null</span>) <span class="keyword">return</span> <span class="keyword">null</span>;</span><br><span class="line">            former = former.next;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">//当former移动到头，也就是当former等于null的时候，latter就到达倒数第k个element，这时再返回latter</span></span><br><span class="line">        <span class="keyword">while</span>(former!=<span class="keyword">null</span>)&#123;</span><br><span class="line">            former = former.next;</span><br><span class="line">            latter = latter.next;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> latter;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="24-反转链表"><a href="#24-反转链表" class="headerlink" title="24-反转链表"></a><a href="https://leetcode-cn.com/problems/fan-zhuan-lian-biao-lcof/">24-反转链表</a></h3><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.ArrayList;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">reverseList_24</span> </span>&#123;</span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 定义一个函数，输入一个链表的头节点，反转该链表并输出反转后链表的头节点。</span></span><br><span class="line"><span class="comment">     *</span></span><br><span class="line"><span class="comment">     *</span></span><br><span class="line"><span class="comment">     *</span></span><br><span class="line"><span class="comment">     * 示例:</span></span><br><span class="line"><span class="comment">     *</span></span><br><span class="line"><span class="comment">     * 输入: 1-&gt;2-&gt;3-&gt;4-&gt;5-&gt;NULL</span></span><br><span class="line"><span class="comment">     * 输出: 5-&gt;4-&gt;3-&gt;2-&gt;1-&gt;NULL</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution_24_0</span></span>&#123;</span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 这是一个土办法</span></span><br><span class="line"><span class="comment">     * 先用list从尾到头来储存node的值</span></span><br><span class="line"><span class="comment">     * 然后利用递归把每一个node的val更换为list中已经反转的值</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    ArrayList&lt;Integer&gt; list = <span class="keyword">new</span> ArrayList&lt;&gt;();</span><br><span class="line">    <span class="keyword">int</span> i = <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> ListNode <span class="title">reverseList</span><span class="params">(ListNode head)</span> </span>&#123;</span><br><span class="line">        recur(head);</span><br><span class="line">        recur1(head);</span><br><span class="line">        <span class="keyword">return</span> head;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">recur</span><span class="params">(ListNode node)</span></span>&#123;</span><br><span class="line">        <span class="comment">//先用递归把所有的node存起来</span></span><br><span class="line">        <span class="keyword">if</span> (node==<span class="keyword">null</span>) <span class="keyword">return</span>;</span><br><span class="line">        recur(node.next);</span><br><span class="line">        list.add(node.val);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">recur1</span><span class="params">(ListNode node)</span></span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (node==<span class="keyword">null</span>) <span class="keyword">return</span>;</span><br><span class="line">        node.val=list.get(i++);</span><br><span class="line">        recur1(node.next);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="25-合并两个排序的链表"><a href="#25-合并两个排序的链表" class="headerlink" title="25-合并两个排序的链表"></a><a href="https://leetcode-cn.com/problems/he-bing-liang-ge-pai-xu-de-lian-biao-lcof/">25-合并两个排序的链表</a></h3><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">mergeTwoLists_25</span> </span>&#123;</span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 输入两个递增排序的链表，合并这两个链表并使新链表中的节点仍然是递增排序的。</span></span><br><span class="line"><span class="comment">     *</span></span><br><span class="line"><span class="comment">     * 示例1：</span></span><br><span class="line"><span class="comment">     *</span></span><br><span class="line"><span class="comment">     * 输入：1-&gt;2-&gt;4, 1-&gt;3-&gt;4</span></span><br><span class="line"><span class="comment">     * 输出：1-&gt;1-&gt;2-&gt;3-&gt;4-&gt;4</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution_25_0</span></span>&#123;</span><br><span class="line">    <span class="comment">//伪头点</span></span><br><span class="line">    ListNode dum = <span class="keyword">new</span> ListNode(<span class="number">0</span>);</span><br><span class="line">    <span class="comment">//cur先指向dum</span></span><br><span class="line">    ListNode cur = dum;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> ListNode <span class="title">mergeTwoLists</span><span class="params">(ListNode l1, ListNode l2)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">while</span> (l1 != <span class="keyword">null</span> &amp;&amp; l2 != <span class="keyword">null</span>)&#123;</span><br><span class="line">            <span class="keyword">if</span> (l1.val&lt;l2.val)&#123;</span><br><span class="line">                cur.next = l1;</span><br><span class="line">                l1 = l1.next;</span><br><span class="line">            &#125;<span class="keyword">else</span> &#123;</span><br><span class="line">                cur.next = l2;</span><br><span class="line">                l2 = l2.next;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="comment">//cur往前更新一步</span></span><br><span class="line">            cur = cur.next;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span> (l1!=<span class="keyword">null</span>)&#123;</span><br><span class="line">            cur.next=l1;</span><br><span class="line">        &#125;<span class="keyword">else</span> &#123;</span><br><span class="line">            cur.next=l2;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> dum.next;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="35-复杂链表的复制"><a href="#35-复杂链表的复制" class="headerlink" title="35-复杂链表的复制"></a><a href="https://leetcode-cn.com/problems/fu-za-lian-biao-de-fu-zhi-lcof/">35-复杂链表的复制</a></h3><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.HashMap;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">copyRandomList_35</span> </span>&#123;</span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 请实现 copyRandomList 函数，复制一个复杂链表。在复杂链表中，</span></span><br><span class="line"><span class="comment">     * 每个节点除了有一个 next 指针指向下一个节点，还有一个 random 指针指向链表中的任意节点或者 null。</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution_35_0</span></span>&#123;</span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 使用HashMap来解题</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> Node <span class="title">copyRandomList</span><span class="params">(Node head)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (head==<span class="keyword">null</span>) <span class="keyword">return</span> <span class="keyword">null</span>;</span><br><span class="line">        <span class="comment">//创建map</span></span><br><span class="line">        HashMap&lt;Node,Node&gt; map = <span class="keyword">new</span> HashMap&lt;&gt;();</span><br><span class="line">        <span class="comment">//指向head</span></span><br><span class="line">        Node cur = head;</span><br><span class="line">        <span class="comment">//复制Node</span></span><br><span class="line">        <span class="keyword">while</span> (cur!=<span class="keyword">null</span>)&#123;</span><br><span class="line">            map.put(cur,<span class="keyword">new</span> Node(cur.val));</span><br><span class="line">            cur = cur.next;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">//再次指向head</span></span><br><span class="line">        cur = head;</span><br><span class="line">        <span class="comment">//复制Node的random和next</span></span><br><span class="line">        <span class="keyword">while</span> (cur!=<span class="keyword">null</span>)&#123;</span><br><span class="line">            map.get(cur).next = map.get(cur.next);</span><br><span class="line">            map.get(cur).random = map.get(cur.random);</span><br><span class="line">            cur = cur.next;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> map.get(head);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="52-两个链表的第一个公共节点"><a href="#52-两个链表的第一个公共节点" class="headerlink" title="52-两个链表的第一个公共节点"></a><a href="https://leetcode-cn.com/problems/liang-ge-lian-biao-de-di-yi-ge-gong-gong-jie-dian-lcof/">52-两个链表的第一个公共节点</a></h3><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">getIntersectionNode_52</span> </span>&#123;</span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 输入：intersectVal = 8, listA = [4,1,8,4,5], listB = [5,0,1,8,4,5], skipA = 2, skipB = 3</span></span><br><span class="line"><span class="comment">     * 输出：Reference of the node with value = 8</span></span><br><span class="line"><span class="comment">     * 输入解释：相交节点的值为 8 （注意，如果两个列表相交则不能为 0）。从各自的表头开始算起，链表 A 为 [4,1,8,4,5]，链表 B 为 [5,0,1,8,4,5]。在 A 中，相交节点前有 2 个节点；在 B 中，相交节点前有 3 个节点。</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution_52_0</span></span>&#123;</span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 如果两个无环链表相交,那么从相交节点开始,一直到两个链表终止的这一段,是两个链表共享的。</span></span><br><span class="line"><span class="comment">     *</span></span><br><span class="line"><span class="comment">     * 因此解决该问题的具体过程如下:</span></span><br><span class="line"><span class="comment">     *</span></span><br><span class="line"><span class="comment">     *     链表1从头节点开始，走到最后一个节点(不是结束)，统计链表1的长度记为len1，同时记录链表1的最后一个节点记为end1</span></span><br><span class="line"><span class="comment">     *</span></span><br><span class="line"><span class="comment">     *     链表2从头节点开始，走到最后一个节点(不是结束)，统计链表2的长度记为len2，同时记录链表2的最后一个节点记为end2。</span></span><br><span class="line"><span class="comment">     *</span></span><br><span class="line"><span class="comment">     *     如果end1!=end2，说明两个链表不相交，返回nul即可。如果end=end2，说明两个链表相交，进入步骤4来找寻第一个相交节点。</span></span><br><span class="line"><span class="comment">     *</span></span><br><span class="line"><span class="comment">     *     如果链表1比较长，链表1就先走len1-len2步。如果链表2比较长，链表2就先走len2-len1步。然后两个链表一起走，一起走的过程中，两个链表第一次走到一起的那个节点，就是第一个相交的节点。</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> ListNode <span class="title">getIntersectionNode</span><span class="params">(ListNode headA, ListNode headB)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (headA==<span class="keyword">null</span> || headB==<span class="keyword">null</span>) <span class="keyword">return</span> <span class="keyword">null</span>;</span><br><span class="line">        <span class="keyword">int</span> lenA=<span class="number">0</span>, lenB=<span class="number">0</span>;</span><br><span class="line">        ListNode curA = headA, curB = headB;</span><br><span class="line">        <span class="comment">//计算lenA</span></span><br><span class="line">        <span class="keyword">while</span>(curA!=<span class="keyword">null</span>)&#123;</span><br><span class="line">            lenA++;</span><br><span class="line">            curA = curA.next;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">//计算lenB</span></span><br><span class="line">        <span class="keyword">while</span> (curB!=<span class="keyword">null</span>)&#123;</span><br><span class="line">            lenB++;</span><br><span class="line">            curB = curB.next;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">//如果end1!=end2，说明两个链表不相交，返回nul即可。如果end=end2，说明两个链表相交，进入步骤4来找寻第一个相交节点。</span></span><br><span class="line">        <span class="keyword">int</span> dif = (lenA-lenB);</span><br><span class="line">        curA = dif&gt;<span class="number">0</span> ? headA : headB;</span><br><span class="line">        curB = curA==headA ? headB : headA;</span><br><span class="line">        dif = Math.abs(dif);</span><br><span class="line">        <span class="keyword">if</span> (dif&gt;<span class="number">0</span>)&#123;</span><br><span class="line">            <span class="keyword">while</span> (dif &gt; <span class="number">0</span>)&#123;</span><br><span class="line">                curA = curA.next;</span><br><span class="line">                dif--;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">//现在两个链表一起走，等两个node相等的时候就返回，因为找到了intersect point</span></span><br><span class="line">        <span class="keyword">while</span>(curA!=curB)&#123;</span><br><span class="line">            curA = curA.next;</span><br><span class="line">            curB = curB.next;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">//返回curA curB都行，因为相同</span></span><br><span class="line">        <span class="keyword">return</span> curA;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="18-删除链表的节点"><a href="#18-删除链表的节点" class="headerlink" title="18-删除链表的节点 "></a><a href="https://leetcode-cn.com/problems/shan-chu-lian-biao-de-jie-dian-lcof/">18-删除链表的节点 </a></h3><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">deleteNode_18</span> </span>&#123;</span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 给定单向链表的头指针和一个要删除的节点的值，定义一个函数删除该节点。</span></span><br><span class="line"><span class="comment">     *</span></span><br><span class="line"><span class="comment">     * 返回删除后的链表的头节点。</span></span><br><span class="line"><span class="comment">     *</span></span><br><span class="line"><span class="comment">     * 注意：此题对比原题有改动</span></span><br><span class="line"><span class="comment">     *</span></span><br><span class="line"><span class="comment">     * 示例 1:</span></span><br><span class="line"><span class="comment">     *</span></span><br><span class="line"><span class="comment">     * 输入: head = [4,5,1,9], val = 5</span></span><br><span class="line"><span class="comment">     * 输出: [4,1,9]</span></span><br><span class="line"><span class="comment">     * 解释: 给定你链表中值为 5 的第二个节点，那么在调用了你的函数之后，该链表应变为 4 -&gt; 1 -&gt; 9.</span></span><br><span class="line"><span class="comment">     *</span></span><br><span class="line"><span class="comment">     * 示例 2:</span></span><br><span class="line"><span class="comment">     *</span></span><br><span class="line"><span class="comment">     * 输入: head = [4,5,1,9], val = 1</span></span><br><span class="line"><span class="comment">     * 输出: [4,5,9]</span></span><br><span class="line"><span class="comment">     * 解释: 给定你链表中值为 1 的第三个节点，那么在调用了你的函数之后，该链表应变为 4 -&gt; 5 -&gt; 9.</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution_18_0</span></span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> ListNode <span class="title">deleteNode</span><span class="params">(ListNode head, <span class="keyword">int</span> val)</span> </span>&#123;</span><br><span class="line">        <span class="comment">/**</span></span><br><span class="line"><span class="comment">         *     删除值为 val 的节点可分为两步：定位节点、修改引用。</span></span><br><span class="line"><span class="comment">         *</span></span><br><span class="line"><span class="comment">         *     定位节点： 遍历链表，直到 head.val == val 时跳出，即可定位目标节点。</span></span><br><span class="line"><span class="comment">         *     修改引用： 设节点 cur 的前驱节点为 pre ，后继节点为 cur.next ；则执行 pre.next = cur.next ，即可实现删除 cur 节点。</span></span><br><span class="line"><span class="comment">         */</span></span><br><span class="line">        <span class="keyword">if</span> (head.val==val) <span class="keyword">return</span> head.next;</span><br><span class="line">        <span class="comment">//创建指针</span></span><br><span class="line">        ListNode cur = head, pre = head;</span><br><span class="line">        <span class="keyword">int</span> count = <span class="number">0</span>;</span><br><span class="line">        <span class="comment">//找到目标节点</span></span><br><span class="line">        <span class="keyword">while</span> (cur.val!=val)&#123;</span><br><span class="line">            cur = cur.next;</span><br><span class="line">            count++;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">//找到目标节点前面的一个节点</span></span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;(count-<span class="number">1</span>);i++)&#123;</span><br><span class="line">            pre = pre.next;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">//删除目标节点</span></span><br><span class="line">        pre.next = cur.next;</span><br><span class="line">        <span class="keyword">return</span> head;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>LeetCode</category>
+      </categories>
+      <tags>
+        <tag>note</tag>
       </tags>
   </entry>
 </search>
