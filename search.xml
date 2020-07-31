@@ -1,20 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>First Blog</title>
-    <url>/2019/11/14/First-Blog/</url>
-    <content><![CDATA[<p>Hello World!</p>
-<p>Personal Blog Test!</p>
-<p>Done!</p>
-]]></content>
-      <categories>
-        <category>Hello World!</category>
-      </categories>
-      <tags>
-        <tag>Hello World!</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>COMP0141 Security</title>
     <url>/2020/04/08/COMP0141-Security/</url>
     <content><![CDATA[<h1 id="Lecture-1-1"><a href="#Lecture-1-1" class="headerlink" title="Lecture 1-1"></a>Lecture 1-1</h1><h2 id="CIA-Triangle"><a href="#CIA-Triangle" class="headerlink" title="CIA Triangle"></a>CIA Triangle</h2><ul>
@@ -673,35 +659,17 @@
       </tags>
   </entry>
   <entry>
-    <title>LeetCode做题记录</title>
-    <url>/2020/04/23/LeetCode%E5%81%9A%E9%A2%98%E8%AE%B0%E5%BD%95/</url>
-    <content><![CDATA[<a id="more"></a>
-
-<h1 id="205-同构字符串"><a href="#205-同构字符串" class="headerlink" title="205.同构字符串"></a><a href="https://leetcode-cn.com/problems/isomorphic-strings/">205.同构字符串</a></h1><p><u><strong>思路分析</strong></u></p>
-<ul>
-<li><p>我们可以利用一个 HashMap 来处理映射。对于 s 到 t 的映射，我们同时遍历 s 和 t ，假设当前遇到的字母分别是 c1 和 c2 。</p>
-</li>
-<li><p>如果 map[c1] 不存在，那么就将 c1 映射到 c2 ，即 map[c1] = c2。</p>
-</li>
-<li><p>如果 map[c1] 存在，那么就判断 map[c1] 是否等于 c2，也就是验证之前的映射和当前的字母是否相同。</p>
-</li>
-<li><p>对于这道题，我们只需要验证 s - &gt; t 和 t -&gt; s 两个方向即可。如果验证一个方向，是不可以的。</p>
-</li>
-<li><p>举个例子，s = ab, t = cc，如果单看 s -&gt; t ，那么 a -&gt; c, b -&gt; c 是没有问题的。</p>
-</li>
-<li><p>必须再验证 t -&gt; s，此时，c -&gt; a, c -&gt; b，一个字母对应了多个字母，所以不是同构的。代码的话，只需要调用两次上边的代码即可。</p>
-</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">egg 和 add 同构，就意味着下边的映射成立</span><br><span class="line">e -&gt; a</span><br><span class="line">g -&gt; d</span><br><span class="line">也就是将 egg 的 e 换成 a, g 换成 d, 就变成了 add</span><br><span class="line"></span><br><span class="line">同时倒过来也成立</span><br><span class="line">a -&gt; e</span><br><span class="line">d -&gt; g</span><br><span class="line">也就是将 add 的 a 换成 e, d 换成 g, 就变成了 egg</span><br><span class="line"></span><br><span class="line">foo 和 bar 不同构，原因就是映射不唯一</span><br><span class="line">o -&gt; a</span><br><span class="line">o -&gt; r</span><br><span class="line">其中 o 映射到了两个字母</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">isIsomorphic1</span><span class="params">(String s,String t)</span></span>&#123;</span><br><span class="line">        <span class="keyword">return</span> isIsomorphicHelper(s,t) &amp;&amp; isIsomorphicHelper(t,s);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">isIsomorphicHelper</span><span class="params">(String s, String t)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> len = s.length();</span><br><span class="line">        HashMap&lt;Character,Character&gt; map = <span class="keyword">new</span> HashMap&lt;&gt;();</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;len;i++)&#123;</span><br><span class="line">            <span class="keyword">char</span> c1 = s.charAt(i);</span><br><span class="line">            <span class="keyword">char</span> c2 = t.charAt(i);</span><br><span class="line">            <span class="keyword">if</span> (!map.containsKey(c1))&#123;</span><br><span class="line">                map.put(c1,c2);</span><br><span class="line">            &#125;<span class="keyword">else</span> &#123;</span><br><span class="line">                <span class="keyword">if</span> (map.get(c1)!=c2)&#123;</span><br><span class="line">                    <span class="keyword">return</span> <span class="keyword">false</span>;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
-
+    <title>First Blog</title>
+    <url>/2019/11/14/First-Blog/</url>
+    <content><![CDATA[<p>Hello World!</p>
+<p>Personal Blog Test!</p>
+<p>Done!</p>
 ]]></content>
       <categories>
-        <category>Notes</category>
+        <category>Hello World!</category>
       </categories>
       <tags>
-        <tag>LeetCode</tag>
+        <tag>Hello World!</tag>
       </tags>
   </entry>
   <entry>
@@ -725,55 +693,6 @@
       <tags>
         <tag>ERROR</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>Quarantine in Shanghai</title>
-    <url>/2020/04/07/Quarantine-in-Shanghai/</url>
-    <content><![CDATA[<h1 id="隔离记录"><a href="#隔离记录" class="headerlink" title="隔离记录"></a>隔离记录</h1><a id="more"></a>
-
-<h2 id="Day-1"><a href="#Day-1" class="headerlink" title="Day 1"></a>Day 1</h2><p><img src="https://raw.githubusercontent.com/yifanzhang13/yifanzhang13.github.io/master/images/QuarantinePics/day1.JPG" alt="day1"></p>
-<p>早上温度：36.9摄氏度</p>
-<p>下午温度：36.1摄氏度</p>
-<h2 id="Day-2"><a href="#Day-2" class="headerlink" title="Day 2"></a>Day 2</h2><p><img src="https://raw.githubusercontent.com/yifanzhang13/yifanzhang13.github.io/master/images/QuarantinePics/day2.JPG" alt="day2"></p>
-<p>早上温度：36.6摄氏度</p>
-<p>下午温度：36.4摄氏度</p>
-<h2 id="Day-3"><a href="#Day-3" class="headerlink" title="Day 3 *"></a>Day 3 *</h2><p><img src="https://raw.githubusercontent.com/yifanzhang13/yifanzhang13.github.io/master/images/QuarantinePics/day3.JPG" alt="day3"></p>
-<p>早上温度：36.0摄氏度</p>
-<p>下午温度：36.5摄氏度</p>
-<h2 id="Day-4"><a href="#Day-4" class="headerlink" title="Day 4"></a>Day 4</h2><p><img src="https://raw.githubusercontent.com/yifanzhang13/yifanzhang13.github.io/master/images/QuarantinePics/day4.JPG" alt="day4"></p>
-<p>上午温度：36.0摄氏度</p>
-<p>下午温度：36.5摄氏度</p>
-<h2 id="Day-5"><a href="#Day-5" class="headerlink" title="Day 5 *"></a>Day 5 *</h2><p><img src="https://raw.githubusercontent.com/yifanzhang13/yifanzhang13.github.io/master/images/QuarantinePics/day5.JPG" alt=""></p>
-<p>上午温度：36.0摄氏度</p>
-<p>下午温度：36.4摄氏度</p>
-<h2 id="Day-6"><a href="#Day-6" class="headerlink" title="Day 6"></a>Day 6</h2><p><img src="https://raw.githubusercontent.com/yifanzhang13/yifanzhang13.github.io/master/images/QuarantinePics/day6.JPG" alt=""></p>
-<p>上午温度：36.5摄氏度</p>
-<p>下午温度：36.9摄氏度</p>
-<h2 id="Day-7"><a href="#Day-7" class="headerlink" title="Day 7 *"></a>Day 7 *</h2><p><img src="https://raw.githubusercontent.com/yifanzhang13/yifanzhang13.github.io/master/images/QuarantinePics/day7.JPG" alt=""></p>
-<p>上午温度：36.4摄氏度</p>
-<p>下午温度：36.7摄氏度</p>
-<h2 id="Day-8"><a href="#Day-8" class="headerlink" title="Day 8"></a>Day 8</h2><p><img src="https://raw.githubusercontent.com/yifanzhang13/yifanzhang13.github.io/master/images/QuarantinePics/day8.JPG" alt=""></p>
-<p>上午温度：36.3摄氏度</p>
-<p>下午温度：36.7摄氏度</p>
-<h2 id="Day-9"><a href="#Day-9" class="headerlink" title="Day 9 *"></a>Day 9 *</h2><p><img src="https://raw.githubusercontent.com/yifanzhang13/yifanzhang13.github.io/master/images/QuarantinePics/day9.JPG" alt=""></p>
-<p>上午温度：36.3摄氏度</p>
-<p>下午温度：36.6摄氏度</p>
-<h2 id="Day-10"><a href="#Day-10" class="headerlink" title="Day 10 *"></a>Day 10 *</h2><p><img src="https://raw.githubusercontent.com/yifanzhang13/yifanzhang13.github.io/master/images/QuarantinePics/day10.JPG" alt=""></p>
-<p>上午温度：36.2摄氏度</p>
-<p>下午温度：36.7摄氏度</p>
-<h2 id="Day-11"><a href="#Day-11" class="headerlink" title="Day 11 *"></a>Day 11 *</h2><p><img src="https://raw.githubusercontent.com/yifanzhang13/yifanzhang13.github.io/master/images/QuarantinePics/day11.JPG" alt=""></p>
-<p>上午温度：36.4摄氏度</p>
-<p>下午温度：36.5摄氏度</p>
-<h2 id="Day-12"><a href="#Day-12" class="headerlink" title="Day 12"></a>Day 12</h2><p><img src="https://raw.githubusercontent.com/yifanzhang13/yifanzhang13.github.io/master/images/QuarantinePics/day12.JPG" alt=""></p>
-<p>上午温度：36.1摄氏度</p>
-<p>下午温度：36.5摄氏度</p>
-<h2 id="Day-13"><a href="#Day-13" class="headerlink" title="Day 13"></a>Day 13</h2><p><img src="https://raw.githubusercontent.com/yifanzhang13/yifanzhang13.github.io/master/images/QuarantinePics/day13.JPG" alt=""></p>
-<p>上午温度：36.1摄氏度</p>
-<p>下午温度：36.8摄氏度</p>
-<h2 id="Day-14"><a href="#Day-14" class="headerlink" title="Day 14"></a>Day 14</h2><p><img src="https://raw.githubusercontent.com/yifanzhang13/yifanzhang13.github.io/master/images/QuarantinePics/day14.JPG" alt=""></p>
-<p>上午温度：36.2摄氏度</p>
-<p>下午温度：36.5摄氏度</p>
-]]></content>
   </entry>
   <entry>
     <title>MachineLearning_Notes</title>
@@ -838,6 +757,87 @@
       <tags>
         <tag>Machine Learning</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>LeetCode做题记录</title>
+    <url>/2020/04/23/LeetCode%E5%81%9A%E9%A2%98%E8%AE%B0%E5%BD%95/</url>
+    <content><![CDATA[<a id="more"></a>
+
+<h1 id="205-同构字符串"><a href="#205-同构字符串" class="headerlink" title="205.同构字符串"></a><a href="https://leetcode-cn.com/problems/isomorphic-strings/">205.同构字符串</a></h1><p><u><strong>思路分析</strong></u></p>
+<ul>
+<li><p>我们可以利用一个 HashMap 来处理映射。对于 s 到 t 的映射，我们同时遍历 s 和 t ，假设当前遇到的字母分别是 c1 和 c2 。</p>
+</li>
+<li><p>如果 map[c1] 不存在，那么就将 c1 映射到 c2 ，即 map[c1] = c2。</p>
+</li>
+<li><p>如果 map[c1] 存在，那么就判断 map[c1] 是否等于 c2，也就是验证之前的映射和当前的字母是否相同。</p>
+</li>
+<li><p>对于这道题，我们只需要验证 s - &gt; t 和 t -&gt; s 两个方向即可。如果验证一个方向，是不可以的。</p>
+</li>
+<li><p>举个例子，s = ab, t = cc，如果单看 s -&gt; t ，那么 a -&gt; c, b -&gt; c 是没有问题的。</p>
+</li>
+<li><p>必须再验证 t -&gt; s，此时，c -&gt; a, c -&gt; b，一个字母对应了多个字母，所以不是同构的。代码的话，只需要调用两次上边的代码即可。</p>
+</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">egg 和 add 同构，就意味着下边的映射成立</span><br><span class="line">e -&gt; a</span><br><span class="line">g -&gt; d</span><br><span class="line">也就是将 egg 的 e 换成 a, g 换成 d, 就变成了 add</span><br><span class="line"></span><br><span class="line">同时倒过来也成立</span><br><span class="line">a -&gt; e</span><br><span class="line">d -&gt; g</span><br><span class="line">也就是将 add 的 a 换成 e, d 换成 g, 就变成了 egg</span><br><span class="line"></span><br><span class="line">foo 和 bar 不同构，原因就是映射不唯一</span><br><span class="line">o -&gt; a</span><br><span class="line">o -&gt; r</span><br><span class="line">其中 o 映射到了两个字母</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">isIsomorphic1</span><span class="params">(String s,String t)</span></span>&#123;</span><br><span class="line">        <span class="keyword">return</span> isIsomorphicHelper(s,t) &amp;&amp; isIsomorphicHelper(t,s);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">isIsomorphicHelper</span><span class="params">(String s, String t)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> len = s.length();</span><br><span class="line">        HashMap&lt;Character,Character&gt; map = <span class="keyword">new</span> HashMap&lt;&gt;();</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;len;i++)&#123;</span><br><span class="line">            <span class="keyword">char</span> c1 = s.charAt(i);</span><br><span class="line">            <span class="keyword">char</span> c2 = t.charAt(i);</span><br><span class="line">            <span class="keyword">if</span> (!map.containsKey(c1))&#123;</span><br><span class="line">                map.put(c1,c2);</span><br><span class="line">            &#125;<span class="keyword">else</span> &#123;</span><br><span class="line">                <span class="keyword">if</span> (map.get(c1)!=c2)&#123;</span><br><span class="line">                    <span class="keyword">return</span> <span class="keyword">false</span>;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>Notes</category>
+      </categories>
+      <tags>
+        <tag>LeetCode</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Quarantine in Shanghai</title>
+    <url>/2020/04/07/Quarantine-in-Shanghai/</url>
+    <content><![CDATA[<h1 id="隔离记录"><a href="#隔离记录" class="headerlink" title="隔离记录"></a>隔离记录</h1><a id="more"></a>
+
+<h2 id="Day-1"><a href="#Day-1" class="headerlink" title="Day 1"></a>Day 1</h2><p><img src="https://raw.githubusercontent.com/yifanzhang13/yifanzhang13.github.io/master/images/QuarantinePics/day1.JPG" alt="day1"></p>
+<p>早上温度：36.9摄氏度</p>
+<p>下午温度：36.1摄氏度</p>
+<h2 id="Day-2"><a href="#Day-2" class="headerlink" title="Day 2"></a>Day 2</h2><p><img src="https://raw.githubusercontent.com/yifanzhang13/yifanzhang13.github.io/master/images/QuarantinePics/day2.JPG" alt="day2"></p>
+<p>早上温度：36.6摄氏度</p>
+<p>下午温度：36.4摄氏度</p>
+<h2 id="Day-3"><a href="#Day-3" class="headerlink" title="Day 3 *"></a>Day 3 *</h2><p><img src="https://raw.githubusercontent.com/yifanzhang13/yifanzhang13.github.io/master/images/QuarantinePics/day3.JPG" alt="day3"></p>
+<p>早上温度：36.0摄氏度</p>
+<p>下午温度：36.5摄氏度</p>
+<h2 id="Day-4"><a href="#Day-4" class="headerlink" title="Day 4"></a>Day 4</h2><p><img src="https://raw.githubusercontent.com/yifanzhang13/yifanzhang13.github.io/master/images/QuarantinePics/day4.JPG" alt="day4"></p>
+<p>上午温度：36.0摄氏度</p>
+<p>下午温度：36.5摄氏度</p>
+<h2 id="Day-5"><a href="#Day-5" class="headerlink" title="Day 5 *"></a>Day 5 *</h2><p><img src="https://raw.githubusercontent.com/yifanzhang13/yifanzhang13.github.io/master/images/QuarantinePics/day5.JPG" alt=""></p>
+<p>上午温度：36.0摄氏度</p>
+<p>下午温度：36.4摄氏度</p>
+<h2 id="Day-6"><a href="#Day-6" class="headerlink" title="Day 6"></a>Day 6</h2><p><img src="https://raw.githubusercontent.com/yifanzhang13/yifanzhang13.github.io/master/images/QuarantinePics/day6.JPG" alt=""></p>
+<p>上午温度：36.5摄氏度</p>
+<p>下午温度：36.9摄氏度</p>
+<h2 id="Day-7"><a href="#Day-7" class="headerlink" title="Day 7 *"></a>Day 7 *</h2><p><img src="https://raw.githubusercontent.com/yifanzhang13/yifanzhang13.github.io/master/images/QuarantinePics/day7.JPG" alt=""></p>
+<p>上午温度：36.4摄氏度</p>
+<p>下午温度：36.7摄氏度</p>
+<h2 id="Day-8"><a href="#Day-8" class="headerlink" title="Day 8"></a>Day 8</h2><p><img src="https://raw.githubusercontent.com/yifanzhang13/yifanzhang13.github.io/master/images/QuarantinePics/day8.JPG" alt=""></p>
+<p>上午温度：36.3摄氏度</p>
+<p>下午温度：36.7摄氏度</p>
+<h2 id="Day-9"><a href="#Day-9" class="headerlink" title="Day 9 *"></a>Day 9 *</h2><p><img src="https://raw.githubusercontent.com/yifanzhang13/yifanzhang13.github.io/master/images/QuarantinePics/day9.JPG" alt=""></p>
+<p>上午温度：36.3摄氏度</p>
+<p>下午温度：36.6摄氏度</p>
+<h2 id="Day-10"><a href="#Day-10" class="headerlink" title="Day 10 *"></a>Day 10 *</h2><p><img src="https://raw.githubusercontent.com/yifanzhang13/yifanzhang13.github.io/master/images/QuarantinePics/day10.JPG" alt=""></p>
+<p>上午温度：36.2摄氏度</p>
+<p>下午温度：36.7摄氏度</p>
+<h2 id="Day-11"><a href="#Day-11" class="headerlink" title="Day 11 *"></a>Day 11 *</h2><p><img src="https://raw.githubusercontent.com/yifanzhang13/yifanzhang13.github.io/master/images/QuarantinePics/day11.JPG" alt=""></p>
+<p>上午温度：36.4摄氏度</p>
+<p>下午温度：36.5摄氏度</p>
+<h2 id="Day-12"><a href="#Day-12" class="headerlink" title="Day 12"></a>Day 12</h2><p><img src="https://raw.githubusercontent.com/yifanzhang13/yifanzhang13.github.io/master/images/QuarantinePics/day12.JPG" alt=""></p>
+<p>上午温度：36.1摄氏度</p>
+<p>下午温度：36.5摄氏度</p>
+<h2 id="Day-13"><a href="#Day-13" class="headerlink" title="Day 13"></a>Day 13</h2><p><img src="https://raw.githubusercontent.com/yifanzhang13/yifanzhang13.github.io/master/images/QuarantinePics/day13.JPG" alt=""></p>
+<p>上午温度：36.1摄氏度</p>
+<p>下午温度：36.8摄氏度</p>
+<h2 id="Day-14"><a href="#Day-14" class="headerlink" title="Day 14"></a>Day 14</h2><p><img src="https://raw.githubusercontent.com/yifanzhang13/yifanzhang13.github.io/master/images/QuarantinePics/day14.JPG" alt=""></p>
+<p>上午温度：36.2摄氏度</p>
+<p>下午温度：36.5摄氏度</p>
+]]></content>
   </entry>
   <entry>
     <title>NexT Configuration</title>
